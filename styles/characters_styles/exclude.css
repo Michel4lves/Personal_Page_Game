@@ -1,0 +1,10 @@
+.character {
+    position: fixed;
+    top: calc(100vh - 370px);
+    left: 30vw;
+    width: 150px;
+    height: 280px;
+    overflow: hidden;
+    background-color: greenyellow;
+    z-index: 5;
+}
