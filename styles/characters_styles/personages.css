@@ -1,4 +1,4 @@
-.character {
+.main_person {
     position: fixed;
     top: calc(100vh - 380px);
     left: calc((100vw/2) - 450px);

@@ -1,0 +1,45 @@
+.desktop {
+    position: absolute;
+    top: calc(100vh - 380px);
+    left: 1200px;
+    width: 200px;
+    height: 300px;
+    background: greenyellow;
+    z-index: 9;
+    transition: 0.2s;
+    /* animation: moving 2s linear both; */
+}
+
+.laptop {
+    position: absolute;
+    top: calc(100vh - 380px);
+    left: 1450px;
+    width: 200px;
+    height: 300px;
+    background: greenyellow;
+    z-index: 9;
+    transition: 0.2s;
+    /* animation-delay: 2s; */
+    /* animation: moving 2s linear both; */
+}
+
+.mobile {
+    position: absolute;
+    top: calc(100vh - 380px);
+    left: 1700px;
+    width: 200px;
+    height: 300px;
+    background: greenyellow;
+    z-index: 9;
+    transition: 0.2s;
+    /* animation: moving 2s linear both; */
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-800px);
+    }
+}
