@@ -27,9 +27,14 @@ $(window).scroll(function(){
 
     // Laptop Motion
     if (screenPosition <= -1100) {
-        $('.desktop').css({animation: 'moving 1.5s linear both, walking_a 0.5s steps(2) infinite'})
-        $('.laptop').css({animation: 'moving 1.5s linear both, walking_b 0.5s steps(2) infinite', animationDelay: '0.2s'})
-        $('.mobile').css({animation: 'moving 1.5s linear both, walking_c 0.5s steps(2) infinite', animationDelay: '0.4s'})
+        $('.desktop_a').css({animation: 'moving 1.5s linear both, walking_a 0.5s steps(2) infinite', visibility: 'hidden', transitionDelay: '1.5s'})
+        $('.desktop_b').css({visibility: 'visible', transitionDelay: '1.7s'})
+        
+        $('.laptop_a').css({animation: 'moving 1.5s linear both, walking_b 0.5s steps(2) infinite', animationDelay: '0.2s', visibility: 'hidden', transitionDelay: '1.7s'}) 
+        $('.laptop_b').css({visibility: 'visible', transitionDelay: '1.9s', animationDelay: '1s'})
+        
+        $('.mobile_a').css({animation: 'moving 1.5s linear both, walking_c 0.5s steps(2) infinite', animationDelay: '0.4s', visibility: 'hidden', transitionDelay: '1.9s'})
+        $('.mobile_b').css({visibility: 'visible', transitionDelay: '2.1s', animationDelay: '1s'})
     }
 
     // Ant Motion

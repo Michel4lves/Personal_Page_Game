@@ -1,4 +1,5 @@
-.desktop {
+.desktop_a,
+.desktop_b {
     position: absolute;
     top: calc(100vh - 410px);
     left: 1500px;
@@ -21,7 +22,28 @@
     }
 }
 
-.laptop {
+.desktop_b {
+    left: 500px;
+    animation: jump_a 5s steps(2) infinite;
+    visibility: hidden;
+}
+
+@keyframes jump_a {
+    0%, 100% {
+        background-position: -1150px -35px;
+    }
+    20% {
+        background-position: -2150px -35px;
+        transform: translateY(-50px);
+    }
+    20.01% {
+        background-position: -1150px -35px;
+        transform: translateY(0);
+    }
+}
+
+.laptop_a,
+.laptop_b {
     position: absolute;
     top: calc(100vh - 380px);
     left: 1850px;
@@ -44,9 +66,30 @@
     }
 }
 
-.mobile {
+.laptop_b {
+    left: 850px;
+    animation: jump_b 7s steps(2) infinite;
+    visibility: hidden;
+}
+
+@keyframes jump_b {
+    0%, 100% {
+        background-position: -1150px -455px;
+    }
+    20% {
+        background-position: -2150px -455px;
+        transform: translateY(-50px);
+    }
+    20.01% {
+        background-position: -1150px -455px;
+        transform: translateY(0);
+    }
+}
+
+.mobile_a,
+.mobile_b {
     position: absolute;
-    top: calc(100vh - 380px);
+    top: calc(100vh - 370px);
     left: 2200px;
     width: 270px;
     height: 300px;
@@ -64,6 +107,26 @@
     }
     100% {
         background-position: -1180px -950px;
+    }
+}
+
+.mobile_b {
+    left: 1200px;
+    animation: jump_c 3s steps(2) infinite;
+    visibility: hidden;
+}
+
+@keyframes jump_c {
+    0%, 100% {
+        background-position: -1180px -950px;
+    }
+    20% {
+        background-position: -2180px -950px;
+        transform: translateY(-50px);
+    }
+    20.01% {
+        background-position: -1180px -950px;
+        transform: translateY(0);
     }
 }
 
