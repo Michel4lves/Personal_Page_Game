@@ -1,0 +1,233 @@
+.desktop {
+    position: absolute;
+    top: calc(100vh - 410px);
+    left: 1500px;
+    width: 300px;
+    height: 330px;
+    background-image: url(../../img/Characters/things.png);
+    background-position: -150px -35px;
+    background-size: 2000px;
+    z-index: 9;
+    transition: 0.2s;
+    animation: walking_a 0.5s steps(2) infinite;
+}
+
+@keyframes walking_a {
+    0% {
+        background-position: -150px -35px;
+    }
+    100% {
+        background-position: -1150px -35px;
+    }
+}
+
+.laptop {
+    position: absolute;
+    top: calc(100vh - 380px);
+    left: 1850px;
+    width: 300px;
+    height: 300px;
+    background-image: url(../../img/Characters/things.png);
+    background-position: -140px -455px;
+    background-size: 2000px;
+    z-index: 9;
+    transition: 0.2s;
+    animation: walking_b 0.5s steps(2) infinite;
+}
+
+@keyframes walking_b {
+    0% {
+        background-position: -140px -455px;
+    }
+    100% {
+        background-position: -1130px -455px;
+    }
+}
+
+.mobile {
+    position: absolute;
+    top: calc(100vh - 380px);
+    left: 2200px;
+    width: 270px;
+    height: 300px;
+    background-image: url(../../img/Characters/things.png);
+    background-position: -190px -950px;
+    background-size: 2000px;
+    z-index: 9;
+    transition: 0.2s;
+    animation: walking_c 0.5s steps(2) infinite;
+}
+
+@keyframes walking_c {
+    0% {
+        background-position: -190px -950px;
+    }
+    100% {
+        background-position: -1180px -950px;
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+.local {
+    position: absolute;
+    top: calc(100vh - 320px);
+    left: 1600px;
+    width: 150px;
+    height: 240px;
+    background-image: url(../../img/signs/local.gif);
+    background-size: 150px;
+    z-index: -1;
+}
+
+.ant {
+    position: absolute;
+    top: calc(100vh);
+    left: 1900px;
+    width: 200px;
+    height: 300px;
+    background-image: url(../../img/Characters/aint.png);
+    background-size: 250px;
+    z-index: -1;
+}
+
+@keyframes appear {
+    0% {
+        top: calc(100vh);
+    }
+    50% {
+        top: calc(100vh - 450px);
+    }
+    100% {
+        top: calc(100vh - 380px);
+        z-index: 1;
+    }
+}
+
+.ball_a, 
+.ball_b {
+    position: absolute;
+    top: calc(100vh - 170px);
+    left: 700px;
+    width: 86px;
+    height: 85px;
+    background-image: url(../../img/Characters/things.png);
+    background-repeat: no-repeat;
+    background-size: 1700px;
+    background-position: -6px -1818px;
+    transform: scaleX(-1) rotateZ(-40deg);
+    z-index: 11;
+    visibility: visible;
+}
+
+.ball_b {
+    left: 1100px;
+    visibility: hidden;
+}
+
+@keyframes rolling {
+    0% {
+        background-position: -6px -1818px;
+    }
+    99% {
+        background-position: -1120px -1818px;
+    }
+    100% {
+        background-position: -6px -1818px;
+    }
+}
+
+@keyframes pass {
+    0% {
+        top: calc(100vh - 170px);
+        left: 700px;
+    }
+    20% {
+        top: calc(100vh - 180px);
+        left: 800px;
+    }
+    40% {
+        top: calc(100vh - 170px);
+        left: 900px;
+    }
+    60% {
+        top: calc(100vh - 180px);
+        left: 950px;
+    }
+    80% {
+        top: calc(100vh - 170px);
+        left: 1000px;
+    }
+    100% {
+        top: calc(100vh - 170px);
+        left: 1100px;
+        visibility: hidden;
+    }
+}
+
+@keyframes kick {
+    0% {
+        top: calc(100vh - 170px);
+        left: 1100px;
+    }
+    50% {
+        top: calc(100vh - 400px);
+        left: 1880px;
+    }
+    70% {
+        top: calc(100vh - 170px);
+        left: 1800px;
+    }
+    90% {
+        top: calc(100vh - 180px);
+        left: 1750px;
+    }
+    100% {
+        top: calc(100vh - 170px);
+        left: 1700px;
+    }
+}
+
+@keyframes roll {
+    0% {
+        background-position: -6px -1818px;
+    }
+    99% {
+        background-position: -1120px -1818px;
+    }
+    100% {
+        background-position: -6px -1818px;
+    }
+}
+
+.beam {
+    position: absolute;
+    top: calc(100vh - 510px);
+    left: 1700px;
+    width: 430px;
+    height: 430px;
+    background-image: url(../../img/Characters/things.png);
+    background-size: 1650px;
+    background-position: -6px -1860px;
+    z-index: 12;
+}
+
+@keyframes net {
+    0% {
+        background-position: -6px -1860px;
+    }
+    99% {
+        background-position: -1388px -1860px;
+    }
+    100% {
+        background-position: -6px -1860px;
+    }
+}
+

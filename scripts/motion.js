@@ -27,12 +27,26 @@ $(window).scroll(function(){
 
     // Laptop Motion
     if (screenPosition <= -1100) {
-        $('.desktop').css({animation: 'moving 1.5s linear both'})
-        $('.laptop').css({animation: 'moving 1.5s linear both', animationDelay: '0.2s'})
-        $('.mobile').css({animation: 'moving 1.5s linear both', animationDelay: '0.4s'})
+        $('.desktop').css({animation: 'moving 1.5s linear both, walking_a 0.5s steps(2) infinite'})
+        $('.laptop').css({animation: 'moving 1.5s linear both, walking_b 0.5s steps(2) infinite', animationDelay: '0.2s'})
+        $('.mobile').css({animation: 'moving 1.5s linear both, walking_c 0.5s steps(2) infinite', animationDelay: '0.4s'})
     }
 
+    // Ant Motion
+    if (screenPosition <= -2500) {
+        $('.ant').css({animation: 'appear 1s linear both'})
+    }
 
+    // Ball Motion
+    if (screenPosition <= -4100 && tracking[0] > tracking[1]) {
+        $('.ball_a').css({animation: 'pass 1s linear both, rolling 1s steps(12) both'})
+        $('.ball_b').css({visibility: 'visible', transitionDelay: '1s'})
+    }
+    if (screenPosition <= -4500) {
+        $('.ball_b').css({animation: 'kick 1s linear both, roll 1s steps(12) both'})
+        $('.beam').css({animation: 'net 1.5s steps(3) both'})
+        $('.goal_keeper').css({animation: 'fall_gk 1s steps(2) infinite', animationDelay: '1s'})
+    }
 
 
 
@@ -48,5 +62,3 @@ $(window).scroll(function(){
 setInterval(() => {
     $('.main_person').css('animation', 'stoping .7s steps(3) infinite')
 }, 500)
-
-

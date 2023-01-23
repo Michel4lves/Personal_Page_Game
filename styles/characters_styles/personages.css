@@ -38,3 +38,39 @@
         background-position: -4600px 0px;
     }
 }
+
+
+
+.goal_keeper {
+    position: absolute;
+    top: calc(100vh - 380px);
+    left: 1400px;
+    width: 390px;
+    height: 300px;
+    background-image: url(../../img/Characters/personages.png);
+    background-repeat: no-repeat;
+    background-size: 5000px;
+    background-position: -1100px -2380px; 
+    transform: scaleX(-1);
+    animation: stoping_gk .7s steps(3) infinite;
+    /* animation: fall_gk 2s steps(2) infinite; */
+    z-index: 10;
+}
+
+@keyframes stoping_gk {
+    0% {
+        background-position: 0px -2380px;
+    }
+    100% {
+        background-position: -1150px -2380px;
+    }
+}
+
+@keyframes fall_gk {
+    0% {
+        background-position: -1500px -2380px;
+    }
+    100% {
+        background-position: -2270px -2380px;
+    }
+}
