@@ -68,7 +68,7 @@
 
 .laptop_b {
     left: 850px;
-    animation: jump_b 7s steps(2) infinite;
+    animation: jump_b 5s steps(2) infinite;
     visibility: hidden;
 }
 
@@ -150,6 +150,15 @@
     z-index: -1;
 }
 
+@keyframes collect {
+    0% {
+        transform: scale(1, 1); 
+    }
+    100% {
+        transform: scale(0, 0);
+    }
+}
+
 .ant {
     position: absolute;
     top: calc(100vh);
@@ -158,19 +167,16 @@
     height: 300px;
     background-image: url(../../img/Characters/aint.png);
     background-size: 250px;
-    z-index: -1;
+    z-index: 1;
 }
 
 @keyframes appear {
     0% {
-        top: calc(100vh);
-    }
-    50% {
-        top: calc(100vh - 450px);
+        top: calc(100vh - 480px);
+        transform: scale(0, 0); 
     }
     100% {
         top: calc(100vh - 380px);
-        z-index: 1;
     }
 }
 

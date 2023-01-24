@@ -6,8 +6,8 @@ $(window).scroll(function(){
         wh = $(window).height()
         value = (scroll / (dh-wh)) * 100
     $('.map').css('left', - value * 20 + '%')
-
-
+    
+    
     // Main Personage Motion
     $('.main_person').css('animation', 'runing 1s steps(6) infinite')
 
@@ -39,7 +39,9 @@ $(window).scroll(function(){
 
     // Ant Motion
     if (screenPosition <= -2500) {
-        $('.ant').css({animation: 'appear 1s linear both'})
+        $('.ant').css({animation: 'appear 2s linear both'})
+        $('.local').css({animation: 'collect 0.2s linear both'})
+        $('.local_collected').css({backgroundImage: 'url(../../img/screen/local_collected.png)', opacity: '1'})
     }
 
     // Ball Motion

@@ -1,0 +1,10 @@
+.local_collected {
+    position: fixed;
+    top: 30px;
+    left: calc((100vw/2) - 570px);
+    width: 40px;
+    height: 55px;
+    background-image: url(../../img/screen/local_no_collected.png);
+    background-size: 40px;
+    opacity: 0.3;
+}
