@@ -276,7 +276,8 @@
     }
 }
 
-.beam {
+.beam_a,
+.beam_b {
     position: absolute;
     top: calc(100vh - 510px);
     left: 1700px;
@@ -288,15 +289,16 @@
     z-index: 12;
 }
 
+.beam_b {
+    visibility: hidden;
+}
+
 @keyframes net {
     0% {
         background-position: -6px -1860px;
     }
-    99% {
-        background-position: -1388px -1860px;
-    }
     100% {
-        background-position: -6px -1860px;
+        background-position: -1389px -1860px;
     }
 }
 

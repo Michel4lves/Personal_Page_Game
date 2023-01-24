@@ -39,7 +39,7 @@ $(window).scroll(function(){
 
     // Ant Motion
     if (screenPosition <= -2500) {
-        $('.ant').css({animation: 'appear 2s linear both'})
+        $('.ant').css({animation: 'appear 0.5s linear both'})
         $('.local').css({animation: 'collect 0.2s linear both'})
         $('.local_collected').css({backgroundImage: 'url(../../img/screen/local_collected.png)', opacity: '1'})
     }
@@ -51,7 +51,8 @@ $(window).scroll(function(){
     }
     if (screenPosition <= -4500) {
         $('.ball_b').css({animation: 'kick 1s linear both, roll 1s steps(12) both'})
-        $('.beam').css({animation: 'net 1.5s steps(3) both'})
+        $('.beam_a').css({animation: 'net 1.5s steps(3) both', visibility: 'hidden', transitionDelay: '1.5s'})
+        $('.beam_b').css({visibility: 'visible', transitionDelay: '1.5s'})
         $('.goal_keeper').css({animation: 'fall_gk 1s steps(2) infinite', animationDelay: '1s'})
     }
 
