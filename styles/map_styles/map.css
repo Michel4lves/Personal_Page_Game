@@ -249,7 +249,28 @@ body {
     z-index: 10;
 }
 
+.map .fase2 .grandstand_a,
+.map .fase2 .grandstand_b,
+.map .fase2 .grandstand_c {
+    position: absolute;
+    left: 420px;
+    bottom: 0px;
+    width: 1500px;
+    height:560px;
+    background-image: url(../../img/street/grandstand_c.png);
+    background-size: 1500px;
+    z-index: -5;
+}
 
+.map .fase2 .grandstand_b {
+    background-image: url(../../img/street/grandstand_b.png);
+    z-index: -3;
+}
+
+.map .fase2 .grandstand_a {
+    background-image: url(../../img/street/grandstand_a.png);
+    z-index: -1;
+}
 
 
 /* FASE 3 */

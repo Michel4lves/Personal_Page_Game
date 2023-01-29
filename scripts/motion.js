@@ -54,6 +54,9 @@ $(window).scroll(function(){
         $('.beam_a').css({animation: 'net 1.5s steps(3) both', visibility: 'hidden', transitionDelay: '1.5s'})
         $('.beam_b').css({visibility: 'visible', transitionDelay: '1.5s'})
         $('.goal_keeper').css({animation: 'fall_gk 1s steps(2) infinite', animationDelay: '1s'})
+        
+        $('.crowd_a').css({backgroundImage: 'url(../../img/Characters/crowd_a2.png)', animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s'})
+        $('.crowd_b').css({backgroundImage: 'url(../../img/Characters/crowd_b2.png)', animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s'})
     }
 
 

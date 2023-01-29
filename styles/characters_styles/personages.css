@@ -73,3 +73,29 @@
         background-position: -2270px -2380px;
     }
 }
+
+.crowd_a,
+.crowd_b {
+    position: absolute;
+    left: 420px;
+    bottom: 0px;
+    width: 1500px;
+    height:560px;
+    background-image: url(../../img/Characters/crowd_a.png);
+    background-size: 1500px;
+    z-index: -2;
+}
+
+.crowd_b {
+    background-image: url(../../img/Characters/crowd_b.png);
+    z-index: -4;
+}
+
+@keyframes goal {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
