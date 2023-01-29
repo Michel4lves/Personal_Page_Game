@@ -59,6 +59,7 @@ $(window).scroll(function(){
         $('.crowd_b').css({backgroundImage: 'url(../../img/Characters/crowd_b2.png)', animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s'})
     }
 
+    
 
 
 
