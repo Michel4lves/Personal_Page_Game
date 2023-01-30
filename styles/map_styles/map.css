@@ -272,6 +272,20 @@ body {
     z-index: -1;
 }
 
+.map .fase2 .outdoor {
+    border: 1px solid red; 
+    position: absolute;
+    top: calc(100vh - 920px);
+    left: 2000px;
+    width: 1500px;
+    height: 900px;
+    background-image: url(../../img/street/outdoor.png);
+    background-size: 500px;
+    z-index: 1;
+}
+
+
+
 
 /* FASE 3 */
 

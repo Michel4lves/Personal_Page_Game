@@ -302,3 +302,32 @@
     }
 }
 
+.classification {
+    border: 1px solid red;
+    position: absolute;
+    left: 100px;
+    bottom: 450px;
+    width: 350px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.classification .team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.classification .star {
+    width: 200px;
+}
+
+.classification .team .icon {
+    width: 50px;
+}
+
+.classification .team h3 {
+    font-size: 2em;
+}
