@@ -1,3 +1,4 @@
+.local_no_collected,
 .local_collected {
     position: fixed;
     top: 30px;
@@ -7,4 +8,10 @@
     background-image: url(../../img/screen/local_no_collected.png);
     background-size: 40px;
     opacity: 0.3;
+}
+
+.local_collected {
+    background-image: url(../../img/screen/local_collected.png);
+    opacity: 1;
+    visibility: hidden;
 }

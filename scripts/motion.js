@@ -41,7 +41,8 @@ $(window).scroll(function(){
     if (screenPosition <= -2500) {
         $('.ant').css({animation: 'appear 0.5s linear both'})
         $('.local').css({animation: 'collect 0.2s linear both'})
-        $('.local_collected').css({backgroundImage: 'url(../../img/screen/local_collected.png)', opacity: '1'})
+        $('.local_no_collected').css({visibility: 'hidden'})
+        $('.local_collected').css({visibility: 'visible'})
     }
 
     // Ball Motion
@@ -55,11 +56,21 @@ $(window).scroll(function(){
         $('.beam_b').css({visibility: 'visible', transitionDelay: '1.5s'})
         $('.goal_keeper').css({animation: 'fall_gk 1s steps(2) infinite', animationDelay: '1s'})
         
-        $('.crowd_a').css({backgroundImage: 'url(../../img/Characters/crowd_a2.png)', animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s'})
-        $('.crowd_b').css({backgroundImage: 'url(../../img/Characters/crowd_b2.png)', animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s'})
+        $('.crowd_a').css({visibility: 'hidden', transitionDelay: '1s'})
+        $('.crowd_b').css({visibility: 'hidden', transitionDelay: '1s'})
+        $('.crowd_a2').css({animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s', visibility: 'visible'})
+        $('.crowd_b2').css({animation: 'goal 0.5s linear infinite', animationDelay: '1s',  transitionDelay: '1s', visibility: 'visible'})
     }
 
-    
+    if (screenPosition <= -4800) {
+        $('.knowlege').css({animation: 'classif 5s steps(6) both'}) 
+    }
+    if (screenPosition <= -5300) {
+        $('.frameworks').css({animation: 'classif 5s steps(6) both'}) 
+    }
+    if (screenPosition <= -5800) {
+        $('.learning').css({animation: 'classif 5s steps(6) both'}) 
+    }
 
 
 

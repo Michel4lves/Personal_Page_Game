@@ -75,7 +75,9 @@
 }
 
 .crowd_a,
-.crowd_b {
+.crowd_b ,
+.crowd_a2,
+.crowd_b2 {
     position: absolute;
     left: 420px;
     bottom: 0px;
@@ -89,6 +91,18 @@
 .crowd_b {
     background-image: url(../../img/Characters/crowd_b.png);
     z-index: -4;
+}
+
+.crowd_a2 {
+    background-image: url(../../img/Characters/crowd_a2.png);
+    z-index: -2;
+    visibility: hidden;
+}
+
+.crowd_b2 {
+    background-image: url(../../img/Characters/crowd_b2.png);
+    z-index: -4;
+    visibility: hidden;
 }
 
 @keyframes goal {

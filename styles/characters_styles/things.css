@@ -302,32 +302,66 @@
     }
 }
 
-.classification {
-    border: 1px solid red;
+.knowlege,
+.frameworks,
+.learning {
     position: absolute;
+    top: calc(100vh - 830px);
     left: 100px;
-    bottom: 450px;
     width: 350px;
-    height: 340px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* animation: classif 5s steps(5) both; */
+    /* animation: classif 5s steps(6) infinite; */
+    overflow: hidden
 }
 
-.classification .team {
+.frameworks {
+    gap: 15px;
+    left: 600px;
+}
+
+.learning {
+    left: 1100px;
+}
+
+@keyframes classif {
+    0% {
+        height: 40px;
+    }
+    100% {
+        height: 400px;
+    }
+}
+
+.knowlege .team,
+.frameworks .team,
+.learning .team {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.classification .star {
+.knowlege .star,
+.frameworks .star,
+.learning .star {
     width: 200px;
 }
 
-.classification .team .icon {
+.knowlege .team .icon,
+.learning .team .icon {
     width: 50px;
 }
 
-.classification .team h3 {
-    font-size: 2em;
+.frameworks .team .icon {
+    width: 40px;
 }
+
+.knowlege .team h3,
+.frameworks .team h3,
+.learning .team h3 {
+    font-size: 1.3em;
+}
+
