@@ -234,7 +234,6 @@ body {
     width: 760px;
     height:210px;
     background-image: url(../../img/street/bridge_back.png);
-    background-size: 1000;
     z-index: 2;
 }
 
@@ -245,8 +244,19 @@ body {
     width: 500px;
     height:180px;
     background-image: url(../../img/street/bridge_front.png);
-    background-size: 2000;
     z-index: 10;
+}
+
+.map .fase2 .lake {
+    border: 1px solid red;
+    position: absolute;
+    left: -350px;
+    bottom: 45px;
+    width: 1000px;
+    height: 420px;
+    background-image: url(../../img/greens/lake.png);
+    background-size: 1000px;
+    z-index: -7;
 }
 
 .map .fase2 .grandstand_a,
