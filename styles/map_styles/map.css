@@ -9,6 +9,10 @@
     height: 0;
 } */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 27000px;
 }
@@ -298,91 +302,115 @@ body {
 
 /* FASE 3 */
 
-/* .map .fase3 {
+.map .fase3 {
     position: relative;
     width: 4000px;
-    height: 200vh;
-} */
+    height: calc(100vh + 978px);
+}
 
-/* .map .fase3 .ground-1 {
-    position: absolute;
-    left: 1420px;
-    bottom: 100vh;
-    width: 100%;
-    height: 129px;
-    background-image: url(img/grounds/grounds.png);
-    z-index: -4;
-} */
-
-/* .map .fase3 .sewer-entrance {
-    position: absolute;
-    top: calc(100vh - 183px);
-    left: -550px;
-    width: 1500px;
-    height: 100vh;
-    background-image: url(img/grounds/rocks-canyon.png);
-    background-size: 1500px;
-    z-index: 2;
-} */
-
-/* .map .fase3 .broken-wall {
-    position: absolute;
-    left: 220px;
-    top: 120vh;
-    width: 1200px;
-    height: 500px;
-    background-image: url(img/grounds/broken-wall.png);
-    z-index: 3;
-} */
-
-/* .map .fase3 .sewer-wall-1,
-.map .fase3 .sewer-wall-2,
-.map .fase3 .sewer-wall-3 {
-    position: absolute;
-    left: -3000px;
-    top: 120vh;
-    width: 3220px;
-    height: 100vh;
-    background-image: url(img/sewer/sewer-wall.png);
-    background-size: 100px;
-    z-index: 3;
-} */
-
-/* .map .fase3 .sewer-wall-2 {
-    left: 220px;
-    top: calc(120vh + 500px);
-    width: 1200px;
-    z-index: 4;
-} */
-
-/* .map .fase3 .sewer-wall-3 {
-    left: 1420px;
-    width: 3220px;
-} */
-
-
-/* .map .fase3 .ground-sewer {
-    position: absolute;
-    top: calc(190vh - 160px);
-    left: -3000px;
-    width: 10000px;
-    height: 160px;
-    background-image: url(img/grounds/sewer-ground.png);
-    background-size: 1000px;
-    z-index: 5;
-} */
-
-
-/* .map .fase3 .sub-ground {
+.map .fase3 .sidewalk-a,
+.map .fase3 .sidewalk-b {
     position: absolute;
     left: 0;
-    top: 100vh;
+    top: calc(100vh - 105px);
+    width: 500px;
+    height: 85px;
+    background-image: url(../../img/grounds/sidewalk.png);
+}
+
+.map .fase3 .rock {
+    position: absolute;
+    left: 0;
+    top: calc(100vh - 20px);
     width: 100%;
-    height: 90%;
-    background-image: url(img/grounds/rocks.png);
-    background-size: 560px;
+    height: 213px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+    z-index: 12;
+}
+
+.map .fase3 .sidewalk-b {
+    left: 450px;
+    width: 100%;
+    z-index: 11;
+}
+
+.map .fase3 .subway-entrance {
+    position: absolute;
+    left: 200px;
+    top: calc(100vh - 641px);
+    width: 800px;
+    height: 600px;
+    background-image: url(../../img/subway/entrance-subway.png);
+    z-index: 12;
+}
+
+.map .fase3 .subway-stairs {
+    border: 1px solid red;
+    position: absolute;
+    left: 650px;
+    bottom: 80px;
+    width: 1300px;
+    height: 880px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3450px;
+    background-position: -2100px -15px;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.map .fase3 .subway-ground {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background-image: url(../../img/subway/subway-ground.png);
+    background-size: 2000px;
+    z-index: -2;
+}
+
+.map .fase3 .subway-pillars {
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+    width: 100%;
+    height: 640px;
+    background-image: url(../../img/subway/subway-pillars.png);
+    background-size: 2000px;
+    z-index: -3;
+}
+
+.map .fase3 .subway-wall {
+    position: absolute;
+    left: 0;
+    bottom: 144px;
+    width: 100%;
+    height: 640px;
+    background-image: url(../../img/subway/subway-wall.png);
+    background-size: 2000px;
     z-index: -5;
-} */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

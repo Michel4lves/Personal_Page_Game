@@ -1,4 +1,5 @@
 var tracking = []
+var stairs = 0
 
 $(window).scroll(function(){
     var scroll = $(window).scrollTop()
@@ -74,6 +75,45 @@ $(window).scroll(function(){
 
 
 
+    // SUBWAY
+
+    // Stairs
+    if (screenPosition <= -7850 && screenPosition >= -7960 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-49px')
+    }else if (screenPosition <= -7961 && screenPosition >= -8070 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-147px')
+    }else if (screenPosition <= -8071 && screenPosition >= -8200 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-245px')
+    }else if (screenPosition <= -8201 &&  screenPosition >= -8268 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-343px')
+    }else if (screenPosition <= -8269 && screenPosition >= -8337 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-392px')
+    }else if (screenPosition <= -8338 && screenPosition >= -8406 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-441px')
+    }else if (screenPosition <= -8407 &&  screenPosition >= -8475 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-490px')
+    }else if (screenPosition <= -8476 && screenPosition >= -8544 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-539px')
+    }else if (screenPosition <= -8545 && screenPosition >= -8613 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-588px')
+    }else if (screenPosition <= -8614 &&  screenPosition >= -8682 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-637px')
+    }else if (screenPosition <= -8683 && screenPosition >= -8751 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-686px')
+    }else if (screenPosition <= -8752 && screenPosition >= -8820 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-735px')
+    }else if (screenPosition <= -8821 &&  screenPosition >= -8889 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-784px')
+    }else if (screenPosition <= -8890 && screenPosition >= -8958 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-833px')
+    }else if (screenPosition <= -8959 && screenPosition >= -9027 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-882px')
+    }else if (screenPosition <= -9028 &&  screenPosition >= -9099 && tracking[0] > tracking[1]) {
+        $('.map').css('top', '-931px')
+    }else if (screenPosition <= -9100 &&  tracking[0] > tracking[1]) {
+        $('.map').css('top', '-978px')
+    }
+
 
 
 
@@ -85,3 +125,5 @@ $(window).scroll(function(){
 setInterval(() => {
     $('.main_person').css('animation', 'stoping .7s steps(3) infinite')
 }, 500)
+
+
