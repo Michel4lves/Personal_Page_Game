@@ -211,6 +211,16 @@ body {
     z-index: 1;
 }
 
+.map .fase2 .rock {
+    position: absolute;
+    right: 0;
+    top: 100vh;
+    width: 75%;
+    height: 980px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+}
+
 .map .fase2 .water {
     position: absolute;
     left: 200px;
@@ -304,12 +314,13 @@ body {
 
 .map .fase3 {
     position: relative;
-    width: 4000px;
+    width: 6000px;
     height: calc(100vh + 978px);
 }
 
 .map .fase3 .sidewalk-a,
-.map .fase3 .sidewalk-b {
+.map .fase3 .sidewalk-b,
+.map .fase3 .sidewalk-c {
     position: absolute;
     left: 0;
     top: calc(100vh - 105px);
@@ -318,24 +329,29 @@ body {
     background-image: url(../../img/grounds/sidewalk.png);
 }
 
+.map .fase3 .sidewalk-b {
+    left: 380px;
+    width: 94%;
+    z-index: 11;
+}
+
+.map .fase3 .sidewalk-c {
+    left: 6000px;
+}
+
 .map .fase3 .rock {
     position: absolute;
     left: 0;
     top: calc(100vh - 20px);
-    width: 100%;
+    width: 110%;
     height: 213px;
     background-image: url(../../img/grounds/rocks.jpg);
     background-size: 100px;
-    z-index: 12;
+    z-index: 13;
 }
 
-.map .fase3 .sidewalk-b {
-    left: 450px;
-    width: 100%;
-    z-index: 11;
-}
-
-.map .fase3 .subway-entrance {
+.map .fase3 .subway-entrance-a,
+.map .fase3 .subway-entrance-b {
     position: absolute;
     left: 200px;
     top: calc(100vh - 641px);
@@ -345,8 +361,13 @@ body {
     z-index: 12;
 }
 
-.map .fase3 .subway-stairs {
-    border: 1px solid red;
+.map .fase3 .subway-entrance-b {
+    left: 5400px;
+}
+
+.map .fase3 .subway-stairs-b,
+.map .fase3 .subway-stairs-f,
+.map .fase3 .subway-stairs-g {
     position: absolute;
     left: 650px;
     bottom: 80px;
@@ -359,11 +380,23 @@ body {
     z-index: -1;
 }
 
+.map .fase3 .subway-stairs-f {
+    background-position: -2100px -900px;
+    z-index: 11;
+}
+
+.map .fase3 .subway-stairs-g {
+    background-position: -2100px -1783px;
+    z-index: 12;
+    opacity: 50%;
+}
+
+
 .map .fase3 .subway-ground {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 110%;
     height: 110px;
     background-image: url(../../img/subway/subway-ground.png);
     background-size: 2000px;
@@ -374,7 +407,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 110px;
-    width: 100%;
+    width: 110%;
     height: 640px;
     background-image: url(../../img/subway/subway-pillars.png);
     background-size: 2000px;
@@ -385,27 +418,143 @@ body {
     position: absolute;
     left: 0;
     bottom: 144px;
-    width: 100%;
+    width: 110%;
     height: 640px;
     background-image: url(../../img/subway/subway-wall.png);
     background-size: 2000px;
+    z-index: -6;
+}
+
+.map .fase3 .subway-stairs-bb,
+.map .fase3 .subway-stairs-ff,
+.map .fase3 .subway-stairs-gg {
+    position: absolute;
+    left: 4500px;
+    bottom: 80px;
+    width: 1300px;
+    height: 880px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3450px;
+    background-position: -2100px -15px;
+    z-index: -1;
+}
+
+.map .fase3 .subway-stairs-ff {
+    background-position: -2100px -900px;
+    z-index: 11;
+}
+
+.map .fase3 .subway-stairs-gg {
+    background-position: -2100px -1783px;
+    z-index: 12;
+    opacity: 50%;
+}
+
+.map .fase3 .project-1,
+.map .fase3 .project-2,
+.map .fase3 .project-3,
+.map .fase3 .project-4 {
+    position: absolute;
+    left: 1520px;
+    bottom: 400px;
+    width: 300px;
+    height: 200px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3200px;
+    background-position: -20px -1710px;
     z-index: -5;
 }
 
+.map .fase3 .project-2 {
+    left: 2525px;
+}
 
+.map .fase3 .project-3 {
+    left: 3025px;
+    background-position: 30px -1450px;
+}
 
+.map .fase3 .project-4 {
+    left: 4025px;
+}
 
+.map .fase3 .terminal-1,
+.map .fase3 .terminal-2 {
+    position: absolute;
+    left: 2025px;
+    bottom: 190px;
+    width: 115px;
+    height: 280px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3200px;
+    background-position: -1050px -1460px;
+    z-index: -2;
+}
 
+.map .fase3 .terminal-2 {
+    left: 2175px;
+}
 
+.map .fase3 .food-machine {
+    position: absolute;
+    left: 3450px;
+    bottom: 160px;
+    width: 215px;
+    height: 380px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3200px;
+    background-position: -480px -1760px;
+    z-index: -2;
+}
 
+.map .fase3 .train-f,
+.map .fase3 .train-v1,
+.map .fase3 .train-v2,
+.map .fase3 .train-v3,
+.map .fase3 .train-b {
+    position: absolute;
+    left: 6900px;
+    bottom: 200px;
+    width: 970px;
+    height: 450px;
+    background-image: url(../../img/subway/train.png);
+    background-size: 2900px;
+    z-index: -4;
+    animation: move-train 20s linear infinite;
+}
 
+@keyframes move-train {
+    0% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-12000px);
+    }
+}
 
+.map .fase3 .train-v1,
+.map .fase3 .train-v2,
+.map .fase3 .train-v3 {
+    left: 7870px;
+    width: 800px;
+    background-position: -1045px 0px;
+}
 
+.map .fase3 .train-v2 {
+    left: 8670px;
+}
 
+.map .fase3 .train-v3 {
+    left: 9470px;
+}
 
-
-
-
+.map .fase3 .train-b {
+    left: 10270px;
+    background-position: -1915px 0px;
+}
 
 
 

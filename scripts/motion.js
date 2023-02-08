@@ -78,41 +78,104 @@ $(window).scroll(function(){
     // SUBWAY
 
     // Stairs
-    if (screenPosition <= -7850 && screenPosition >= -7960 && tracking[0] > tracking[1]) {
+    if (screenPosition <= -7850 && screenPosition >= -7960) {
         $('.map').css('top', '-49px')
-    }else if (screenPosition <= -7961 && screenPosition >= -8070 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -7961 && screenPosition >= -8070) {
         $('.map').css('top', '-147px')
-    }else if (screenPosition <= -8071 && screenPosition >= -8200 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8071 && screenPosition >= -8200) {
         $('.map').css('top', '-245px')
-    }else if (screenPosition <= -8201 &&  screenPosition >= -8268 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8201 &&  screenPosition >= -8268) {
         $('.map').css('top', '-343px')
-    }else if (screenPosition <= -8269 && screenPosition >= -8337 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8269 && screenPosition >= -8337) {
         $('.map').css('top', '-392px')
-    }else if (screenPosition <= -8338 && screenPosition >= -8406 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8338 && screenPosition >= -8406) {
         $('.map').css('top', '-441px')
-    }else if (screenPosition <= -8407 &&  screenPosition >= -8475 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8407 &&  screenPosition >= -8475) {
         $('.map').css('top', '-490px')
-    }else if (screenPosition <= -8476 && screenPosition >= -8544 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8476 && screenPosition >= -8544) {
         $('.map').css('top', '-539px')
-    }else if (screenPosition <= -8545 && screenPosition >= -8613 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8545 && screenPosition >= -8613) {
         $('.map').css('top', '-588px')
-    }else if (screenPosition <= -8614 &&  screenPosition >= -8682 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8613.1 &&  screenPosition >= -8682) {
         $('.map').css('top', '-637px')
-    }else if (screenPosition <= -8683 && screenPosition >= -8751 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8683 && screenPosition >= -8751) {
         $('.map').css('top', '-686px')
-    }else if (screenPosition <= -8752 && screenPosition >= -8820 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8752 && screenPosition >= -8820) {
         $('.map').css('top', '-735px')
-    }else if (screenPosition <= -8821 &&  screenPosition >= -8889 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8821 &&  screenPosition >= -8889) {
         $('.map').css('top', '-784px')
-    }else if (screenPosition <= -8890 && screenPosition >= -8958 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8889.1 && screenPosition >= -8958) {
         $('.map').css('top', '-833px')
-    }else if (screenPosition <= -8959 && screenPosition >= -9027 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -8959 && screenPosition >= -9027) {
         $('.map').css('top', '-882px')
-    }else if (screenPosition <= -9028 &&  screenPosition >= -9099 && tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -9028 &&  screenPosition >= -9099) {
         $('.map').css('top', '-931px')
-    }else if (screenPosition <= -9100 &&  tracking[0] > tracking[1]) {
+    }else if (screenPosition <= -9100 &&  screenPosition >= -12099) {
+        $('.map').css('top', '-978px')
+
+    }else if (screenPosition <= -12100 &&  screenPosition >= -12168) {
+        $('.map').css('top', '-931px')
+    }else if (screenPosition <= -12169 &&  screenPosition >= -12237) {
+        $('.map').css('top', '-882px')
+    }else if (screenPosition <= -12238 && screenPosition >= -12306) {
+        $('.map').css('top', '-833px')
+    }else if (screenPosition <= -12307 && screenPosition >= -12375) {
+        $('.map').css('top', '-784px')
+    }else if (screenPosition <= -12376 &&  screenPosition >= -12454) {
+        $('.map').css('top', '-735px')
+    }else if (screenPosition <= -12455 && screenPosition >= -12513) {
+        $('.map').css('top', '-686px')
+    }else if (screenPosition <= -12514 && screenPosition >= -12582) {
+        $('.map').css('top', '-637px')
+    }else if (screenPosition <= -12583 &&  screenPosition >= -12661) {
+        $('.map').css('top', '-588px')
+    }else if (screenPosition <= -12662 && screenPosition >= -12740) {
+        $('.map').css('top', '-539px')
+    }else if (screenPosition <= -12741 && screenPosition >= -12789) {
+        $('.map').css('top', '-490px')
+    }else if (screenPosition <= -12790 &&  screenPosition >= -12858) {
+        $('.map').css('top', '-441px')
+    }else if (screenPosition <= -12859 && screenPosition >= -12947) {
+        $('.map').css('top', '-392px')
+    }else if (screenPosition <= -12948 && screenPosition >= -13016) { //
+        $('.map').css('top', '-343px')
+    }else if (screenPosition <= -13017 &&  screenPosition >= -13156) {  //
+        $('.map').css('top', '-245px')
+    }else if (screenPosition <= -13157 && screenPosition >= -13276) { //
+        $('.map').css('top', '-147px')
+    }else if (screenPosition <= -13277 && screenPosition >= -13300) { //
+        $('.map').css('top', '-49px')
+    
+    }else{
+        $('.map').css('top', '0px')
+    }
+
+
+
+    if (screenPosition <= -14100 && screenPosition >= -18000) { //
         $('.map').css('top', '-978px')
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,5 +188,4 @@ $(window).scroll(function(){
 setInterval(() => {
     $('.main_person').css('animation', 'stoping .7s steps(3) infinite')
 }, 500)
-
 
