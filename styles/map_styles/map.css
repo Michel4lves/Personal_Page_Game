@@ -221,6 +221,18 @@ body {
     background-size: 100px;
 }
 
+.map .fase2 .tree-5 {
+    position: absolute;
+    left: -100px;
+    bottom: 210px;
+    width: 190px;
+    height: 240px;
+    background-image: url(../../img/greens/trees.png);
+    background-position: -220px -220px;
+    background-size: 600px;
+    z-index: -3;
+}
+
 .map .fase2 .water {
     position: absolute;
     left: 200px;
@@ -262,7 +274,6 @@ body {
 }
 
 .map .fase2 .lake {
-    border: 1px solid red;
     position: absolute;
     left: -350px;
     bottom: 45px;
@@ -307,6 +318,17 @@ body {
     z-index: -1;
 }
 
+.map .fase2 .field {
+    position: absolute;
+    left: 700px;
+    bottom: 95px;
+    width: 100%;
+    height: 220px;
+    background-image: url(../../img/greens/field-1.png);
+    background-size: 800px;
+    z-index: -5;
+}
+
 
 
 
@@ -337,6 +359,27 @@ body {
 
 .map .fase3 .sidewalk-c {
     left: 6000px;
+    width: 520px;
+}
+
+.map .fase3 .sidewalk-edge-a,
+.map .fase3 .sidewalk-edge-b,
+.map .fase3 .sidewalk-edge-c {
+    position: absolute;
+    left: -60px;
+    top: calc(100vh - 105px);
+    width: 216px;
+    height: 75px;
+    background-image: url(../../img/grounds/sidewalk-edge.png);
+    z-index: 1;
+}
+
+.map .fase3 .sidewalk-edge-b {
+    left: 6530px;
+}
+
+.map .fase3 .sidewalk-edge-c {
+    left: 6760px;
 }
 
 .map .fase3 .rock {
@@ -507,77 +550,33 @@ body {
     z-index: -2;
 }
 
-.map .fase3 .train-f,
-.map .fase3 .train-v1,
-.map .fase3 .train-v2,
-.map .fase3 .train-v3,
-.map .fase3 .train-b {
-    position: absolute;
-    left: 6900px;
-    bottom: 200px;
-    width: 970px;
-    height: 450px;
-    background-image: url(../../img/subway/train.png);
-    background-size: 2900px;
-    z-index: -4;
-    animation: move-train 20s linear infinite;
-}
-
-@keyframes move-train {
-    0% {
-        transform: translateX(0);
-    }
-    80% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-12000px);
-    }
-}
-
-.map .fase3 .train-v1,
-.map .fase3 .train-v2,
-.map .fase3 .train-v3 {
-    left: 7870px;
-    width: 800px;
-    background-position: -1045px 0px;
-}
-
-.map .fase3 .train-v2 {
-    left: 8670px;
-}
-
-.map .fase3 .train-v3 {
-    left: 9470px;
-}
-
-.map .fase3 .train-b {
-    left: 10270px;
-    background-position: -1915px 0px;
-}
-
-
-
-
-
-
-
 
 /* FASE 4 */
 
-/* .map .fase4 {
+.map .fase4 {
     position: relative;
     width: 4000px;
     height: 100vh;
-} */
+}
 
-/* .map .fase4 .ground-5 {
+.map .fase4 .ground-5 {
     position: absolute;
-    left: 0;
+    left: 200px;
     bottom: 0;
     width: 100%;
     height: 129px;
-    background-image: url(img/grounds/grounds.png);
+    background-image: url(../../img/grounds/grounds.png);
     background-position: 0 408px;
-    z-index: 1;
-} */
+    z-index: -1;
+}
+
+.map .fase4 .rock {
+    position: absolute;
+    left: 600px;
+    top: 100vh;
+    width: 130%;
+    height: 980px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+    z-index: 13;
+}

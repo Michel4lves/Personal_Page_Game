@@ -38,12 +38,29 @@ $(window).scroll(function(){
         $('.mobile_b').css({visibility: 'visible', transitionDelay: '2.1s', animationDelay: '1s'})
     }
 
-    // Ant Motion
+    // Ant / mail collect
     if (screenPosition <= -2500) {
         $('.ant').css({animation: 'appear 0.5s linear both'})
         $('.local').css({animation: 'collect 0.2s linear both'})
         $('.local_no_collected').css({visibility: 'hidden'})
         $('.local_collected').css({visibility: 'visible'})
+    }
+    if (screenPosition <= -7100) {
+        $('.mail').css({animation: 'collect 0.2s linear both'})
+        $('.mail_no_collected').css({visibility: 'hidden'})
+        $('.mail_collected').css({visibility: 'visible'})
+    }
+    if (screenPosition <= -11525) {
+        $('.mobile').css({animation: 'collect 0.2s linear both'})
+        $('.mobile_no_collected').css({visibility: 'hidden'})
+        $('.mobile_collected').css({visibility: 'visible'})
+    }
+
+    // BREACH
+    if (screenPosition <= -3230 && screenPosition >= -3920) {
+        $('.main_person').css('top', 'calc(100vh - 400px)')
+    }else{
+        $('.main_person').css('top', 'calc(100vh - 380px)')
     }
 
     // Ball Motion
@@ -148,12 +165,6 @@ $(window).scroll(function(){
     
     }else{
         $('.map').css('top', '0px')
-    }
-
-
-
-    if (screenPosition <= -14100 && screenPosition >= -18000) { //
-        $('.map').css('top', '-978px')
     }
 
 
