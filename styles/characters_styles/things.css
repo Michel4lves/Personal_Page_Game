@@ -142,7 +142,7 @@
 .local {
     position: absolute;
     top: calc(100vh - 320px);
-    left: 1600px;
+    left: 2000px;
     width: 150px;
     height: 240px;
     background-image: url(../../img/signs/local.gif);
@@ -156,27 +156,6 @@
     }
     100% {
         transform: scale(0, 0);
-    }
-}
-
-.ant {
-    position: absolute;
-    top: calc(100vh);
-    left: 1900px;
-    width: 200px;
-    height: 300px;
-    background-image: url(../../img/Characters/aint.png);
-    background-size: 250px;
-    z-index: 1;
-}
-
-@keyframes appear {
-    0% {
-        top: calc(100vh - 480px);
-        transform: scale(0, 0); 
-    }
-    100% {
-        top: calc(100vh - 380px);
     }
 }
 
@@ -302,19 +281,17 @@
     }
 }
 
-.knowlege,
+.knowledge,
 .frameworks,
 .learning {
     position: absolute;
-    top: calc(100vh - 830px);
+    top: 80px; 
     left: 100px;
     width: 350px;
     height: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* animation: classif 5s steps(5) both; */
-    /* animation: classif 5s steps(6) infinite; */
     overflow: hidden
 }
 
@@ -336,7 +313,7 @@
     }
 }
 
-.knowlege .team,
+.knowledge .team,
 .frameworks .team,
 .learning .team {
     display: flex;
@@ -344,13 +321,13 @@
     gap: 10px;
 }
 
-.knowlege .star,
+.knowledge .star,
 .frameworks .star,
 .learning .star {
     width: 200px;
 }
 
-.knowlege .team .icon,
+.knowledge .team .icon,
 .learning .team .icon {
     width: 50px;
 }
@@ -359,7 +336,7 @@
     width: 40px;
 }
 
-.knowlege .team h3,
+.knowledge .team h3,
 .frameworks .team h3,
 .learning .team h3 {
     font-size: 1.3em;
@@ -439,7 +416,7 @@
 .helicopter {
     position: relative;
     top: calc(100vh - 600px);
-    left: 500px;
+    left: 3500px;
     width: 800px;
     height: 550px;
     transform: scaleX(-1);

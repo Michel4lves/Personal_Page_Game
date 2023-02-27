@@ -9,9 +9,9 @@
     height: 0;
 } */
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     height: 27000px;
@@ -34,6 +34,27 @@ body {
     width: 27000px;
     height: 200vh;
     display: flex;
+}
+
+.sky,
+.sky-middle,
+.sky-fall {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-color: #bef6f7;
+    z-index: -10;
+}
+
+.sky-middle {
+    background-image: linear-gradient(to right, #bef6f7, #043b3f);
+}
+
+.sky-fall {
+    width: 200%;
+    background-color: #043b3f;
 }
 
 /* INITIAL SCREEN */
@@ -191,6 +212,15 @@ body {
     z-index: -6;
 } 
 
+.map .fase1 .city-a {
+    position: absolute;
+    left: 100px;
+    bottom: 220px;
+    width: 1540px;
+    height: 1000px;
+    background-image: url(../../img/street/city-a.png);
+    z-index: -7;
+} 
 
 /* FASE 2 */
 
@@ -238,10 +268,11 @@ body {
     left: 200px;
     bottom: 0;
     width: 1500px;
-    height: 80px;
-    background-image: url(../../img/grounds/grounds.png);
-    background-position: 0 550px;
+    height: 260px;
+    background-image: url(../../img/grounds/water.gif);
+    background-size: 200px;
     animation: water 50s linear infinite;
+    z-index: -6;
 }
 
 @keyframes water {
@@ -276,9 +307,9 @@ body {
 .map .fase2 .lake {
     position: absolute;
     left: -350px;
-    bottom: 45px;
+    bottom: 0px;
     width: 1000px;
-    height: 420px;
+    height: 465px;
     background-image: url(../../img/greens/lake.png);
     background-size: 1000px;
     z-index: -7;
@@ -308,7 +339,7 @@ body {
 }
 
 .map .fase2 .outdoor {
-    position: absolute;
+    position: relative;
     top: calc(100vh - 745px);
     left: 2000px;
     width: 1500px;
@@ -352,8 +383,8 @@ body {
 }
 
 .map .fase3 .sidewalk-b {
-    left: 380px;
-    width: 94%;
+    left: 350px;
+    width: 95%;
     z-index: 11;
 }
 
@@ -550,12 +581,44 @@ body {
     z-index: -2;
 }
 
+.map .fase3 .house-a {
+    position: absolute;
+    left: 410px;
+    top: calc(100vh - 1023px);
+    width: 4000px;
+    height: 923px;
+    background-image: url(../../img/street/houses.png);
+    background-size: 4000px;
+    z-index: -2;
+}
+
+.map .fase3 .field {
+    position: absolute;
+    left: 700px;
+    top: calc(100vh - 300px);
+    width: 4000px;
+    height: 220px;
+    background-image: url(../../img/greens/field-1.png);
+    background-size: 800px;
+    z-index: -5;
+}
+
+.map .fase3 .gate {
+    position: absolute;
+    left: 4300px;
+    top: calc(100vh - 630px);
+    width: 520px;
+    height: 600px;
+    background-image: url(../../img/street/gate.png);
+    background-size: 500px;
+    z-index: 12;
+}
 
 /* FASE 4 */
 
 .map .fase4 {
     position: relative;
-    width: 4000px;
+    width: 6600px;
     height: 100vh;
 }
 
@@ -579,4 +642,81 @@ body {
     background-image: url(../../img/grounds/rocks.jpg);
     background-size: 100px;
     z-index: 13;
+}
+
+.map .fase4 .sands-a,
+.map .fase4 .sands-b {
+    position: absolute;
+    left: -1250px;
+    top: calc(100vh - 350px);
+    width: 8000px;
+    height: 250px;
+    background-image: url(../../img/desert/sands.png);
+    background-position: -0px -245px;
+    background-size: 1200px;
+    z-index: -5;
+}
+
+.map .fase4 .sands-b {
+    top: calc(100vh - 470px);
+    background-position: -0px -0px;
+    z-index: -6;
+}
+
+.map .fase4 .sands-plataform {
+    position: absolute;
+    top: calc(100vh - 240px);
+    left: 1250px;
+    width: 1500px;
+    height: 198px;
+    background-image: url(../../img/desert/sand-plataform.png);
+    background-size: 1500px;
+    z-index: 1;
+}
+
+.map .fase4 .canyon {
+    position: absolute;
+    top: calc(100vh - 730px);
+    left: 0px;
+    width: 1300px;
+    height: 370px;
+    background-image: url(../../img/desert/canyon-.png);
+    z-index: -7;
+}
+
+.map .fase4 .pile-stones {
+    position: absolute;
+    top: calc(100vh - 460px);
+    left: 2800px;
+    width: 420px;
+    height: 90px;
+    background-image: url(../../img/desert/pile-stones.png);
+    z-index: -5;
+}
+
+.map .fase4 .city-b {
+    position: absolute;
+    left: 300px;
+    bottom: 0px;
+    width: 1000px;
+    height: 1000px;
+    background-image: url(../../img/street/city-b.png);
+    z-index: -8;
+}
+
+.map .fase4 .plataform-a,
+.map .fase4 .plataform-f {
+    position: absolute;
+    left: 4400px;
+    bottom: 90px;
+    width: 2500px;
+    height: 2000px;
+    background-image: url(../../img/plataform/plataform.png);
+    background-size: 2500px;
+    z-index: -2;
+} 
+
+.map .fase4 .plataform-f {
+    background-image: url(../../img/plataform/plataform-f.png);
+    z-index: 11;
 }
