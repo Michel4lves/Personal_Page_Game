@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+} */
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    height: 0; /* value on js*/
+}
+
+.game {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0; /* value on js*/
+    height: 200vh;
+    display: flex;
+    overflow: hidden;
+}

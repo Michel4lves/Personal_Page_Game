@@ -1,0 +1,201 @@
+/* FASE 4 */
+
+/* MAP */
+
+.phase-4-map {
+    position: relative;
+    width: 6600px;
+    height: 100vh;
+}
+
+.phase-4-map .ground-5 {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 100%;
+    height: 129px;
+    background-image: url(../../img/grounds/grounds.png);
+    background-position: 0 408px;
+    z-index: -1;
+}
+
+.phase-4-map .sands-a,
+.phase-4-map .sands-b {
+    position: absolute;
+    left: -1250px;
+    bottom: 100px;
+    width: 8000px;
+    height: 250px;
+    background-image: url(../../img/desert/sands.png);
+    background-position: -0px -245px;
+    background-size: 1200px;
+    z-index: -5;
+}
+
+.phase-4-map .sands-b {
+    bottom: 220px;
+    background-position: -0px -0px;
+    z-index: -6;
+}
+
+.phase-4-map .sands-plataform {
+    position: absolute;
+    bottom: 42px;
+    left: 1250px;
+    width: 1500px;
+    height: 198px;
+    background-image: url(../../img/desert/sand-plataform.png);
+    background-size: 1500px;
+    z-index: 1;
+}
+
+.phase-4-map .canyon {
+    position: absolute;
+    bottom: 365px;
+    left: 0px;
+    width: 1300px;
+    height: 370px;
+    background-image: url(../../img/desert/canyon-.png);
+    z-index: -7;
+}
+
+.phase-4-map .pile-stones {
+    position: absolute;
+    bottom: 370px;
+    left: 2800px;
+    width: 420px;
+    height: 90px;
+    background-image: url(../../img/desert/pile-stones.png);
+    z-index: -5;
+}
+
+.phase-4-map .rock {
+    position: absolute;
+    left: 600px;
+    top: 100vh;
+    width: 130%;
+    height: 980px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+    z-index: 13;
+}
+
+.phase-4-map .city-b {
+    position: absolute;
+    left: -1000px;
+    bottom: 0px;
+    width: 1000px;
+    height: 1000px;
+    background-image: url(../../img/street/city-b.png);
+    z-index: -8;
+}
+
+.phase-4-map .sky-fall {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-color: #043b3f;
+    z-index: -10;
+}
+
+/* COMPONENTS */
+
+.phase-4-map .phase-4-components .plataform-a,
+.phase-4-map .phase-4-components .plataform-f {
+    position: absolute;
+    left: 4400px;
+    bottom: 90px;
+    width: 2500px;
+    height: 2000px;
+    background-image: url(../../img/plataform/plataform.png);
+    background-size: 2500px;
+    z-index: -2;
+} 
+
+.phase-4-map .phase-4-components .plataform-f {
+    background-image: url(../../img/plataform/plataform-f.png);
+    z-index: 11;
+}
+
+.github {
+    position: absolute;
+    left: 2000px;
+    bottom: 210px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../img/signs/github.gif);
+    background-size: 150px;
+    z-index: 1;
+}
+
+.helicopter {  /*problema*/
+    position: relative;
+    left: 3500px;
+    bottom: 0px;
+    width: 800px;
+    height: 550px;
+    transform: scaleX(-1);
+    z-index: 11;
+}
+
+.helicopter .helicopter-body,
+.helicopter .helicopter-glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/vehicles/helicopter-back.png);
+    background-size: 800px;
+}
+
+.helicopter .helicopter-glass {
+    background-image: url(../../img/vehicles/helicopter-glass.png);
+    z-index: 1;
+}
+
+.helicopter .helicopter-propeller-a {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 660px;
+    height: 140px;
+    background-image: url(../../img/vehicles/helicopter-propeller.png);
+    background-size: 1000px;
+    background-position: -40px 0px;
+    animation: propeller-a 1s steps(4) infinite;
+    z-index: 2;
+}
+
+@keyframes propeller-a {
+    0% {
+        background-position: -40px 0px;
+    }
+    100% {
+        background-position: -40px -548px;
+    }
+}
+
+.helicopter .helicopter-propeller-b {
+    position: absolute;
+    top: 130px;
+    left: 560px;
+    width: 250px;
+    height: 250px;
+    background-image: url(../../img/vehicles/helicopter-propeller.png);
+    background-size: 990px;
+    background-position: -740px 0px;
+    animation: propeller-b 1s steps(4) infinite;
+    z-index: -1;
+}
+
+@keyframes propeller-b {
+    0% {
+        background-position: -725px 0px;
+    }
+    100% {
+        background-position: -725px -1045px;
+    }
+}

@@ -1,0 +1,348 @@
+/* PHASE 2 */
+
+/* MAP */
+
+.phase-2-map {
+    position: relative;
+    width: 4000px;
+    height: 100vh;
+}
+
+.phase-2-map .tree-5 {
+    position: absolute;
+    left: -100px;
+    bottom: 210px;
+    width: 190px;
+    height: 240px;
+    background-image: url(../../img/greens/trees.png);
+    background-position: -220px -220px;
+    background-size: 600px;
+    z-index: -3;
+}
+
+.phase-2-map .bridge-back {
+    position: absolute;
+    left: -170px;
+    bottom: 65px;
+    width: 760px;
+    height:210px;
+    background-image: url(../../img/street/bridge_back.png);
+    z-index: 2;
+}
+
+.phase-2-map .bridge-front {
+    position: absolute;
+    left: -43px;
+    bottom: 74px;
+    width: 500px;
+    height:180px;
+    background-image: url(../../img/street/bridge_front.png);
+    z-index: 12;
+}
+
+.phase-2-map .lake {
+    position: absolute;
+    left: -350px;
+    bottom: 0px;
+    width: 1000px;
+    height: 465px;
+    background-image: url(../../img/greens/lake.png);
+    background-size: 1000px;
+    z-index: -7;
+}
+
+.phase-2-map .water-effect {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 1500px;
+    height: 260px;
+    background-image: url(../../img/grounds/water.gif);
+    background-size: 200px;
+    animation: water 50s linear infinite;
+    z-index: -6;
+}
+
+@keyframes water {
+    0%, 100% {
+        left: -20px;
+    }
+    50% {
+        left: -800px;
+    }
+}
+
+.phase-2-map .ground-6 {
+    position: absolute;
+    left: 405px;
+    bottom: 0;
+    width: 90%;
+    height: 129px;
+    background-image: url(../../img/grounds/grounds.png);
+    background-position: 0 268px;
+    z-index: 1;
+}
+
+.phase-2-map .field {
+    position: absolute;
+    left: 650px;
+    bottom: 95px;
+    width: 100%;
+    height: 220px;
+    background-image: url(../../img/greens/field-1.png);
+    background-size: 800px;
+    z-index: -5;
+}
+
+.phase-2-map .rock {
+    position: absolute;
+    right: 0;
+    top: 100vh;
+    width: 75%;
+    height: 980px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+}
+
+.phase-2-map .sky {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-color: #bef6f7;
+    z-index: -10;
+}
+
+/* COMPONENTS */
+
+
+.phase-2-components .grandstand_a,
+.phase-2-components .grandstand_b,
+.phase-2-components .grandstand_c {
+    position: absolute;
+    left: 420px;
+    bottom: 0px;
+    width: 1500px;
+    height:560px;
+    background-image: url(../../img/street/grandstand_c.png);
+    background-size: 1500px;
+    z-index: -5;
+}
+
+.phase-2-components .grandstand_a {
+    background-image: url(../../img/street/grandstand_a.png);
+    z-index: -1;
+}
+
+.phase-2-components .grandstand_b {
+    background-image: url(../../img/street/grandstand_b.png);
+    z-index: -3;
+}
+
+.ball-a, 
+.ball-b {
+    position: absolute;
+    left: 700px;
+    bottom: 85px;
+    width: 86px;
+    height: 85px;
+    background-image: url(../../img/Characters/things.png);
+    background-repeat: no-repeat;
+    background-size: 1700px;
+    background-position: -6px -1818px;
+    transform: scaleX(-1) rotateZ(-40deg);
+    z-index: 11;
+    visibility: visible;
+}
+
+.ball-b {
+    left: 1100px;
+    visibility: hidden;
+}
+
+@keyframes rolling {
+    0% {
+        background-position: -6px -1818px;
+    }
+    99% {
+        background-position: -1120px -1818px;
+    }
+    100% {
+        background-position: -6px -1818px;
+    }
+}
+
+@keyframes pass {
+    0% {
+        top: calc(100vh - 170px);
+        left: 700px;
+    }
+    20% {
+        top: calc(100vh - 180px);
+        left: 800px;
+    }
+    40% {
+        top: calc(100vh - 170px);
+        left: 900px;
+    }
+    60% {
+        top: calc(100vh - 180px);
+        left: 950px;
+    }
+    80% {
+        top: calc(100vh - 170px);
+        left: 1000px;
+    }
+    100% {
+        top: calc(100vh - 170px);
+        left: 1100px;
+        visibility: hidden;
+    }
+}
+
+@keyframes kick {
+    0% {
+        top: calc(100vh - 170px);
+        left: 1100px;
+    }
+    50% {
+        top: calc(100vh - 400px);
+        left: 1880px;
+    }
+    70% {
+        top: calc(100vh - 170px);
+        left: 1800px;
+    }
+    90% {
+        top: calc(100vh - 180px);
+        left: 1750px;
+    }
+    100% {
+        top: calc(100vh - 170px);
+        left: 1700px;
+    }
+}
+
+@keyframes roll {
+    0% {
+        background-position: -6px -1818px;
+    }
+    99% {
+        background-position: -1120px -1818px;
+    }
+    100% {
+        background-position: -6px -1818px;
+    }
+}
+
+.beam-a,
+.beam-b {
+    position: absolute;
+    left: 1700px;
+    bottom: 80px;
+    width: 430px;
+    height: 430px;
+    background-image: url(../../img/Characters/things.png);
+    background-size: 1650px;
+    background-position: -6px -1860px;
+    z-index: 12;
+}
+
+.beam-b {
+    visibility: hidden;
+}
+
+@keyframes net {
+    0% {
+        background-position: -6px -1860px;
+    }
+    100% {
+        background-position: -1389px -1860px;
+    }
+}
+
+.mail {
+    position: absolute;
+    bottom: 100px;
+    left: 3700px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../../img/signs/mail.gif);
+    background-size: 120px;
+    z-index: 1;
+}
+
+/* COMPONENTS 2 */
+
+.phase-2-components-2 .outdoor {
+    position: relative;
+    top: calc(100vh - 745px);
+    left: 2000px;
+    width: 1500px;
+    height: 680px;
+    background-image: url(../../img/street/outdoor.png);
+    background-size: 500px;
+    z-index: -1;
+}
+
+.phase-2-components-2 .outdoor .knowledge,
+.phase-2-components-2 .outdoor .frameworks,
+.phase-2-components-2 .outdoor .learning {
+    position: absolute;
+    top: 80px; 
+    left: 100px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden
+}
+
+.phase-2-components-2 .outdoor .frameworks {
+    gap: 15px;
+    left: 600px;
+}
+
+.phase-2-components-2 .outdoor .learning {
+    left: 1100px;
+}
+
+@keyframes classif {
+    0% {
+        height: 40px;
+    }
+    100% {
+        height: 400px;
+    }
+}
+
+.phase-2-components-2 .outdoor .knowledge .team,
+.phase-2-components-2 .outdoor .frameworks .team,
+.phase-2-components-2 .outdoor .learning .team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phase-2-components-2 .outdoor .knowledge .star,
+.phase-2-components-2 .outdoor .frameworks .star,
+.phase-2-components-2 .outdoor .learning .star {
+    width: 200px;
+}
+
+.phase-2-components-2 .outdoor .knowledge .team .icon,
+.phase-2-components-2 .outdoor .learning .team .icon {
+    width: 50px;
+}
+
+.phase-2-components-2 .outdoor .frameworks .team .icon {
+    width: 40px;
+}
+
+.phase-2-components-2 .outdoor .knowledge .team h3,
+.phase-2-components-2 .outdoor .frameworks .team h3,
+.phase-2-components-2 .outdoor .learning .team h3 {
+    font-size: 1.3em;
+}

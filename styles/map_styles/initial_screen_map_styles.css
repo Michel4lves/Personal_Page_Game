@@ -1,0 +1,118 @@
+/* INITIAL SCREEN */
+
+.initial-screen-map {
+    display: flex;
+}
+
+.compens-screen-left {
+    position: relative;
+    width: calc((100vw - 1200px) /2);
+    height: 100vh;
+}
+
+.initial-screen-center {
+    position: relative;
+    width: 1200px;
+    height: 100vh;
+}
+
+.compens-screen-right {
+    position: relative;
+    width: calc((100vw - 1200px) /2);
+    height: 100vh;
+}
+
+.compens-screen-left .initial-ground,
+.compens-screen-right .initial-ground,
+.initial-screen-center .initial-ground {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 129px;
+    background-image: url(../../img/grounds/grounds.png);
+}
+
+.compens-screen-left .grass,
+.compens-screen-right .grass,
+.initial-screen-center .grass {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    height: 70px;
+    background-image: url(../../img/greens/grass.png);
+    background-size: 550px;
+    z-index: -2;
+}
+
+.compens-screen-left .field,
+.compens-screen-right .field,
+.initial-screen-center .field {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    height: 200px;
+    background-image: url(../../img/greens/initial-back-field.png);
+    background-size: 1400px;
+    z-index: -5;
+}
+
+.compens-screen-left .sky,
+.compens-screen-right .sky,
+.initial-screen-center .sky {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-color: #bef6f7;
+    z-index: -10;
+}
+
+.initial-screen-center .tree-1 {
+    position: absolute;
+    left: 0;
+    bottom: 95px;
+    width: 525px;
+    height: 640px;
+    background-image: url(../../img/greens/trees.png);
+    background-position: -70px 0px;
+    background-size: 1800px;
+    z-index: -1;
+}
+
+.initial-screen-center .tree-2 {
+    position: absolute;
+    left: -115px;
+    bottom: 200px;
+    width: 225px;
+    height: 290px;
+    background-image: url(../../img/greens/trees.png);
+    background-position: -255px -250px;
+    background-size: 700px;
+    z-index: -3;
+}
+
+.initial-screen-center .tree-3 {
+    position: absolute;
+    right: -140px;
+    bottom: 200px;
+    width: 300px;
+    height: 330px;
+    background-image: url(../../img/greens/trees.png);
+    background-size: 900px;
+    z-index: -3;
+}
+
+.initial-screen-center .wooden-board {
+    position: absolute;
+    right: 100px;
+    bottom: 105px;
+    width: 200px;
+    height: 260px;
+    background-image: url(../../img/signs/wood-plate.png);
+    background-position: 0px 0px;
+    background-size: 200px;
+}

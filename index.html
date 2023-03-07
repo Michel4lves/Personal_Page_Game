@@ -1,219 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Game</title>
-    <link rel="stylesheet" href="styles/map_styles/map.css">
-    <link rel="stylesheet" href="styles/characters_styles/cat.css">
-    <link rel="stylesheet" href="styles/characters_styles/personages.css">
-    <link rel="stylesheet" href="styles/characters_styles/things.css">
-    <link rel="stylesheet" href="styles/characters_styles/screen.css">
+    <link rel="stylesheet" href="styles/screen_styles/screen_styles.css">
+    <link rel="stylesheet" href="styles/map_styles/general_styles.css">
+    <link rel="stylesheet" href="styles/map_styles/initial_screen_map_styles.css">
+    <link rel="stylesheet" href="styles/map_styles/phase_1_map_styles.css">
+    <link rel="stylesheet" href="styles/map_styles/phase_2_map_styles.css">
+    <link rel="stylesheet" href="styles/map_styles/phase_3_map_styles.css">
+    <link rel="stylesheet" href="styles/map_styles/phase_4_map_styles.css">
+    <link rel="stylesheet" href="styles/persons_styles/main_character_styles.css">
+    <link rel="stylesheet" href="styles/persons_styles/supporting_characters_styles.css">
+    <link rel="stylesheet" href="styles/debug_menu_styles/debug_menu_styles.css">
 </head>
 <body>
-    <div class="map">
-
-        <div class="main_person"></div>
-
+    <div class="game">
+        <div class="main">
+            <div class="main-character"></div>
+        </div>
         <div class="screen">
-            <div class="local_no_collected"></div>
-            <div class="local_collected"></div>
-            <div class="mail_no_collected"></div>
-            <div class="mail_collected"></div>
-            <div class="mobile_no_collected"></div>
-            <div class="mobile_collected"></div>
+            <div class="local-no-collected"></div>
+            <div class="local-collected"></div>
+            <div class="mail-no-collected"></div>
+            <div class="mail-collected"></div>
+            <div class="mobile-no-collected"></div>
+            <div class="mobile-collected"></div>
+            <div class="github-no-collected"></div>
+            <div class="github-collected"></div>
         </div>
-
-        <div class="compens-screen-l">
-            <div class="initial-ground"></div>
-            <div class="grass"></div>
-            <div class="field"></div>
-            <div class="sky"></div>
-        </div>
-        <div class="initial-screen">
-            <div class="initial-ground"></div>
-            <div class="tree-1"></div>
-            <div class="tree-2"></div>
-            <div class="tree-3"></div>
-            <div class="grass"></div>
-            <div class="field"></div>
-            <div class="wooden-board"></div>
-            <div class="sky"></div>
-        </div>
-        <div class="compens-screen-r">
-            <div class="initial-ground"></div>
-            <div class="grass"></div>
-            <div class="field"></div>
-            <div class="sky"></div>
-        </div>
-        
-        <div class="fase1">
-            <div class="ground-1"></div>
-            <div class="tree-4"></div>
-            <div class="field"></div>
-            <div class="back-trees"></div>
-            <div class="city-a"></div>
-            <div class="sky"></div>
-            <!-- <div class="animals">
-                <div class="cat"></div>
-            </div> -->
-            <div class="desktop_a"></div>
-            <div class="desktop_b"></div>
-            <div class="laptop_a"></div>
-            <div class="laptop_b"></div>
-            <div class="mobile_a"></div>
-            <div class="mobile_b"></div>
-            <div class="local"></div>
-        </div>
-
-        <div class="fase2">
-            <div class="ground-6"></div>
-            <div class="rock"></div>
-            <div class="water"></div>
-            <div class="tree-5"></div>
-            <div class="bridge-back"></div>
-            <div class="bridge-front"></div>
-            <div class="lake"></div>
-            <div class="sky"></div>
-            <div class="grandstand_a"></div>
-            <div class="grandstand_b"></div>
-            <div class="grandstand_c"></div>
-            <div class="crowd_a"></div>
-            <div class="crowd_b"></div>
-            <div class="crowd_a2"></div>
-            <div class="crowd_b2"></div>
-            <div class="ball_a"></div>
-            <div class="ball_b"></div>
-            <div class="goal_keeper"></div>
-            <div class="beam_a"></div>
-            <div class="beam_b"></div>
-            <div class="field"></div>
-            <div class="outdoor">
-                <div class="knowledge">
-                    <h1>Conhecimentos:</h1>
-                    <div class="team">
-                        <img class="icon" src="img/icons/html.png">
-                        <h3>Html</h3>
-                        <img class="star" src="img/icons/star4.png">
-                    </div>
-                    <div class="team">
-                        <img class="icon" src="img/icons/css.png">
-                        <h3>CSS</h3>
-                        <img class="star" src="img/icons/star4.png">
-                    </div>
-                    <div class="team">
-                        <img class="icon" src="img/icons/js.png">
-                        <h3>Javascript</h3>
-                        <img class="star" src="img/icons/star3.png">
-                    </div>
-                    <div class="team">
-                        <img class="icon" src="img/icons/python.png">
-                        <h3>Python</h3>
-                        <img class="star" src="img/icons/star3.png">
-                    </div>
-                    <div class="team">
-                        <img class="icon" src="img/icons/git.png">
-                        <h3>git</h3>
-                        <img class="star" src="img/icons/star4.png">
-                    </div>
+        <div class="initial-screen-container">
+            <div class="initial-screen-map">
+                <div class="compens-screen-left">
+                    <div class="initial-ground"></div>
+                    <div class="grass"></div>
+                    <div class="field"></div>
+                    <div class="sky"></div>
                 </div>
-                <div class="frameworks">
-                    <h1>Frameworks:</h1>
-                    <div class="team">
-                        <img class="icon" src="img/icons/bootstrap.png">
-                        <h3>Bootstrap</h3>
-                        <img class="star" src="img/icons/star4.png">
-                    </div>
-                    <div class="team">
-                        <img class="icon" src="img/icons/django.png">
-                        <h3>Django</h3>
-                        <img class="star" src="img/icons/star2.png">
-                    </div>
-                    <div class="team">
-                        <img class="icon" src="img/icons/jquery.png">
-                        <h3>Jquery</h3>
-                        <img class="star" src="img/icons/star3.png">
-                    </div>
+                <div class="initial-screen-center">
+                    <div class="initial-ground"></div>
+                    <div class="tree-1"></div>
+                    <div class="tree-2"></div>
+                    <div class="tree-3"></div>
+                    <div class="grass"></div>
+                    <div class="field"></div>
+                    <div class="wooden-board"></div>
+                    <div class="sky"></div>
                 </div>
-                <div class="learning">
-                    <h1>Aprendendo:</h1>
-                    <div class="team">
-                        <img class="icon" src="img/icons/react.png">
-                        <h3>React Js</h3>
-                        <img class="star" src="img/icons/star1.png">
+                <div class="compens-screen-right">
+                    <div class="initial-ground"></div>
+                    <div class="grass"></div>
+                    <div class="field"></div>
+                    <div class="sky"></div>
+                </div>
+            </div>
+        </div>
+        <div class="phase-1">
+            <div class="phase-1-container">
+                <div class="phase-1-map">
+                    <div class="ground-1"></div>
+                    <div class="tree-4"></div>
+                    <div class="field"></div>
+                    <div class="back-trees"></div>
+                    <div class="city-a"></div>
+                    <div class="sky"></div>
+                    <div class="phase-1-components">
+                        <div class="local"></div>
+                    </div>
+                    <div class="phase-1-persons">
+                        <div class="desktop">
+                            <div class="desktop-a"></div>
+                            <div class="desktop-b"></div>
+                        </div>
+                        <div class="laptop">
+                            <div class="laptop-a"></div>
+                            <div class="laptop-b"></div>
+                        </div>
+                        <div class="tablet">
+                            <div class="mobile-a"></div>
+                            <div class="mobile-b"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="mail"></div>
         </div>
-
-        <div class="fase3">
-            <div class="sidewalk-a"></div>
-            <div class="sidewalk-b"></div>
-            <div class="sidewalk-c"></div>
-            <div class="sidewalk-edge-a"></div>
-            <div class="sidewalk-edge-b"></div>
-            <div class="sidewalk-edge-c"></div>
-            <div class="rock"></div>
-            <div class="subway-entrance-a"></div>
-            <div class="subway-stairs-b"></div>
-            <div class="subway-stairs-f"></div>
-            <div class="subway-stairs-g"></div>
-            <div class="subway-ground"></div>
-            <div class="subway-pillars"></div>
-            <div class="subway-wall"></div>
-            <div class="subway-stairs-bb"></div>
-            <div class="subway-stairs-ff"></div>
-            <div class="subway-stairs-gg"></div>
-            <div class="subway-entrance-b"></div>
-            <div class="project-1"></div>
-            <div class="project-2"></div>
-            <div class="project-3"></div>
-            <div class="project-4"></div>
-            <div class="terminal-1"></div>
-            <div class="terminal-2"></div>
-            <div class="food-machine"></div>
-            <div class="mobile"></div>
-            <div class="train-f"></div>
-            <div class="train-v1"></div>
-            <div class="train-v2"></div>
-            <div class="train-v3"></div>
-            <div class="train-b"></div>
-            <div class="house-a"></div>
-            <div class="sky-middle"></div>
-            <div class="field"></div>
-            <div class="gate"></div>
-        </div>
-
-        <div class="fase4">
-            <div class="ground-5"></div>
-            <div class="rock"></div>
-            <div class="sands-a"></div>
-            <div class="sands-b"></div>
-            <div class="sands-plataform"></div>
-            <div class="canyon"></div>
-            <div class="pile-stones"></div>
-            <div class="city-b"></div>
-            <div class="sky-fall"></div>
-            <div class="plataform-a"></div>
-            <div class="plataform-f"></div>
-            <div class="helicopter">
-                <div class="helicopter-body"></div>
-                <div class="helicopter-glass"></div>
-                <div class="helicopter-propeller-a"></div>
-                <div class="helicopter-propeller-b"></div>
-                <div class="pilot"></div>
+        <div class="phase-2">
+            <div class="phase-2-container">
+                <div class="phase-2-map">
+                    <div class="tree-5"></div>
+                    <div class="bridge-back"></div>
+                    <div class="bridge-front"></div>
+                    <div class="lake"></div>
+                    <div class="water-effect"></div>
+                    <div class="ground-6"></div>
+                    <div class="field"></div>
+                    <div class="rock"></div>
+                    <div class="sky"></div>
+                    <div class="phase-2-components">
+                        <div class="grandstand_a"></div>
+                        <div class="grandstand_b"></div>
+                        <div class="grandstand_c"></div>
+                        <div class="ball-a"></div>
+                        <div class="ball-b"></div>
+                        <div class="beam-a"></div>
+                        <div class="beam-b"></div>
+                        <div class="mail"></div>
+                    </div>
+                    <div class="phase-2-components-2">
+                        <div class="outdoor">
+                            <div class="knowledge">
+                                <h1>Conhecimentos:</h1>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/html.png">
+                                    <h3>Html</h3>
+                                    <img class="star" src="img/icons/star4.png">
+                                </div>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/css.png">
+                                    <h3>CSS</h3>
+                                    <img class="star" src="img/icons/star4.png">
+                                </div>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/js.png">
+                                    <h3>Javascript</h3>
+                                    <img class="star" src="img/icons/star3.png">
+                                </div>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/python.png">
+                                    <h3>Python</h3>
+                                    <img class="star" src="img/icons/star3.png">
+                                </div>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/git.png">
+                                    <h3>git</h3>
+                                    <img class="star" src="img/icons/star4.png">
+                                </div>
+                            </div>
+                            <div class="frameworks">
+                                <h1>Frameworks:</h1>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/bootstrap.png">
+                                    <h3>Bootstrap</h3>
+                                    <img class="star" src="img/icons/star4.png">
+                                </div>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/django.png">
+                                    <h3>Django</h3>
+                                    <img class="star" src="img/icons/star2.png">
+                                </div>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/jquery.png">
+                                    <h3>Jquery</h3>
+                                    <img class="star" src="img/icons/star3.png">
+                                </div>
+                            </div>
+                            <div class="learning">
+                                <h1>Aprendendo:</h1>
+                                <div class="team">
+                                    <img class="icon" src="img/icons/react.png">
+                                    <h3>React Js</h3>
+                                    <img class="star" src="img/icons/star1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phase-2-persons">
+                        <div class="goal-keeper"></div>
+                        <div class="crowd-a"></div>
+                        <div class="crowd-b"></div>
+                        <div class="crowd-a2"></div>
+                        <div class="crowd-b2"></div>
+                    </div>
+                </div>
             </div>
-
         </div>
+        <div class="phase-3">
+            <div class="phase-3-container">
+                <div class="phase-3-map">
+                    <div class="sidewalk-a"></div>
+                    <div class="sidewalk-b"></div>
+                    <div class="sidewalk-c"></div>
+                    <div class="sidewalk-edge-a"></div>
+                    <div class="sidewalk-edge-b"></div>
+                    <div class="sidewalk-edge-c"></div>
+                    <div class="sidewalk-edge-end"></div>
+                    <div class="houses"></div>
+                    <div class="field"></div>
+                    <div class="gate"></div>
+                    <div class="sky-middle"></div>
+                    <div class="rock"></div>
+                    <div class="subway">
+                        <div class="subway-entrance-a"></div>
+                        <div class="subway-stairs-b"></div>
+                        <div class="subway-stairs-f"></div>
+                        <div class="subway-stairs-g"></div>
+                        <div class="subway-ground"></div>
+                        <div class="subway-pillars"></div>
+                        <div class="subway-wall"></div>
+                        <div class="subway-stairs-bb"></div>
+                        <div class="subway-stairs-ff"></div>
+                        <div class="subway-stairs-gg"></div>
+                        <div class="subway-entrance-b"></div>
+                        <div class="phase-3-subway-components">
+                            <div class="terminal-1"></div>
+                            <div class="terminal-2"></div>
+                            <div class="food-machine"></div>
+                            <div class="mobile"></div>
+                            <div class="train">
+                                <div class="train-f"></div>
+                                <div class="train-v1"></div>
+                                <div class="train-v2"></div>
+                                <div class="train-v3"></div>
+                                <div class="train-b"></div>
+                            </div>
+                        </div>
+                        <div class="phase-3-subway-portfolios">
+                            <div class="project-1"></div>
+                            <div class="project-2"></div>
+                            <div class="project-3"></div>
+                            <div class="project-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phase-4">
+            <div class="phase-4-container">
+                <div class="phase-4-map">
+                    <div class="ground-5"></div>
+                    <div class="sands-a"></div>
+                    <div class="sands-b"></div>
+                    <div class="sands-plataform"></div>
+                    <div class="canyon"></div>
+                    <div class="pile-stones"></div>
+                    <div class="rock"></div>
+                    <div class="city-b"></div>
+                    <div class="sky-fall"></div>
+                    <div class="phase-4-components">
+                        <div class="plataform-a"></div>
+                        <div class="plataform-f"></div>
+                        <div class="github"></div>
+                        <div class="helicopter">
+                            <div class="helicopter-body"></div>
+                            <div class="helicopter-glass"></div>
+                            <div class="helicopter-propeller-a"></div>
+                            <div class="helicopter-propeller-b"></div>
+                        </div>
+                    <!-- <div class="phase-4-persons">
+                        <div class="pilot"></div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
 
 
 
     </div>
+    <div class="debug-screen">
+        <h1>DEBUG MODE</h1>
+        <div class="menu-debug">
+            <div class="col-a">
+                <div class="position">
+                    <h2>Position:</h2>
+                    <div id="position-value"></div>
+                </div>
+                <div class="orientation-direction">
+                    <h2>Orientation:</h2>
+                    <div id="orientation-value"></div>
+                </div>
+            </div>
+            <div class="col-b">
+                <div class="custon-document-height">
+                    <h2>C D Height:</h2>
+                    <div id="cdh-value"></div>
+                </div>
+                <div class="map-width">
+                    <h2>Map Width:</h2>
+                    <div id="mw-value"></div>
+                </div>
+                <div class="initial-screen-width">
+                    <h2>I S Width:</h2>
+                    <div id="isw-value"></div>
+                </div>
+                <div class="phase-1-width">
+                    <h2>Phase 1 W:</h2>
+                    <div id="p1w-value"></div>
+                </div>
+                <div class="phase-2-width">
+                    <h2>Phase 2 W:</h2>
+                    <div id="p2w-value"></div>
+                </div>
+                <div class="phase-3-width">
+                    <h2>Phase 3 W:</h2>
+                    <div id="p3w-value"></div>
+                </div>
+                <div class="phase-4-width">
+                    <h2>Phase 4 W:</h2>
+                    <div id="p4w-value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- <div class="animals">
+                <div class="cat"></div>
+            </div> -->
+
 
     <script src="files/jquery.min.js"></script>
-    <script src="scripts/motion.js"></script>
+    <script src="scripts/mapScripts.js"></script>
+    <script src="scripts/motionScripts.js"></script>
+    <script src="scripts/animationScripts.js"></script>
+    <script src="scripts/menuDebug.js"></script>
+    <!-- <script src="scripts/motion.js"></script> -->
 </body>
 </html>

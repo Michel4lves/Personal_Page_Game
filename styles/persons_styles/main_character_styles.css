@@ -1,0 +1,60 @@
+/* MAIN CHARACTER */
+
+.main-character,
+.main-character.jump,
+.main-character.running {
+    position: fixed;
+    bottom: 80px;
+    left: calc((100vw/2) - 450px);
+    width: 400px;
+    height: 300px;
+    background-image: url(../../img/Characters/personages.png);
+    background-repeat: no-repeat;
+    background-size: 5000px;
+    background-position: 0 0;
+    z-index: 10;
+}
+
+.main-character.stopping {
+    animation: stoping 0.5s steps(3) infinite;
+}
+
+@keyframes stoping {
+    0% {
+        background-position: -3450px 0px;
+    }
+    100% {
+        background-position: -4600px 0px;
+    }
+}
+
+.main-character.running {
+    animation: runing 0.7s steps(6) infinite;
+}
+
+@keyframes runing {
+    0% {
+        background-position: 0 0px;
+    }
+    100% {
+        background-position: -2300px 0;
+    }
+}
+
+.main-character.jump {
+    animation: jumping 1.1s steps(3) infinite;
+}
+
+@keyframes jumping {
+    0% {
+        background-position: -2300px -20px;
+        top: calc(100vh - 380px);
+    }
+    50% {
+        top: calc(100vh - 580px);
+    }
+    100% {
+        background-position: -3450px -20px;
+        top: calc(100vh - 495px);
+    }
+}

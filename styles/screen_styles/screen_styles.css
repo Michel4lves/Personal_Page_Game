@@ -1,5 +1,14 @@
-.local_no_collected,
-.local_collected {
+.screen {
+    position: fixed;
+    top: 0;
+    left: calc((100vw/2) - 600px);
+    width: 1200px;
+    height: 100vh;
+    z-index: 100;
+}
+
+.local-no-collected,
+.local-collected {
     position: fixed;
     top: 32px;
     left: calc((100vw/2) - 570px);
@@ -7,17 +16,17 @@
     height: 55px;
     background-image: url(../../img/screen/local_no_collected.png);
     background-size: 40px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
-.local_collected {
+.local-collected {
     background-image: url(../../img/screen/local_collected.png);
     opacity: 1;
     visibility: hidden;
 }
 
-.mail_no_collected,
-.mail_collected {
+.mail-no-collected,
+.mail-collected {
     position: fixed;
     top: 30px;
     left: calc((100vw/2) - 520px);
@@ -25,18 +34,17 @@
     height: 55px;
     background-image: url(../../img/screen/mail_no_collected.png);
     background-size: 60px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
-.mail_collected {
+.mail-collected {
     background-image: url(../../img/screen/mail_collected.png);
     opacity: 1;
     visibility: hidden;
 }
 
-
-.mobile_no_collected,
-.mobile_collected {
+.mobile-no-collected,
+.mobile-collected {
     position: fixed;
     top: 28px;
     left: calc((100vw/2) - 460px);
@@ -44,11 +52,29 @@
     height: 60px;
     background-image: url(../../img/screen/mobile_no_collected.png);
     background-size: 65px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
-.mobile_collected {
+.mobile-collected {
     background-image: url(../../img/screen/mobile_collected.png);
+    opacity: 1;
+    visibility: hidden;
+}
+
+.github-no-collected,
+.github-collected {
+    position: fixed;
+    top: 24px;
+    left: calc((100vw/2) - 400px);
+    width: 65px;
+    height: 60px;
+    background-image: url(../../img/screen/github_no_collected.png);
+    background-size: 70px;
+    opacity: 0.5;
+}
+
+.github-collected {
+    background-image: url(../../img/screen/github_collected.png);
     opacity: 1;
     visibility: hidden;
 }

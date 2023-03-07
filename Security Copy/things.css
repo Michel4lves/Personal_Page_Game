@@ -413,6 +413,17 @@
     z-index: 1;
 }
 
+.github {
+    position: absolute;
+    top: calc(100vh - 360px);
+    left: 2000px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../img/signs/github.gif);
+    background-size: 150px;
+    z-index: 1;
+}
+
 .helicopter {
     position: relative;
     top: calc(100vh - 600px);

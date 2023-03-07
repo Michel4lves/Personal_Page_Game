@@ -1,0 +1,337 @@
+/* FASE 3 */
+
+/* MAP */
+
+.phase-3-map {
+    position: relative;
+    width: 6000px; 
+    height: calc(100vh + 978px);
+    bottom: 0;
+}
+
+.phase-3-map .sidewalk-a,
+.phase-3-map .sidewalk-b,
+.phase-3-map .sidewalk-c {
+    position: absolute;
+    left: 0;
+    bottom: 998px;
+    width: 500px;
+    height: 85px;
+    background-image: url(../../img/grounds/sidewalk.png);
+}
+
+.phase-3-map .sidewalk-b {
+    left: 280px;
+    width: 5820px;
+    z-index: 11;
+}
+
+.phase-3-map .sidewalk-c {
+    left: 6020px;
+    width: 520px;
+}
+
+.phase-3-map .sidewalk-edge-a,
+.phase-3-map .sidewalk-edge-b,
+.phase-3-map .sidewalk-edge-c,
+.phase-3-map .sidewalk-edge-end {
+    position: absolute;
+    left: -60px;
+    bottom: 1008px;
+    width: 216px;
+    height: 75px;
+    background-image: url(../../img/grounds/sidewalk-edge.png);
+    z-index: 1;
+}
+
+.phase-3-map .sidewalk-edge-b {
+    left: 6580px;
+}
+
+.phase-3-map .sidewalk-edge-c {
+    left: 6820px;
+}
+
+.phase-3-map .sidewalk-edge-end {
+    left: 6350px;
+    background-image: url(../../img/grounds/sidewalk-edge-end.png);
+    z-index: 2;
+}
+
+.phase-3-map .houses {
+    position: absolute;
+    left: 410px;
+    bottom: 1080px;
+    width: 4000px;
+    height: 730px;
+    background-image: url(../../img/street/houses.png);
+    background-size: 4000px;
+    z-index: -2;
+}
+
+.phase-3-map .field {
+    position: absolute;
+    left: 650px;
+    bottom: 1073px;
+    width: 4100px;
+    height: 220px;
+    background-image: url(../../img/greens/field-1.png);
+    background-size: 800px;
+    z-index: -5;
+}
+
+.phase-3-map .gate {
+    position: absolute;
+    left: 4300px;
+    bottom: 1008px;
+    width: 520px;
+    height: 600px;
+    background-image: url(../../img/street/gate.png);
+    background-size: 500px;
+    z-index: 12;
+}
+
+.sky-middle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-image: linear-gradient(to right, #bef6f7, #043b3f);
+    z-index: -10;
+}
+
+.phase-3-map .rock {
+    position: absolute;
+    left: 0;
+    top: calc(100vh - 20px);
+    width: 110%;
+    height: 213px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+    z-index: 13;
+}
+
+/* SUBWAY */
+
+.phase-3-map .subway .subway-entrance-a,
+.phase-3-map .subway .subway-entrance-b {
+    position: absolute;
+    left: 200px;
+    top: calc(100vh - 641px);
+    width: 800px;
+    height: 600px;
+    background-image: url(../../img/subway/entrance-subway.png);
+    z-index: 12;
+}
+
+.phase-3-map .subway .subway-entrance-b {
+    left: 5400px;
+}
+
+.phase-3-map .subway .subway-stairs-b,
+.phase-3-map .subway .subway-stairs-f,
+.phase-3-map .subway .subway-stairs-g {
+    position: absolute;
+    left: 650px;
+    bottom: 80px;
+    width: 1300px;
+    height: 880px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3450px;
+    background-position: -2100px -15px;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.phase-3-map .subway .subway-stairs-f {
+    background-position: -2100px -900px;
+    z-index: 11;
+}
+
+.phase-3-map .subway .subway-stairs-g {
+    background-position: -2100px -1783px;
+    z-index: 12;
+    opacity: 50%;
+}
+
+.phase-3-map .subway .subway-ground {  /*problema*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    height: 110px;
+    background-image: url(../../img/subway/subway-ground.png);
+    background-size: 2000px;
+    z-index: -2;
+}
+
+.phase-3-map .subway .subway-pillars {
+    position: absolute;
+    left: 0;
+    bottom: 110px;
+    width: 110%;
+    height: 640px;
+    background-image: url(../../img/subway/subway-pillars.png);
+    background-size: 2000px;
+    z-index: -3;
+}
+
+.phase-3-map .subway .subway-wall {
+    position: absolute;
+    left: 0;
+    bottom: 144px;
+    width: 110%;
+    height: 640px;
+    background-image: url(../../img/subway/subway-wall.png);
+    background-size: 2000px;
+    z-index: -6;
+}
+
+.phase-3-map .subway .subway-stairs-bb,
+.phase-3-map .subway .subway-stairs-ff,
+.phase-3-map .subway .subway-stairs-gg {
+    position: absolute;
+    left: 4450px;
+    bottom: 80px;
+    width: 1300px;
+    height: 880px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3450px;
+    background-position: -2100px -15px;
+    z-index: -1;
+}
+
+.phase-3-map .subway .subway-stairs-ff {
+    background-position: -2100px -900px;
+    z-index: 11;
+}
+
+.phase-3-map .subway .subway-stairs-gg {
+    background-position: -2100px -1783px;
+    z-index: 12;
+    opacity: 50%;
+}
+
+/* COMPONENTS */
+
+.phase-3-map .subway .phase-3-subway-components .terminal-1,
+.phase-3-map .subway .phase-3-subway-components .terminal-2 {
+    position: absolute;
+    left: 2025px;
+    bottom: 190px;
+    width: 115px;
+    height: 280px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3200px;
+    background-position: -1050px -1460px;
+    z-index: -2;
+}
+
+.phase-3-map .subway .phase-3-subway-components .terminal-2 {
+    left: 2175px;
+}
+
+.phase-3-map .subway .phase-3-subway-components .food-machine {
+    position: absolute;
+    left: 3450px;
+    bottom: 160px;
+    width: 215px;
+    height: 380px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3200px;
+    background-position: -480px -1760px;
+    z-index: -2;
+}
+
+.mobile {
+    position: absolute;
+    left: 4100px;
+    bottom: 80px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../img/signs/mobile.gif);
+    background-size: 150px;
+    z-index: 1;
+}
+
+/* TRAIN */
+
+.phase-3-map .subway .phase-3-subway-components .train .train-f,
+.phase-3-map .subway .phase-3-subway-components .train .train-v1,
+.phase-3-map .subway .phase-3-subway-components .train .train-v2,
+.phase-3-map .subway .phase-3-subway-components .train .train-v3,
+.phase-3-map .subway .phase-3-subway-components .train .train-b {
+    position: absolute;
+    left: 6900px;
+    bottom: 200px;
+    width: 970px;
+    height: 450px;
+    background-image: url(../../img/subway/train.png);
+    background-size: 2900px;
+    z-index: -4;
+    animation: move-train 20s linear infinite;
+}
+
+@keyframes move-train {
+    0% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-12000px);
+    }
+}
+
+.phase-3-map .subway .phase-3-subway-components .train .train-v1,
+.phase-3-map .subway .phase-3-subway-components .train .train-v2,
+.phase-3-map .subway .phase-3-subway-components .train .train-v3 {
+    left: 7870px;
+    width: 800px;
+    background-position: -1045px 0px;
+}
+
+.phase-3-map .subway .phase-3-subway-components .train .train-v2 {
+    left: 8670px;
+}
+
+.phase-3-map .subway .phase-3-subway-components .train .train-v3 {
+    left: 9470px;
+}
+
+.phase-3-map .subway .phase-3-subway-components .train .train-b {
+    left: 10270px;
+    background-position: -1915px 0px;
+}
+
+/* PORTFOLIO */
+
+.phase-3-map .subway .phase-3-subway-portfolios .project-1,
+.phase-3-map .subway .phase-3-subway-portfolios .project-2,
+.phase-3-map .subway .phase-3-subway-portfolios .project-3,
+.phase-3-map .subway .phase-3-subway-portfolios .project-4 {
+    position: absolute;
+    left: 1520px;
+    bottom: 400px;
+    width: 300px;
+    height: 200px;
+    background-image: url(../../img/subway/subway.png);
+    background-size: 3200px;
+    background-position: -20px -1710px;
+    z-index: -5;
+}
+
+.phase-3-map .subway .phase-3-subway-portfolios .project-2 {
+    left: 2525px;
+}
+
+.phase-3-map .subway .phase-3-subway-portfolios .project-3 {
+    left: 3025px;
+    background-position: 30px -1450px;
+}
+
+.phase-3-map .subway .phase-3-subway-portfolios .project-4 {
+    left: 4025px;
+}

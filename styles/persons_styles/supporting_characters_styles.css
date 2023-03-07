@@ -1,0 +1,254 @@
+/* SUPPORTING CHARACTER */
+
+/* PHASE 1 */
+
+.desktop-a,
+.desktop-b {
+    position: absolute;
+    left: 1500px;
+    bottom: 80px;
+    width: 300px;
+    height: 330px;
+    background-image: url(../../img/Characters/things.png);
+    background-position: -150px -35px;
+    background-size: 2000px;
+    z-index: 9;
+    transition: 0.2s;
+    animation: walking_a 0.5s steps(2) infinite;
+}
+
+@keyframes walking_a {
+    0% {
+        background-position: -150px -35px;
+    }
+    100% {
+        background-position: -1150px -35px;
+    }
+}
+
+.desktop-b {
+    left: 500px;
+    animation: jump_a 5s steps(2) infinite;
+    visibility: hidden;
+}
+
+@keyframes jump_a {
+    0%, 100% {
+        background-position: -1150px -35px;
+    }
+    20% {
+        background-position: -2150px -35px;
+        transform: translateY(-50px);
+    }
+    20.01% {
+        background-position: -1150px -35px;
+        transform: translateY(0);
+    }
+}
+
+.laptop-a,
+.laptop-b {
+    position: absolute;
+    left: 1850px;
+    bottom: 80px;
+    width: 300px;
+    height: 300px;
+    background-image: url(../../img/Characters/things.png);
+    background-position: -140px -455px;
+    background-size: 2000px;
+    z-index: 9;
+    transition: 0.2s;
+    animation: walking_b 0.5s steps(2) infinite;
+}
+
+@keyframes walking_b {
+    0% {
+        background-position: -140px -455px;
+    }
+    100% {
+        background-position: -1130px -455px;
+    }
+}
+
+.laptop-b {
+    left: 850px;
+    animation: jump_b 5s steps(2) infinite;
+    visibility: hidden;
+}
+
+@keyframes jump_b {
+    0%, 100% {
+        background-position: -1150px -455px;
+    }
+    20% {
+        background-position: -2150px -455px;
+        transform: translateY(-50px);
+    }
+    20.01% {
+        background-position: -1150px -455px;
+        transform: translateY(0);
+    }
+}
+
+.mobile-a,
+.mobile-b {
+    position: absolute;
+    top: calc(100vh - 370px);
+    left: 2200px;
+    width: 270px;
+    height: 300px;
+    background-image: url(../../img/Characters/things.png);
+    background-position: -190px -950px;
+    background-size: 2000px;
+    z-index: 9;
+    transition: 0.2s;
+    animation: walking_c 0.5s steps(2) infinite;
+}
+
+@keyframes walking_c {
+    0% {
+        background-position: -190px -950px;
+    }
+    100% {
+        background-position: -1180px -950px;
+    }
+}
+
+.mobile-b {
+    left: 1200px;
+    animation: jump_c 3s steps(2) infinite;
+    visibility: hidden;
+}
+
+@keyframes jump_c {
+    0%, 100% {
+        background-position: -1180px -950px;
+    }
+    20% {
+        background-position: -2180px -950px;
+        transform: translateY(-50px);
+    }
+    20.01% {
+        background-position: -1180px -950px;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+/* PHASE 2 */
+
+.goal-keeper {
+    position: absolute;
+    bottom: 80px;
+    left: 1400px;
+    width: 390px;
+    height: 300px;
+    background-image: url(../../img/Characters/personages.png);
+    background-repeat: no-repeat;
+    background-size: 5000px;
+    background-position: -1100px -2380px; 
+    transform: scaleX(-1);
+    animation: stoping_gk .7s steps(3) infinite;
+    z-index: 10;
+}
+
+@keyframes stoping_gk {
+    0% {
+        background-position: 0px -2380px;
+    }
+    100% {
+        background-position: -1150px -2380px;
+    }
+}
+
+@keyframes fall_gk {
+    0% {
+        background-position: -1500px -2380px;
+    }
+    100% {
+        background-position: -2270px -2380px;
+    }
+}
+
+.crowd-a,
+.crowd-b ,
+.crowd-a2,
+.crowd-b2 {
+    position: absolute;
+    left: 420px;
+    bottom: 0px;
+    width: 1500px;
+    height:560px;
+    background-image: url(../../img/Characters/crowd_a.png);
+    background-size: 1500px;
+    z-index: -2;
+}
+
+.crowd-b {
+    background-image: url(../../img/Characters/crowd_b.png);
+    z-index: -4;
+}
+
+.crowd-a2 {
+    background-image: url(../../img/Characters/crowd_a2.png);
+    z-index: -2;
+    visibility: hidden;
+}
+
+.crowd-b2 {
+    background-image: url(../../img/Characters/crowd_b2.png);
+    z-index: -4;
+    visibility: hidden;
+}
+
+@keyframes goal {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pilot {
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background-image: url(../../img/Characters/personages-pilot.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    transform: scaleX(-1);
+    z-index: -2;
+    visibility: hidden;
+}
+
+@keyframes pilot {
+    0% {
+        left: 100px;
+    }
+    100% {
+        left: 50px;
+    }
+}
