@@ -121,6 +121,20 @@ function desertHill(){
 }
 
 
+function pilot() {
+    if (mapPosition() >= 17220 ) {   // && screenPosition >= -20685
+        $('.main-character').css('visibility', 'hidden')
+        $('.pilot').css({visibility: 'visible', animation: 'pilot 0.5s linear both'})
+        $('.helicopter-propeller-a').css({animation: 'propeller-a 0.1s steps(4) infinite'})
+        $('.helicopter-propeller-b').css({animation: 'propeller-b 0.1s steps(4) infinite'})
+    }else{
+        $('.main-character').css('visibility', 'visible')
+        $('.pilot').css({visibility: 'hidden', animation: 'none'})
+        $('.helicopter-propeller-a').css({animation: 'propeller-a 1s steps(4) infinite'})
+        $('.helicopter-propeller-b').css({animation: 'propeller-b 1s steps(4) infinite'})
+    }
+}
+
 
 
 
@@ -133,4 +147,5 @@ $(window).scroll(function(){
     Skills()
     screenIcons()
     desertHill()
+    pilot()
 })
