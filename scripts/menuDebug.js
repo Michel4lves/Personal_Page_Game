@@ -12,3 +12,16 @@ $(document).ready(function(){
         $('#p4w-value ').text(phase4Width)
     })
 })
+
+$('.exit-menu-debug').click(function() {
+    $('.debug-screen').css('display', 'none')
+})
+
+
+// var ex = $('.debug-access')
+// $('html').keyup(function(){
+//     ex.text($(this).val())
+
+
+//     console.log(ex)
+// })
