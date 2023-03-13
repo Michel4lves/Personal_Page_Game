@@ -159,19 +159,23 @@ function fly(){
         $('.helicopter').css({bottom: 'calc(55px + ' + gameTop + ')', left: '4185px'})
     }
     // OUT
-    if (gameTopValue >= 1554) {
-        $('.game').css({left: - ((valueScroll - parseFloat(1545))) + 'px', top: '990px'})
+    gameTopValue2 = 0
+    if ($('.game').css('top') != '0px' && mapPosition() == 17950) {
+        gameTopValue2 = gameTop.split('px').join('')
+    }
+    if (gameTopValue2 <= 990 && gameTopValue2 != 0) { //////////////////////////////
+        $('.game').css({left: - (valueScroll - (parseFloat(1135) + screenLeftAdditional)) + 'px', top: '990px'})
         $('.helicopter').css({bottom: '1051px'})
     }
+    
+    
+    console.log(valueScroll)
 
-
-
-
-
-
-console.log(mapPosition())
 
 }
+
+
+
 
 
 

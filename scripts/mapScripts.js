@@ -20,7 +20,10 @@ function mapReferences(){
         phase2Width = $('.phase-2-map').width()
         phase3Width = $('.phase-3-map').width()
         phase4Width = $('.phase-4-map').width()
-        mapWidth = initialScreenWidth + phase1Width + phase2Width + phase3Width + phase4Width
+        flyCompensationWidth = $('.screen').offset().left * 2
+        phase4CompensationWidth = phase4Width + flyCompensationWidth
+        // mapWidth = initialScreenWidth + phase1Width + phase2Width + phase3Width + phase4Width
+        mapWidth = initialScreenWidth + phase1Width + phase2Width + phase3Width + phase4CompensationWidth
         documentHeightCustom = mapWidth - windowWidth
 }
 

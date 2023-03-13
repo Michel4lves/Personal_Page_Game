@@ -10,6 +10,7 @@ $(document).ready(function(){
         $('#p2w-value ').text(phase2Width)
         $('#p3w-value ').text(phase3Width)
         $('#p4w-value ').text(phase4Width)
+        $('#pfc-value ').text(flyCompensationWidth)
     })
 })
 
