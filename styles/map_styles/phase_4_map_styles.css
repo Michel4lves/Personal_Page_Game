@@ -213,3 +213,15 @@
     background-size: 600px;
     z-index: 0;
 }
+
+.phase-4-map .phase-4-components .linkedin {
+    position: absolute;
+    bottom: 1080px;
+    left: 6500px;
+    width: 100px;
+    height: 80px;
+    background-image: url(../../img/signs/linkedin.gif);
+    transform: scaleX(-1);
+    background-size: 100px;
+    z-index: 0;
+}
