@@ -116,7 +116,7 @@ function desertHill(){
 
 
 function pilot() {
-    if (mapPosition() >= 17220 ) {   // && screenPosition >= -20685
+    if (mapPosition() >= 17220 && mapPosition() <= 19500) {
         $('.main-character').css('visibility', 'hidden')
         $('.pilot').css({visibility: 'visible', animation: 'pilot 0.5s linear both'})
         $('.helicopter-propeller-a').css({animation: 'propeller-a 0.1s steps(4) infinite'})
@@ -139,13 +139,11 @@ function fly(){
         gameTop = $('.game').css('top')
         $('.helicopter').css('bottom', 'calc(55px + ' + gameTop + ')')
     }else{
-        $('.game').css({top: '0px'})
-        gameTop = $('.game').css('top')
         $('.helicopter').css('bottom', '55px')
     }
     // RIGHT
     var gameTopValue = 0
-    if ($('.game').css('top') != '0px') {
+    if ($('.game').css('top') != '0px' && mapPosition() >= 17000) {
         gameTopValue = gameTop.split('px').join('')
     }
     if (gameTopValue >= 1065) {
@@ -154,14 +152,24 @@ function fly(){
     }else{
         $('.helicopter').css({left: '3500px'})
     }
+    // DOWN
+    if (mapPosition() >= 17950) {
+        $('.game').css({top: parseFloat(1065) - (mapPosition() - 17950) / 1.42 + 'px', left: -(17950 + screenLeftAdditional) + 'px'})
+        gameTop = $('.game').css('top')
+        $('.helicopter').css({bottom: 'calc(55px + ' + gameTop + ')', left: '4185px'})
+    }
+    // OUT
+    if (gameTopValue >= 1554) {
+        $('.game').css({left: - ((valueScroll - parseFloat(1545))) + 'px', top: '990px'})
+        $('.helicopter').css({bottom: '1051px'})
+    }
 
 
-if (gameTopValue <= 1065) {
-    console.log(mapPosition())
-    console.log(valueScroll)
-    console.log(valueScroll - mapPosition())
-}
 
+
+
+
+console.log(mapPosition())
 
 }
 
