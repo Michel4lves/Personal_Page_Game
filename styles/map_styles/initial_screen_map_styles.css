@@ -71,6 +71,18 @@
     z-index: -10;
 }
 
+.sun {
+    position: absolute;
+    bottom: 600px;
+    right: 200px;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #ffff5b, 0 0 60px #ffff5b, 0 0 80px #ffff5b, 0 0 100px #ffff5b;
+    z-index: -9;
+}
+
 .initial-screen-center .tree-1 {
     position: absolute;
     left: 0;

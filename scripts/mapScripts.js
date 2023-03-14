@@ -26,16 +26,22 @@ function mapReferences(){
 }
 
 
-function citiesMove(){
+function landsMove(){
     $('.city-a').css({left: (valueScroll / 4) + 'px'})
+    $('.clouds').css({left: ((valueScroll - 3600) / 2) + 'px'})
     $('.city-b').css({left: (valueScroll / 8) + 'px'})
+    $('.dark-clouds').css({left: ((valueScroll - 13000) / 2) + 'px'})
+    $('.sun').css({left: ((valueScroll + 800 + screenLeftWidth)) + 'px', bottom: ( - (mapPosition()) / 50) + 600 + 'px'})
+    if (mapPosition() >= 9965) {
+        $('.sun').css({display: 'none'})
+    }
 }
 
 
 $(window).scroll(function(){
     roadMap()
     mapPosition()
-    citiesMove()
+    landsMove()
 })
 
 

@@ -18,11 +18,10 @@ $('.exit-menu-debug').click(function() {
     $('.debug-screen').css('display', 'none')
 })
 
-
-// var ex = $('.debug-access')
-// $('html').keyup(function(){
-//     ex.text($(this).val())
-
-
-//     console.log(ex)
-// })
+var ex = $('.xxx')
+$('.debug-mod-access').keyup(function(){
+    ex.text($(this).val())
+    if (ex.text() == 'debug') {
+        $('.debug-screen').css('display', 'flex')
+    }
+})

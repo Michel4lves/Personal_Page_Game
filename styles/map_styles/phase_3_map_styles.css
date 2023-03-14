@@ -123,6 +123,17 @@
     left: 5400px;
 }
 
+.phase-3-map .rock {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 109%;
+    height: 20px;
+    background-image: url(../../img/grounds/rocks.jpg);
+    background-size: 100px;
+    z-index: 13;
+}
+
 /* SUBWAY */
 
 .phase-3-map .subway {

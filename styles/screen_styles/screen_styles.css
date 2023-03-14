@@ -79,3 +79,13 @@
     visibility: hidden;
 }
 
+.debug-mod-access {
+    position: absolute;
+    bottom: 20px;
+    left: calc((100vw/2) - 340px);
+    width: 100px;
+    height: 30px;
+    border: none;
+    opacity: 0;
+    text-align: center;
+}

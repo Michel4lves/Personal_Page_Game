@@ -114,6 +114,16 @@
     z-index: -10;
 }
 
+.phase-2-map .clouds {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 120vh;
+    background-image: url(../../img/greens/clouds.png);
+    z-index: -8;
+}
+
 /* COMPONENTS */
 
 

@@ -103,6 +103,16 @@
     z-index: -10;
 }
 
+.phase-4-map .dark-clouds {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 420vh;
+    background-image: url(../../img/greens/dark-clouds.png);
+    z-index: -9;
+}
+
 /* COMPONENTS */
 
 .github {
