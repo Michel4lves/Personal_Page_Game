@@ -15,15 +15,13 @@ function mapPosition(position){
 
 function mapReferences(){
     var windowWidth = $(window).width()
+        screenLeftWidth = $('.screen').offset().left
         initialScreenWidth = $(window).width()
         phase1Width = $('.phase-1-map').width()
         phase2Width = $('.phase-2-map').width()
         phase3Width = $('.phase-3-map').width()
         phase4Width = $('.phase-4-map').width()
-        flyCompensationWidth = $('.screen').offset().left * 2
-        phase4CompensationWidth = phase4Width + flyCompensationWidth
-        // mapWidth = initialScreenWidth + phase1Width + phase2Width + phase3Width + phase4Width
-        mapWidth = initialScreenWidth + phase1Width + phase2Width + phase3Width + phase4CompensationWidth
+        mapWidth = initialScreenWidth + phase1Width + phase2Width + phase3Width + phase4Width
         documentHeightCustom = mapWidth - windowWidth
 }
 

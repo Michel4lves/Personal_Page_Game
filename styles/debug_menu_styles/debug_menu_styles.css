@@ -62,7 +62,7 @@
 .menu-debug .col-b .phase-2-width,
 .menu-debug .col-b .phase-3-width,
 .menu-debug .col-b .phase-4-width,
-.menu-debug .col-b .fly-compensation {
+.menu-debug .col-b .screen-left {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -78,7 +78,7 @@
 .menu-debug .col-b .phase-2-width h2,
 .menu-debug .col-b .phase-3-width h2,
 .menu-debug .col-b .phase-4-width h2,
-.menu-debug .col-b .fly-compensation h2 {
+.menu-debug .col-b .screen-left h2 {
     display: flex;
     align-items: center;
 }
@@ -92,7 +92,7 @@
 .menu-debug .col-b .phase-2-width #p2w-value,
 .menu-debug .col-b .phase-3-width #p3w-value,
 .menu-debug .col-b .phase-4-width #p4w-value,
-.menu-debug .col-b .fly-compensation #pfc-value {
+.menu-debug .col-b .screen-left #slw-value {
     border: 1px solid silver;
     border-radius: 5px;
     width: 50%;

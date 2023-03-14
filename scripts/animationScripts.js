@@ -116,7 +116,7 @@ function desertHill(){
 
 
 function pilot() {
-    if (mapPosition() >= 17220 && mapPosition() <= 19500) {
+    if (mapPosition() >= 17220 && mapPosition() <= 21070) {
         $('.main-character').css('visibility', 'hidden')
         $('.pilot').css({visibility: 'visible', animation: 'pilot 0.5s linear both'})
         $('.helicopter-propeller-a').css({animation: 'propeller-a 0.1s steps(4) infinite'})
@@ -131,48 +131,96 @@ function pilot() {
 
 
 function fly(){
-    var screenLeftAdditional = $('.screen').offset().left
-        gameTop = 0
+    var screenLeft = $('.screen').offset().left
     // UP
-    if (mapPosition() >= 17265) {
-        $('.game').css({top: (mapPosition() - 17265) / 1.42 + 'px', left: -(17265 + screenLeftAdditional) + 'px'})
-        gameTop = $('.game').css('top')
-        $('.helicopter').css('bottom', 'calc(55px + ' + gameTop + ')')
-    }else{
-        $('.helicopter').css('bottom', '55px')
-    }
-    // RIGHT
-    var gameTopValue = 0
-    if ($('.game').css('top') != '0px' && mapPosition() >= 17000) {
-        gameTopValue = gameTop.split('px').join('')
-    }
-    if (gameTopValue >= 1065) {
-        $('.game').css({left: - ((valueScroll - parseFloat(1065) - screenLeftAdditional)) + 'px', top: '1065px'})
-        $('.helicopter').css({left: parseFloat(3500) + (mapPosition() - 17265) + 'px', bottom: '1120px'})
-    }else{
-        $('.helicopter').css({left: '3500px'})
+    if (mapPosition() >= 17285 && mapPosition() <= 20250) {
+        $('.game').css('top', ((mapPosition() - 17285) / 1.42) + 'px')
+        $('.helicopter').css({bottom: 'calc(55px + ' + ((mapPosition() - 17285) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
     }
     // DOWN
-    if (mapPosition() >= 17950) {
-        $('.game').css({top: parseFloat(1065) - (mapPosition() - 17950) / 1.42 + 'px', left: -(17950 + screenLeftAdditional) + 'px'})
-        gameTop = $('.game').css('top')
-        $('.helicopter').css({bottom: 'calc(55px + ' + gameTop + ')', left: '4185px'})
+    if (mapPosition() >= 20250.01 && mapPosition() <= 21070) {
+        $('.game').css('top', (1570 - (mapPosition() - 20250.01) / 1.42) + 'px')
+        $('.helicopter').css({bottom: 'calc(55px + ' + (1570 - (mapPosition() - 20250.01) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
     }
-    // OUT
-    gameTopValue2 = 0
-    if ($('.game').css('top') != '0px' && mapPosition() == 17950) {
-        gameTopValue2 = gameTop.split('px').join('')
+    // RIGHT
+    if (mapPosition() >= 21050.01) {
+        $('.game').css('top', '985px')
+        $('.helicopter').css({bottom: '1055px'})
     }
-    if (gameTopValue2 <= 990 && gameTopValue2 != 0) { //////////////////////////////
-        $('.game').css({left: - (valueScroll - (parseFloat(1135) + screenLeftAdditional)) + 'px', top: '990px'})
-        $('.helicopter').css({bottom: '1051px'})
-    }
-    
-    
+
+
+
+
+
     console.log(valueScroll)
+    console.log(screenLeft)
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function fly(){
+//     var screenLeftAdditional = $('.screen').offset().left
+//         gameTop = 0
+//     // UP
+//     if (mapPosition() >= 17265) {
+//         $('.game').css({top: (mapPosition() - 17265) / 1.42 + 'px', left: -(17265 + screenLeftAdditional) + 'px'})
+//         gameTop = $('.game').css('top')
+//         $('.helicopter').css('bottom', 'calc(55px + ' + gameTop + ')')
+//     }else{
+//         $('.helicopter').css('bottom', '55px')
+//     }
+//     // RIGHT
+//     var gameTopValue = 0
+//     if ($('.game').css('top') != '0px' && mapPosition() >= 17000) {
+//         gameTopValue = gameTop.split('px').join('')
+//     }
+//     if (gameTopValue >= 1065) {
+//         $('.game').css({left: - ((valueScroll - parseFloat(1065) - screenLeftAdditional)) + 'px', top: '1065px'})
+//         $('.helicopter').css({left: parseFloat(3500) + (mapPosition() - 17265) + 'px', bottom: '1120px'})
+//     }else{
+//         $('.helicopter').css({left: '3500px'})
+//     }
+//     // DOWN
+//     if (mapPosition() >= 17950) {
+//         $('.game').css({top: parseFloat(1065) - (mapPosition() - 17950) / 1.42 + 'px', left: -(17950 + screenLeftAdditional) + 'px'})
+//         gameTop = $('.game').css('top')
+//         $('.helicopter').css({bottom: 'calc(55px + ' + gameTop + ')', left: '4185px'})
+//     }
+//     // OUT
+//     gameTopValue2 = 0
+//     if ($('.game').css('top') != '0px' && mapPosition() == 17950) {
+//         gameTopValue2 = gameTop.split('px').join('')
+//     }
+//     if (gameTopValue2 <= 990 && gameTopValue2 != 0) { //////////////////////////////
+//         $('.game').css({left: - (valueScroll - (parseFloat(1135) + screenLeftAdditional)) + 'px', top: '990px'})
+//         $('.helicopter').css({bottom: '1051px'})
+//     }
+    
+    
+//     console.log(valueScroll)
+
+
+// }
 
 
 
