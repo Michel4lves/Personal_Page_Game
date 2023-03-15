@@ -245,3 +245,31 @@
     }
 }
 
+
+
+
+
+
+/* 
+.bird {
+    position: absolute;
+    top: 50vh;
+    left: 500px;
+    width: 125px;
+    height: 130px;
+    background-image: url(../../img/Characters/bird.png);
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    background-position: 0 0;
+    animation: flyBird .5s steps(14) infinite;
+    z-index: 50;
+}
+
+@keyframes flyBird {
+    0% {
+        background-position: 0 0px;
+    }
+    100% {
+        background-position: -1750px 0;
+    }
+} */
