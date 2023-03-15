@@ -5,7 +5,7 @@
 .phase-4-map {
     position: relative;
     bottom: 100vh;
-    width: 10000px;
+    width: 9800px;
     height: 200vh;
     display: flex;
     align-items: flex-end;
@@ -97,7 +97,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 150%;
     height: 400vh;
     background-color: #043b3f;
     z-index: -10;
@@ -107,8 +107,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 95%;
-    height: 420vh;
+    width: 150%;
+    height: 820vh;
     background-image: url(../../img/greens/dark-clouds.png);
     z-index: -9;
 }
@@ -199,7 +199,7 @@
 .phase-4-map .phase-4-components .plataform-a,
 .phase-4-map .phase-4-components .plataform-f {
     position: absolute;
-    right: 0px;
+    right: -100px;
     bottom: 90px;
     width: 2500px;
     height: 2000px;
@@ -213,41 +213,41 @@
     z-index: 11;
 }
 
-
-
-
-
-
-
-
-
-
-/* 
-
 .phase-4-map .phase-4-components .painel {
     position: absolute;
     bottom: 1080px;
-    left: 5900px;
+    right: 200px;
     width: 600px;
     height: 500px;
     background-image: url(../../img/plataform/painel.png);
     background-size: 600px;
     z-index: 0;
-} */
+}
 
-
-
-/* 
-.phase-4-map .phase-4-components .linkedin {
+.phase-4-map .phase-4-components .linkedin-ballon {
     position: absolute;
-    bottom: 1080px;
-    left: 6500px;
+    bottom: 1230px;
+    right: 180px;
     width: 100px;
     height: 80px;
     background-image: url(../../img/signs/linkedin.gif);
     transform: scaleX(-1);
     background-size: 100px;
-    z-index: 0;
-} */
+    display: none;
+    z-index: 1;
+}
 
+.phase-4-map .phase-4-components .linkedin-icon {
+    position: absolute;
+    bottom: 1250px;
+    right: 204px;
+    width: 64px;
+    height: 38px;
+    background-image: url(../../img/signs/linkedin.gif);
+    background-size: 130px;
+    background-position: -40px -30px;
+    transform: scaleX(1);
+    display: none;
+    z-index: 2;
+}
 

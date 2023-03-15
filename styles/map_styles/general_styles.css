@@ -19,7 +19,7 @@ body {
 
 .game {
     position: fixed;
-    bottom: 0;
+    bottom: -979px;
     left: 0;
     width: 0; /* value on js*/
     display: flex;

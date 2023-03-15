@@ -27,7 +27,7 @@ function stairs(){
 
 
 function devicesMotion(){
-    if (mapPosition() >= 1250) {
+    if (mapPosition() >= 1100) {
         $('.desktop-a').css({animation: 'moving 1.5s linear both, walking_a 0.5s steps(2) infinite', visibility: 'hidden', transitionDelay: '1.5s'})
         $('.desktop-b').css({visibility: 'visible', transitionDelay: '1.7s'})
         $('.laptop-a').css({animation: 'moving 1.5s linear both, walking_b 0.5s steps(2) infinite', animationDelay: '0.2s', visibility: 'hidden', transitionDelay: '1.7s'}) 
@@ -60,13 +60,13 @@ function soccerMotion(){
 
 function Skills() {
     if (mapPosition() >= 4900) {
-        $('.knowledge').css({animation: 'classif 5s steps(6) both'}) 
+        $('.knowledge').css({animation: 'classif 3s steps(6) both'}) 
     }
     if (mapPosition() >= 5350) {
-        $('.frameworks').css({animation: 'classif 5s steps(6) both'}) 
+        $('.frameworks').css({animation: 'classif 3s steps(6) both'}) 
     }
     if (mapPosition() >= 5900) {
-        $('.learning').css({animation: 'classif 5s steps(6) both'}) 
+        $('.learning').css({animation: 'classif 3s steps(6) both'}) 
     }
 }
 
@@ -133,17 +133,17 @@ function pilot() {
 function fly(){
     var screenLeft = $('.screen').offset().left
     // UP
-    if (mapPosition() >= 17285 && mapPosition() <= 20250) {
+    if (mapPosition() >= 17285 && mapPosition() <= 19850) {
         $('.game').css('top', ((mapPosition() - 17285) / 1.42) + 'px')
         $('.helicopter').css({bottom: 'calc(55px + ' + ((mapPosition() - 17285) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
     }
     // DOWN
-    if (mapPosition() >= 20250.01 && mapPosition() <= 21070) {
-        $('.game').css('top', (1570 - (mapPosition() - 20250.01) / 1.42) + 'px')
-        $('.helicopter').css({bottom: 'calc(55px + ' + (1570 - (mapPosition() - 20250.01) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
+    if (mapPosition() >= 19850.01 && mapPosition() <= 20988) {//
+        $('.game').css('top', (1800 - (mapPosition() - 19850.01) / 1.42) + 'px')
+        $('.helicopter').css({bottom: 'calc(55px + ' + (1800 - (mapPosition() - 19850.01) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
     }
     // RIGHT
-    if (mapPosition() >= 21050.01) {
+    if (mapPosition() >= 20988.01) {
         $('.game').css('top', '985px')
         $('.helicopter').css({bottom: '1055px'})
     }

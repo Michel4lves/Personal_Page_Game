@@ -82,10 +82,22 @@
 .debug-mod-access {
     position: absolute;
     bottom: 20px;
-    left: calc((100vw/2) - 340px);
+    left: 300px;
     width: 100px;
     height: 30px;
     border: none;
     opacity: 0;
     text-align: center;
+}
+
+.linkedin {
+    position: absolute;
+    bottom: 250px;
+    right: 200px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: none;
 }
