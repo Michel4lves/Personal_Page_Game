@@ -24,6 +24,7 @@
     opacity: 1;
     visibility: hidden;
     /* animation: local-collected 2s linear infinite; */
+    z-index: 15;
 }
 
 .mail-no-collected,
@@ -43,6 +44,7 @@
     background-image: url(../../img/screen/mail_collected.png);
     opacity: 1;
     visibility: hidden;
+    z-index: 14;
 }
 
 .mobile-no-collected,
@@ -54,7 +56,6 @@
     height: 60px;
     background-image: url(../../img/screen/mobile_no_collected.png);
     background-size: 65px;
-    /* animation: mobile-collected 2s linear infinite; */
     opacity: 0.5;
 }
 
@@ -62,6 +63,8 @@
     background-image: url(../../img/screen/mobile_collected.png);
     opacity: 1;
     visibility: hidden;
+    /* animation: mobile-collected 2s linear infinite; */
+    z-index: 13;
 }
 
 .github-no-collected,
@@ -73,7 +76,6 @@
     height: 60px;
     background-image: url(../../img/screen/github_no_collected.png);
     background-size: 70px;
-    /* animation: github-collected 2s linear infinite; */
     opacity: 0.5;
 }
 
@@ -81,6 +83,8 @@
     background-image: url(../../img/screen/github_collected.png);
     opacity: 1;
     visibility: hidden;
+    /* animation: github-collected 2s linear infinite; */
+    z-index: 12;
 }
 
 .debug-mod-access {
@@ -111,8 +115,8 @@
 .explode-3,
 .explode-4 {
     position: fixed;
-    bottom: 330px;
-    left: 950px;
+    bottom: 290px;
+    left: 810px;
     width: 200px;
     height: 220px;
     background-image: url(../../img/signs/explode-1.png);
@@ -120,8 +124,8 @@
     background-size: 2000px;
     background-position: 0 0;
     /* animation: explode 0.5s steps(7) infinite; */
-    z-index: 10;
-    display: none;
+    z-index: 16;
+    visibility: hidden;
 }
 
 .explode-2 {
@@ -151,8 +155,9 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) + 80px);
-        bottom: 390px;
+        left: calc((100vw/2) - 70px);
+        bottom: 380px;
+        visibility: hidden;
     }
 }
 @keyframes mail-collected {
@@ -161,8 +166,9 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) + 70px);
+        left: calc((100vw/2) - 80px);
         bottom: 400px;
+        visibility: hidden;
     }
 }
 @keyframes mobile-collected {
@@ -171,8 +177,9 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) + 60px);
+        left: calc((100vw/2) - 90px);
         bottom: 400px;
+        visibility: hidden;
     }
 }
 @keyframes github-collected {
@@ -181,7 +188,22 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) + 50px);
+        left: calc((100vw/2) - 100px);
         bottom: 410px;
+        visibility: hidden;
     }
+}
+
+.speek {
+    position: fixed;
+    bottom: 250px;
+    left: 750px;
+    width: 350px;
+    height: 250px;
+    background-image: url(../../img/signs/speek.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: 0 0;
+    z-index: 11;
+    /* visibility: hidden; */
 }

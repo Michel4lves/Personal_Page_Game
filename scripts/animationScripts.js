@@ -150,6 +150,19 @@ function fly(){
 }
 
 
+function iconsCollected(){
+    var mapLeft = $('.game').offset().left
+    if (mapLeft == -documentHeightCustom){
+        $('.local-collected').css({animation: 'local-collected 2s linear both', animationDelay: '1s'})
+        $('.explode-1').css({visibility: 'visible', transitionDelay: '3s', animation: 'explode 0.5s steps(7) both', animationDelay: '3s'})
+        $('.mail-collected').css({animation: 'mail-collected 2s linear both', animationDelay: '3s'})
+        $('.explode-2').css({visibility: 'visible', transitionDelay: '5s', animation: 'explode 0.5s steps(7) both', animationDelay: '5s'})
+        $('.mobile-collected').css({animation: 'mobile-collected 2s linear both', animationDelay: '5s'})
+        $('.explode-3').css({visibility: 'visible', transitionDelay: '7s', animation: 'explode 0.5s steps(7) both', animationDelay: '7s'})
+        $('.github-collected').css({animation: 'github-collected 2s linear both', animationDelay: '7s'})
+        $('.explode-4').css({visibility: 'visible', transitionDelay: '9s', animation: 'explode 0.5s steps(7) both', animationDelay: '9s'})
+    }
+}
 
 
 
@@ -168,4 +181,5 @@ $(window).scroll(function(){
     desertHill()
     pilot()
     fly()
+    iconsCollected()
 })
