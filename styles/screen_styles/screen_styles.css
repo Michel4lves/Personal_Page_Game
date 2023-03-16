@@ -23,7 +23,7 @@
     background-image: url(../../img/screen/local_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: local-collected 2s linear infinite; */
+    /* animation: local-collected 5s linear infinite; */
     z-index: 15;
 }
 
@@ -36,7 +36,6 @@
     height: 55px;
     background-image: url(../../img/screen/mail_no_collected.png);
     background-size: 60px;
-    /* animation: mail-collected 2s linear infinite; */
     opacity: 0.5;
 }
 
@@ -44,6 +43,7 @@
     background-image: url(../../img/screen/mail_collected.png);
     opacity: 1;
     visibility: hidden;
+    /* animation: mail-collected 5s linear infinite; */
     z-index: 14;
 }
 
@@ -63,7 +63,7 @@
     background-image: url(../../img/screen/mobile_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: mobile-collected 2s linear infinite; */
+    /* animation: mobile-collected 5s linear infinite; */
     z-index: 13;
 }
 
@@ -83,7 +83,7 @@
     background-image: url(../../img/screen/github_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: github-collected 2s linear infinite; */
+    /* animation: github-collected 5s linear infinite; */
     z-index: 12;
 }
 
@@ -110,53 +110,14 @@
     display: none;
 }
 
-.explode-1,
-.explode-2,
-.explode-3,
-.explode-4 {
-    position: fixed;
-    bottom: 290px;
-    left: 810px;
-    width: 200px;
-    height: 220px;
-    background-image: url(../../img/signs/explode-1.png);
-    background-repeat: no-repeat;
-    background-size: 2000px;
-    background-position: 0 0;
-    /* animation: explode 0.5s steps(7) infinite; */
-    z-index: 16;
-    visibility: hidden;
-}
-
-.explode-2 {
-    background-image: url(../../img/signs/explode-2.png);
-}
-
-.explode-3 {
-    background-image: url(../../img/signs/explode-3.png);
-}
-
-.explode-4 {
-    background-image: url(../../img/signs/explode-4.png);
-}
-
-@keyframes explode {
-    0% {
-        background-position: 0 0px;
-    }
-    100% {
-        background-position: -2000px 0;
-    }
-}
-
 @keyframes local-collected {
     0% {
         left: calc((100vw/2) - 570px);
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) - 70px);
-        bottom: 380px;
+        left: calc((100vw/2) - 30px);
+        bottom: 410px;
         visibility: hidden;
     }
 }
@@ -166,8 +127,8 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) - 80px);
-        bottom: 400px;
+        left: calc((100vw/2) + 30px);
+        bottom: 410px;
         visibility: hidden;
     }
 }
@@ -177,8 +138,8 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) - 90px);
-        bottom: 400px;
+        left: calc((100vw/2) + 100px);
+        bottom: 410px;
         visibility: hidden;
     }
 }
@@ -188,7 +149,7 @@
         bottom: 90vh;
     }
     100% {
-        left: calc((100vw/2) - 100px);
+        left: calc((100vw/2) + 160px);
         bottom: 410px;
         visibility: hidden;
     }
@@ -205,5 +166,5 @@
     background-size: 350px;
     background-position: 0 0;
     z-index: 11;
-    /* visibility: hidden; */
+    visibility: hidden;
 }

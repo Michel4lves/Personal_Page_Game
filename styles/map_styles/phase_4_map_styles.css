@@ -251,3 +251,96 @@
     z-index: 2;
 }
 
+/* FINAL COMPONENTS */
+
+.final-components .local-collected-final {
+    position: absolute;
+    bottom: 1400px;
+    right: 590px;
+    width: 40px;
+    height: 55px;
+    background-image: url(../../img/screen/local_collected.png);
+    background-size: 40px;
+    /* animation: local-collected 2s linear infinite; */
+    z-index: 14;
+    visibility: hidden;
+}
+
+.final-components .mail-collected-final {
+    position: absolute;
+    bottom: 1400px;
+    right: 520px;
+    width: 55px;
+    height: 55px;
+    background-image: url(../../img/screen/mail_collected.png);
+    background-size: 60px;
+    /* animation: mail-collected 2s linear infinite; */
+    z-index: 14;
+    visibility: hidden;
+}
+
+.final-components .mobile-collected-final {
+    position: absolute;
+    bottom: 1400px;
+    right: 450px;
+    width: 55px;
+    height: 60px;
+    background-image: url(../../img/screen/mobile_collected.png);
+    background-size: 65px;
+    /* animation: mobille-collected 2s linear infinite; */
+    z-index: 14;
+    visibility: hidden;
+}
+
+.final-components .github-collected-final {
+    position: absolute;
+    bottom: 1400px;
+    right: 370px;
+    width: 65px;
+    height: 60px;
+    background-image: url(../../img/screen/github_collected.png);
+    background-size: 70px;
+    /* animation: github-collected 2s linear infinite; */
+    z-index: 14;
+    visibility: hidden;
+}
+
+
+.final-components .explode-1,
+.final-components .explode-2,
+.final-components .explode-3,
+.final-components .explode-4 {
+    position: fixed;
+    bottom: 1400px;
+    right: 590px;
+    width: 200px;
+    height: 220px;
+    background-image: url(../../img/signs/explode-1.png);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: 0 0;
+    /* animation: explode 0.5s steps(7) infinite; */
+    z-index: 16;
+    visibility: hidden;
+}
+
+.final-components .explode-2 {
+    background-image: url(../../img/signs/explode-2.png);
+}
+
+.final-components .explode-3 {
+    background-image: url(../../img/signs/explode-3.png);
+}
+
+.final-components .explode-4 {
+    background-image: url(../../img/signs/explode-4.png);
+}
+
+@keyframes explode {
+    0% {
+        background-position: 0 0px;
+    }
+    100% {
+        background-position: -2000px 0;
+    }
+}
