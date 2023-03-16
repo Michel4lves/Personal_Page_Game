@@ -10,7 +10,7 @@
 .local-no-collected,
 .local-collected {
     position: fixed;
-    top: 32px;
+    bottom: 90vh;
     left: calc((100vw/2) - 570px);
     width: 40px;
     height: 55px;
@@ -23,17 +23,19 @@
     background-image: url(../../img/screen/local_collected.png);
     opacity: 1;
     visibility: hidden;
+    /* animation: local-collected 2s linear infinite; */
 }
 
 .mail-no-collected,
 .mail-collected {
     position: fixed;
-    top: 30px;
+    bottom: 90vh;
     left: calc((100vw/2) - 520px);
     width: 55px;
     height: 55px;
     background-image: url(../../img/screen/mail_no_collected.png);
     background-size: 60px;
+    /* animation: mail-collected 2s linear infinite; */
     opacity: 0.5;
 }
 
@@ -46,12 +48,13 @@
 .mobile-no-collected,
 .mobile-collected {
     position: fixed;
-    top: 28px;
+    bottom: 90vh;
     left: calc((100vw/2) - 460px);
     width: 55px;
     height: 60px;
     background-image: url(../../img/screen/mobile_no_collected.png);
     background-size: 65px;
+    /* animation: mobile-collected 2s linear infinite; */
     opacity: 0.5;
 }
 
@@ -64,12 +67,13 @@
 .github-no-collected,
 .github-collected {
     position: fixed;
-    top: 24px;
+    bottom: 90vh;
     left: calc((100vw/2) - 400px);
     width: 65px;
     height: 60px;
     background-image: url(../../img/screen/github_no_collected.png);
     background-size: 70px;
+    /* animation: github-collected 2s linear infinite; */
     opacity: 0.5;
 }
 
@@ -102,6 +106,82 @@
     display: none;
 }
 
+.explode-1,
+.explode-2,
+.explode-3,
+.explode-4 {
+    position: fixed;
+    bottom: 330px;
+    left: 950px;
+    width: 200px;
+    height: 220px;
+    background-image: url(../../img/signs/explode-1.png);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: 0 0;
+    /* animation: explode 0.5s steps(7) infinite; */
+    z-index: 10;
+    display: none;
+}
 
+.explode-2 {
+    background-image: url(../../img/signs/explode-2.png);
+}
 
+.explode-3 {
+    background-image: url(../../img/signs/explode-3.png);
+}
 
+.explode-4 {
+    background-image: url(../../img/signs/explode-4.png);
+}
+
+@keyframes explode {
+    0% {
+        background-position: 0 0px;
+    }
+    100% {
+        background-position: -2000px 0;
+    }
+}
+
+@keyframes local-collected {
+    0% {
+        left: calc((100vw/2) - 570px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 80px);
+        bottom: 390px;
+    }
+}
+@keyframes mail-collected {
+    0% {
+        left: calc((100vw/2) - 520px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 70px);
+        bottom: 400px;
+    }
+}
+@keyframes mobile-collected {
+    0% {
+        left: calc((100vw/2) - 460px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 60px);
+        bottom: 400px;
+    }
+}
+@keyframes github-collected {
+    0% {
+        left: calc((100vw/2) - 400px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 50px);
+        bottom: 410px;
+    }
+}
