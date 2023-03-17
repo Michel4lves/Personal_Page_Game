@@ -223,34 +223,6 @@
     background-size: 600px;
 }
 
-.phase-4-map .phase-4-components .linkedin-ballon {
-    position: absolute;
-    bottom: 1230px;
-    right: 180px;
-    width: 100px;
-    height: 80px;
-    background-image: url(../../img/signs/linkedin.gif);
-    transform: scaleX(-1);
-    background-size: 100px;
-    cursor: pointer;
-    visibility: hidden;
-    z-index: 1;
-}
-
-.phase-4-map .phase-4-components .linkedin-icon {
-    position: absolute;
-    bottom: 1250px;
-    right: 204px;
-    width: 64px;
-    height: 38px;
-    cursor: pointer;
-    background-image: url(../../img/signs/linkedin.gif);
-    background-size: 130px;
-    background-position: -40px -30px;
-    visibility: hidden;
-    z-index: 2;
-}
-
 /* FINAL COMPONENTS */
 
 .final-components .local-collected-final {
@@ -437,20 +409,104 @@
     }
 }
 
-
-
-
-
-
-
-.linkedin {
+.phase-4-components .linkedin-ballon {
     position: absolute;
-    bottom: 250px;
+    bottom: 1230px;
+    right: 180px;
+    width: 100px;
+    height: 80px;
+    background-image: url(../../img/signs/linkedin.gif);
+    transform: scaleX(-1);
+    background-size: 100px;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.phase-4-components .linkedin-icon {
+    position: absolute;
+    bottom: 1250px;
+    right: 204px;
+    width: 64px;
+    height: 38px;
+    cursor: pointer;
+    background-image: url(../../img/signs/linkedin.gif);
+    background-size: 130px;
+    background-position: -40px -30px;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.final-components  .linkedin-link {
+    position: absolute;
+    bottom: 1230px;
     right: 200px;
     width: 70px;
     height: 70px;
-    border: none;
-    text-align: center;
     cursor: pointer;
-    display: none;
+    z-index: 30;
+    visibility: hidden;
+}
+
+/* FINAL LINKS */
+
+.final-links {
+    position: absolute;
+    top: calc(100vh - 635px);
+    right: 290px;
+    width: 460px;
+    height: 280px;
+    overflow: hidden;
+    z-index: 20;
+    visibility: hidden;
+    /* animation: info-show 10s linear infinite; */
+}
+
+.final-links .info-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.final-links .info-links .contact-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.final-links .info-links .contact-form .icon {
+    width: 40px;
+}
+
+.final-links .info-links .contact-form .icon-local {
+    width: 35px;
+}
+
+.final-links .info-links h1 .icon-git {
+    position: relative;
+    top: 4px;
+    width: 130px;
+}
+
+.final-links .info-links .contact-form .info {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.final-links .info-links .contact-form .link {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes info-show {
+    0% {
+        height: 40px;
+    }
+    100% {
+        height: 280px;
+    }
 }

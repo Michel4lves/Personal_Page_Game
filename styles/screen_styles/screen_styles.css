@@ -45,7 +45,7 @@
     opacity: 1;
     visibility: hidden;
     /* animation: mail-collected 5s linear infinite; */
-    z-index: 14;
+    z-index: 15;
 }
 
 .mobile-no-collected,
@@ -58,6 +58,7 @@
     background-image: url(../../img/screen/mobile_no_collected.png);
     background-size: 65px;
     opacity: 0.5;
+    z-index: 14;
 }
 
 .mobile-collected {
@@ -65,7 +66,7 @@
     opacity: 1;
     visibility: hidden;
     /* animation: mobile-collected 5s linear infinite; */
-    z-index: 13;
+    z-index: 15;
 }
 
 .github-no-collected,
@@ -78,6 +79,7 @@
     background-image: url(../../img/screen/github_no_collected.png);
     background-size: 70px;
     opacity: 0.5;
+    z-index: 14;
 }
 
 .github-collected {
@@ -85,7 +87,7 @@
     opacity: 1;
     visibility: hidden;
     /* animation: github-collected 5s linear infinite; */
-    z-index: 12;
+    z-index: 15;
 }
 
 .debug-mod-access {

@@ -364,3 +364,31 @@
 .phase-3-map .subway .phase-3-subway-portfolios .project-4 {
     left: 4025px;
 }
+
+.project-1-link,
+.project-2-link,
+.project-3-link,
+.project-4-link {
+    position: absolute;
+    left: 1520px;
+    bottom: 400px;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.project-2-link {
+    left: 2525px;
+}
+
+.project-3-link {
+    left: 3080px;
+    width: 200px;
+}
+
+.project-4-link {
+    left: 4025px;
+}
+
+

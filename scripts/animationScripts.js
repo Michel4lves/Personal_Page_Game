@@ -153,13 +153,11 @@ function fly(){
 function finalLinks(){
     var mapLeft = $('.game').offset().left
     if (mapLeft == -documentHeightCustom){
-        $('.linkedin-icon').css({visibility: 'visible', cursor: 'pointer'})
-        $('.linkedin-ballon').css({visibility: 'visible', cursor: 'pointer'})
-        $('.fireworks').css({visibility: 'visible', transitionDelay: '2s'})
-
-    // }else{
-    //     $('.linkedin-icon').css({visibility: 'hidden'})
-    //     $('.linkedin-ballon').css({visibility: 'hidden'})
+        $('.linkedin-icon').css({visibility: 'visible'})
+        $('.linkedin-ballon').css({visibility: 'visible'})
+        $('.linkedin-link').css({visibility: 'visible'})
+        $('.final-links').css({visibility: 'visible', transitionDelay: '5s', animation: 'info-show 5s linear both', animationDelay: '5s'})
+        $('.fireworks').css({visibility: 'visible', transitionDelay: '11s'})
     }
 }
 
