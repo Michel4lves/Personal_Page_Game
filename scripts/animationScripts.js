@@ -130,6 +130,13 @@ function pilot() {
 }
 
 
+function birdFly() {
+    if (mapPosition() >= 18000) {
+        $('.bird-box').css({animation: 'bird-fly 8s linear both'})
+    }
+}
+
+
 function fly(){
     var screenLeft = $('.screen').offset().left
     // UP
@@ -153,9 +160,9 @@ function fly(){
 function finalLinks(){
     var mapLeft = $('.game').offset().left
     if (mapLeft == -documentHeightCustom){
-        $('.linkedin-icon').css({visibility: 'visible'})
-        $('.linkedin-ballon').css({visibility: 'visible'})
-        $('.linkedin-link').css({visibility: 'visible'})
+        $('.linkedin-icon').css({visibility: 'visible', transitionDelay: '11s'})
+        $('.linkedin-ballon').css({visibility: 'visible', transitionDelay: '11s'})
+        $('.linkedin-link').css({visibility: 'visible', transitionDelay: '11s'})
         $('.final-links').css({visibility: 'visible', transitionDelay: '5s', animation: 'info-show 5s linear both', animationDelay: '5s'})
         $('.fireworks').css({visibility: 'visible', transitionDelay: '11s'})
     }
@@ -203,6 +210,7 @@ $(window).scroll(function(){
     screenIcons()
     desertHill()
     pilot()
+    birdFly()
     fly()
     finalLinks()
     iconsCollected()

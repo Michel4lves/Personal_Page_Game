@@ -245,24 +245,47 @@
     }
 }
 
-
-
-
-
-
-/* 
-.bird {
+.bird-box {
     position: absolute;
-    top: 50vh;
-    left: 500px;
+    bottom: 1230px;
+    left: 7000px;
+    width: 300px;
+    height: 300px;
+    /* animation: bird-fly 10s linear infinite; */
+}
+
+@keyframes bird-fly {
+    0% {
+        bottom: 1230px;
+        left: 7000px;
+    }
+    100% {
+        bottom: 1230px;
+        left: 2000px;
+        visibility: hidden;
+    }
+}
+
+.bird-1,
+.bird-2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
     width: 125px;
     height: 130px;
     background-image: url(../../img/Characters/bird.png);
     background-repeat: no-repeat;
     background-size: 1800px;
     background-position: 0 0;
+    transform: scaleX(-1);
     animation: flyBird .5s steps(14) infinite;
     z-index: 50;
+}
+
+.bird-2 {
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
 }
 
 @keyframes flyBird {
@@ -272,4 +295,4 @@
     100% {
         background-position: -1750px 0;
     }
-} */
+}
