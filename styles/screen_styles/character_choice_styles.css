@@ -1,0 +1,39 @@
+.character-choice-screen {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    z-index: 100;
+}
+
+/* .character-choice-screen h1 {
+    
+} */
+
+.character-choice-screen .character-box {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.character-choice-screen .character-box .character-picture {
+    border: 1px solid green;
+    width: 400px;
+    height: 300px;
+}
+
+.character-choice-screen .character-box .character-picture .carol {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/Characters/personages.png);
+    background-size: 5000px;
+    background-position: 0 0;
+    animation: stoping 0.5s steps(3) infinite;
+}
+
