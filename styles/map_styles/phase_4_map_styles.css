@@ -221,7 +221,6 @@
     height: 500px;
     background-image: url(../../img/plataform/painel.png);
     background-size: 600px;
-    z-index: 0;
 }
 
 .phase-4-map .phase-4-components .linkedin-ballon {
@@ -233,7 +232,8 @@
     background-image: url(../../img/signs/linkedin.gif);
     transform: scaleX(-1);
     background-size: 100px;
-    display: none;
+    cursor: pointer;
+    visibility: hidden;
     z-index: 1;
 }
 
@@ -243,11 +243,11 @@
     right: 204px;
     width: 64px;
     height: 38px;
+    cursor: pointer;
     background-image: url(../../img/signs/linkedin.gif);
     background-size: 130px;
     background-position: -40px -30px;
-    transform: scaleX(1);
-    display: none;
+    visibility: hidden;
     z-index: 2;
 }
 
@@ -305,14 +305,100 @@
     visibility: hidden;
 }
 
+@keyframes local-collected {
+    0% {
+        left: calc((100vw/2) - 570px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) - 30px);
+        bottom: 410px;
+        visibility: hidden;
+    }
+}
+@keyframes mail-collected {
+    0% {
+        left: calc((100vw/2) - 520px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 30px);
+        bottom: 410px;
+        visibility: hidden;
+    }
+}
+@keyframes mobile-collected {
+    0% {
+        left: calc((100vw/2) - 460px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 100px);
+        bottom: 410px;
+        visibility: hidden;
+    }
+}
+@keyframes github-collected {
+    0% {
+        left: calc((100vw/2) - 400px);
+        bottom: 90vh;
+    }
+    100% {
+        left: calc((100vw/2) + 160px);
+        bottom: 410px;
+        visibility: hidden;
+    }
+}
+
+.final-components .fireworks {
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 1480px;
+    right: 200px;
+    width: 600px;
+    height: 600px;
+    background-image: url(../../img/signs/firework.gif);
+    background-size: 600px;
+    visibility: hidden;
+    z-index: -5;
+}
+
+.final-components .hide-1,
+.final-components .hide-2,
+.final-components .hide-3,
+.final-components .hide-4 {
+    position: absolute;
+    bottom: 1325px;
+    right: 580px;
+    width: 70px;
+    height: 220px;
+    z-index: 15;
+    background-color: white;
+    visibility: hidden;
+}
+
+.final-components .hide-2 {
+    bottom: 1325px;
+    right: 510px;
+}
+
+.final-components .hide-3 {
+    bottom: 1325px;
+    right: 440px;
+}
+
+.final-components .hide-4 {
+    bottom: 1325px;
+    right: 365px;
+}
 
 .final-components .explode-1,
 .final-components .explode-2,
 .final-components .explode-3,
 .final-components .explode-4 {
-    position: fixed;
-    bottom: 1400px;
-    right: 590px;
+    position: absolute;
+    bottom: 1325px;
+    right: 510px;
     width: 200px;
     height: 220px;
     background-image: url(../../img/signs/explode-1.png);
@@ -325,14 +411,20 @@
 }
 
 .final-components .explode-2 {
+    bottom: 1325px;
+    right: 445px;
     background-image: url(../../img/signs/explode-2.png);
 }
 
 .final-components .explode-3 {
+    bottom: 1325px;
+    right: 375px;
     background-image: url(../../img/signs/explode-3.png);
 }
 
 .final-components .explode-4 {
+    bottom: 1325px;
+    right: 300px;
     background-image: url(../../img/signs/explode-4.png);
 }
 
@@ -343,4 +435,22 @@
     100% {
         background-position: -2000px 0;
     }
+}
+
+
+
+
+
+
+
+.linkedin {
+    position: absolute;
+    bottom: 250px;
+    right: 200px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: none;
 }

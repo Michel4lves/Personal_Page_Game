@@ -38,25 +38,11 @@ function landsMove(){
     }
 }
 
-function finalLinks(){
-    var mapLeft = $('.game').offset().left
-    if (mapLeft == -documentHeightCustom){
-        $('.linkedin').css({display: 'block'})
-        $('.linkedin-icon').css({display: 'block'})
-        $('.linkedin-ballon').css({display: 'block'})
-    }else{
-        $('.linkedin').css({display: 'none'})
-        $('.linkedin-icon').css({display: 'none'})
-        $('.linkedin-ballon').css({display: 'none'})
-    }
-}
-
 
 $(window).scroll(function(){
     roadMap()
     mapPosition()
     landsMove()
-    finalLinks()
 })
 
 

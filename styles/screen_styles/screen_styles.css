@@ -1,10 +1,11 @@
 .screen {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: calc((100vw/2) - 600px);
-    width: 1200px;
-    height: 100vh;
-    z-index: 100;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    visibility: hidden;
 }
 
 .local-no-collected,
@@ -89,71 +90,19 @@
 
 .debug-mod-access {
     position: absolute;
-    bottom: 20px;
-    left: 300px;
+    bottom: 978px;
+    left: 0px;
     width: 100px;
     height: 30px;
     border: none;
     opacity: 0;
     text-align: center;
+    z-index: 30;
 }
 
-.linkedin {
-    position: absolute;
-    bottom: 250px;
-    right: 200px;
-    width: 70px;
-    height: 70px;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    display: none;
-}
 
-@keyframes local-collected {
-    0% {
-        left: calc((100vw/2) - 570px);
-        bottom: 90vh;
-    }
-    100% {
-        left: calc((100vw/2) - 30px);
-        bottom: 410px;
-        visibility: hidden;
-    }
-}
-@keyframes mail-collected {
-    0% {
-        left: calc((100vw/2) - 520px);
-        bottom: 90vh;
-    }
-    100% {
-        left: calc((100vw/2) + 30px);
-        bottom: 410px;
-        visibility: hidden;
-    }
-}
-@keyframes mobile-collected {
-    0% {
-        left: calc((100vw/2) - 460px);
-        bottom: 90vh;
-    }
-    100% {
-        left: calc((100vw/2) + 100px);
-        bottom: 410px;
-        visibility: hidden;
-    }
-}
-@keyframes github-collected {
-    0% {
-        left: calc((100vw/2) - 400px);
-        bottom: 90vh;
-    }
-    100% {
-        left: calc((100vw/2) + 160px);
-        bottom: 410px;
-        visibility: hidden;
-    }
-}
+
+
 
 .speek {
     position: fixed;

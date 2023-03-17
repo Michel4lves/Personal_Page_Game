@@ -150,21 +150,42 @@ function fly(){
 }
 
 
+function finalLinks(){
+    var mapLeft = $('.game').offset().left
+    if (mapLeft == -documentHeightCustom){
+        $('.linkedin-icon').css({visibility: 'visible', cursor: 'pointer'})
+        $('.linkedin-ballon').css({visibility: 'visible', cursor: 'pointer'})
+        $('.fireworks').css({visibility: 'visible', transitionDelay: '2s'})
+
+    // }else{
+    //     $('.linkedin-icon').css({visibility: 'hidden'})
+    //     $('.linkedin-ballon').css({visibility: 'hidden'})
+    }
+}
+
+
 function iconsCollected(){
     var mapLeft = $('.game').offset().left
     if (mapLeft == -documentHeightCustom){
         $('.local-collected').css({animation: 'local-collected 0.5s linear both', animationDelay: '0.5s'})
         $('.local-collected-final').css({visibility: 'visible', transitionDelay: '1s'})
+        $('.hide-1').css({visibility: 'visible', transitionDelay: '3s'})
         $('.explode-1').css({visibility: 'visible', transitionDelay: '3s', animation: 'explode 0.5s steps(7) both', animationDelay: '3s'})
+        
         $('.mail-collected').css({animation: 'mail-collected 0.5s linear both', animationDelay: '0.7s'})
         $('.mail-collected-final').css({visibility: 'visible', transitionDelay: '1.2s'})
-        // $('.explode-2').css({visibility: 'visible', transitionDelay: '5s', animation: 'explode 0.5s steps(7) both', animationDelay: '5s'})
+        $('.hide-2').css({visibility: 'visible', transitionDelay: '3.5s'})
+        $('.explode-2').css({visibility: 'visible', transitionDelay: '3.5s', animation: 'explode 0.5s steps(7) both', animationDelay: '3.5s'})
+
         $('.mobile-collected').css({animation: 'mobile-collected 0.5s linear both', animationDelay: '0.9s'})
         $('.mobile-collected-final').css({visibility: 'visible', transitionDelay: '1.4s'})
-        // $('.explode-3').css({visibility: 'visible', transitionDelay: '7s', animation: 'explode 0.5s steps(7) both', animationDelay: '7s'})
+        $('.hide-3').css({visibility: 'visible', transitionDelay: '4s'})
+        $('.explode-3').css({visibility: 'visible', transitionDelay: '4s', animation: 'explode 0.5s steps(7) both', animationDelay: '4s'})
+
         $('.github-collected').css({animation: 'github-collected 0.5s linear both', animationDelay: '1.1s'})
         $('.github-collected-final').css({visibility: 'visible', transitionDelay: '1.6s'})
-        // $('.explode-4').css({visibility: 'visible', transitionDelay: '9s', animation: 'explode 0.5s steps(7) both', animationDelay: '9s'})
+        $('.hide-4').css({visibility: 'visible', transitionDelay: '4.5s'})
+        $('.explode-4').css({visibility: 'visible', transitionDelay: '4.5s', animation: 'explode 0.5s steps(7) both', animationDelay: '4.5s'})
     }
 }
 
@@ -185,5 +206,6 @@ $(window).scroll(function(){
     desertHill()
     pilot()
     fly()
+    finalLinks()
     iconsCollected()
 })
