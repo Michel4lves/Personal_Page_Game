@@ -1,0 +1,35 @@
+.welcome-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    z-index: 200;
+}
+
+.welcome-screen .Carol,
+.welcome-screen .Michael,
+.welcome-screen .Martha,
+.welcome-screen .Pedro {
+    position: absolute;
+    bottom: 70px;
+    left: calc((100vw/2) - 450px);
+    width: 400px;
+    height: 300px;
+    background-image: url(../../img/Characters/character-carol.png);
+    background-size: 5000px;
+    background-position: 0 0;
+    animation: stoping 0.5s steps(3) infinite;
+    z-index: 201;
+}
+
+.welcome-screen .Michael {
+    background-image: url(../../img/Characters/character-michael.png);
+}
+
+.welcome-screen .Martha {
+    background-image: url(../../img/Characters/character-martha.png);
+}
+
+.welcome-screen .Pedro {
+    background-image: url(../../img/Characters/character-pedro.png);
+}

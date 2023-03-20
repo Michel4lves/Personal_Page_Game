@@ -7,6 +7,7 @@
     <title>Resume Game</title>
     <link rel="stylesheet" href="styles/screen_styles/screen_styles.css">
     <link rel="stylesheet" href="styles/screen_styles/character_choice_styles.css">
+    <link rel="stylesheet" href="styles/screen_styles/character_welcome.css">
     <link rel="stylesheet" href="styles/map_styles/general_styles.css">
     <link rel="stylesheet" href="styles/map_styles/initial_screen_map_styles.css">
     <link rel="stylesheet" href="styles/map_styles/phase_1_map_styles.css">
@@ -22,13 +23,21 @@
         <h1>ESCOLHA SEU PERSONAGEM:</h1>
         <div class="character-box">
             <div class="character-picture">
-                <div class="carol"></div>
+                <div class="character Carol"></div>
             </div>
+            <h2 class="character-name">Carol</h2>
+            <h2 class="character-number">1<span>/</span>4</h2>
+            <div class="left-choice"></div>
+            <div class="choice-ok"></div>
+            <div class="right-choice"></div>
         </div>
+    </div>
+    <div class="welcome-screen">
+        <div class="welcome-character Carol"></div>
     </div>
     <div class="game">
         <div class="main">
-            <div class="main-character"></div>
+            <div class="main-character Carol"></div>
         </div>
         <div class="screen"></div>
         <div class="local-no-collected"></div>
@@ -384,5 +393,6 @@
     <script src="scripts/motionScripts.js"></script>
     <script src="scripts/animationScripts.js"></script>
     <script src="scripts/menuDebug.js"></script>
+    <script src="scripts/characterSelect.js"></script>
 </body>
 </html>

@@ -1,39 +1,111 @@
 .character-choice-screen {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: bisque;
     z-index: 100;
+    /* display: none; */
 }
 
-/* .character-choice-screen h1 {
-    
-} */
+.character-choice-screen h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: calc((100vh/2) + 300px);
+    z-index: 1;    
+}
 
 .character-choice-screen .character-box {
     border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    background-image: url(../../img/screen/choice-back.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 570px;
 }
 
 .character-choice-screen .character-box .character-picture {
-    border: 1px solid green;
+    position: absolute;
+    left: calc(50% - 200px);
+    bottom: calc(50% - 30px);
     width: 400px;
     height: 300px;
+    /* animation: chosen 1.5s linear infinite; */
 }
 
-.character-choice-screen .character-box .character-picture .carol {
+@keyframes chosen {
+    0% {
+        left: calc(50% - 200px);
+        bottom: calc(50% - 30px);
+    }
+    100%{
+        left: calc(50% - 450px);
+        bottom: 70px;
+    }
+}
+
+.character-picture .Carol,
+.character-picture .Michael,
+.character-picture .Martha,
+.character-picture .Pedro {
     width: 100%;
     height: 100%;
-    background-image: url(../../img/Characters/personages.png);
+    background-image: url(../../img/Characters/character-carol.png);
     background-size: 5000px;
     background-position: 0 0;
     animation: stoping 0.5s steps(3) infinite;
 }
 
+.character-picture .Michael {
+    background-image: url(../../img/Characters/character-michael.png);
+}
+
+.character-picture .Martha {
+    background-image: url(../../img/Characters/character-martha.png);
+}
+
+.character-picture .Pedro {
+    background-image: url(../../img/Characters/character-pedro.png);
+}
+
+.character-choice-screen .character-box .character-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: calc(50% - 115px);
+    font-size: 38px;
+}
+
+.character-choice-screen .character-box .character-number {
+    position: absolute;
+    bottom: calc(50% + 125px);
+    left: calc(50% - 240px);
+    width: 155px;
+    height: 125px;
+    font-size: 40px;
+    color: #0c8616;
+}
+
+.character-choice-screen .character-box .left-choice,
+.character-choice-screen .character-box .choice-ok,
+.character-choice-screen .character-box .right-choice {
+    position: absolute;
+    bottom: calc(50% - 275px);
+    left: calc(50% - 275px);
+    width: 155px;
+    height: 125px;
+    cursor: pointer;
+}
+
+.character-choice-screen .character-box .choice-ok {
+    left: calc(50% - 95px);
+}
+
+.character-choice-screen .character-box .right-choice {
+    left: calc(50% + 85px);
+}

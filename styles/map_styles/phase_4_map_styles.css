@@ -452,7 +452,8 @@
 
 .final-links {
     position: absolute;
-    top: calc(100vh - 635px);
+    /* top: calc(100vh - 635px); */
+    bottom: 1270px;
     right: 290px;
     width: 460px;
     height: 280px;

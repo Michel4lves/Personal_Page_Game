@@ -157,7 +157,7 @@
     bottom: 85px;
     width: 86px;
     height: 85px;
-    background-image: url(../../img/Characters/things.png);
+    background-image: url(../../img/street/things.png);
     background-repeat: no-repeat;
     background-size: 1700px;
     background-position: -6px -1818px;
@@ -253,7 +253,7 @@
     bottom: 80px;
     width: 430px;
     height: 430px;
-    background-image: url(../../img/Characters/things.png);
+    background-image: url(../../img/street/things.png);
     background-size: 1650px;
     background-position: -6px -1860px;
     z-index: 12;

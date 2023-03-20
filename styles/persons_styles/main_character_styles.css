@@ -4,15 +4,30 @@
 .main-character.jump,
 .main-character.running {
     position: fixed;
-    bottom: 80px;
+    bottom: 70px;
     left: calc((100vw/2) - 450px);
     width: 400px;
     height: 300px;
-    background-image: url(../../img/Characters/personages.png);
     background-repeat: no-repeat;
     background-size: 5000px;
     background-position: 0 0;
     z-index: 10;
+    visibility: hidden;
+}
+
+.main-character.Carol {
+    background-image: url(../../img/Characters/character-carol.png);
+}
+.main-character.Michael {
+    background-image: url(../../img/Characters/character-michael.png);
+}
+
+.main-character.Martha {
+    background-image: url(../../img/Characters/character-martha.png);
+}
+
+.main-character.Pedro {
+    background-image: url(../../img/Characters/character-pedro.png);
 }
 
 .main-character.stopping {

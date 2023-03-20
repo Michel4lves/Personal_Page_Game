@@ -1,8 +1,8 @@
 function bridge(){
     if (mapPosition() >= 3170 && mapPosition() <= 3910) {
-        $('.main-character').css('bottom', '95px')
+        $('.main-character').css('bottom', '90px')
     }else{
-        $('.main-character').css('bottom', '80px')
+        $('.main-character').css('bottom', '75px')
     }
 }
 
@@ -143,6 +143,8 @@ function fly(){
     if (mapPosition() >= 17285 && mapPosition() <= 19850) {
         $('.game').css('top', ((mapPosition() - 17285) / 1.42) + 'px')
         $('.helicopter').css({bottom: 'calc(55px + ' + ((mapPosition() - 17285) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
+    }else if (mapPosition() <= 17285.999) {
+        $('.helicopter').css({bottom: '55px'})
     }
     // DOWN
     if (mapPosition() >= 19850.01 && mapPosition() <= 20988) {//
