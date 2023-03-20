@@ -45,11 +45,21 @@ function choiceCharacter(){
         $('.character-choice-screen').css({transform: 'translateY(-200vh)', transition: '2s', transitionDelay: '1s'})
         $('.welcome-screen').css({visibility: 'visible', transitionDelay: '1s'})
         $('.welcome-ballon').css({visibility: 'visible', transitionDelay: '2s'})
+        $('.main-character').css({visibility: 'hidden'})
     })
 }
 
 
+function start() {
+    $('.begin').click(function() {
 
+        $('body').css({overflow: 'auto'})
+        $('.welcome-character').css({visibility: 'hidden'})
+        $('.main-character').css({visibility: 'visible'})
+        $('.welcome-screen').css({visibility: 'hidden'})
+        $('.welcome-ballon').css({visibility: 'hidden', transitionDelay: '0s'})
+    })
+}
 
 
 
@@ -61,5 +71,5 @@ function choiceCharacter(){
 $(document).ready(function() {
     $('.character').addClass(characterName[0])
     choiceCharacter()
-
+    start()
 })

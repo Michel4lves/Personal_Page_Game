@@ -102,6 +102,21 @@
     z-index: 30;
 }
 
+.game .character-name {
+    position: fixed;
+    bottom: 90vh;
+    left: calc((100vw/2) - 300px);
+    width: 165px;
+    height: 60px;
+    font-size: 30px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #006400;
+    z-index: 14;
+}
 
 
 
