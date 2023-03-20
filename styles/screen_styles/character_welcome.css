@@ -33,3 +33,69 @@
 .welcome-screen .Pedro {
     background-image: url(../../img/Characters/character-pedro.png);
 }
+
+.welcome-ballon {
+    position: absolute;
+    bottom: 200px;
+    left: calc((100vw/2) - 190px);
+    width: 500px;
+    height: 400px;
+    background-image: url(../../img/signs/speek.png);
+    background-size: 500px;
+    z-index: 201;
+    visibility: hidden;
+}
+
+.welcome-ballon .welcome-ballon-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 70px;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.welcome-ballon .welcome-ballon-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.welcome-ballon .welcome-ballon-box h1 {
+    padding-left: 20px;
+    color: #b22222;
+}
+
+.welcome-ballon .welcome-ballon-box p {
+    font-size: 20px;
+    padding: 0 100px 0 0;
+}
+
+.welcome-ballon .welcome-ballon-box p span {
+    color: #006400;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.welcome-ballon .welcome-ballon-box p .my-name {
+    color: #5471e6;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.welcome-ballon .welcome-ballon-box .begin {
+    position: relative;
+    left: 250px;
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    color: #006400;
+    border: 1px solid #006400;
+    border-radius: 10px;
+    cursor: pointer;
+}

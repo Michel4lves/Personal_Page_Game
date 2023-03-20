@@ -15,6 +15,7 @@
 
 body {
     height: 0; /* value on js*/
+    overflow: hidden;
 }
 
 .game {
@@ -24,5 +25,4 @@ body {
     width: 0; /* value on js*/
     display: flex;
     align-items: flex-start;
-    /* overflow: hidden; */
 }

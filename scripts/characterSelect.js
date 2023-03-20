@@ -44,22 +44,8 @@ function choiceCharacter(){
         $('.character-picture').css({animation: 'chosen 1s linear both', visibility: 'hidden', transitionDelay: '1s'})
         $('.character-choice-screen').css({transform: 'translateY(-200vh)', transition: '2s', transitionDelay: '1s'})
         $('.welcome-screen').css({visibility: 'visible', transitionDelay: '1s'})
-
-
-
-        $(window).scrollTop(0)
-
-        // $('.main-character').css({visibility: 'visible'})
-
+        $('.welcome-ballon').css({visibility: 'visible', transitionDelay: '2s'})
     })
-
-
-
-
-
-
-
-
 }
 
 
