@@ -74,7 +74,7 @@
     }
 }
 
-.pilot {
+.pilot.Carol {
     position: absolute;
     top: 210px;
     left: 50px;
@@ -86,6 +86,18 @@
     transform: scaleX(-1);
     z-index: -2;
     visibility: hidden;
+}
+
+.pilot.Michael {
+    background-position: 0px -340px;
+}
+
+.pilot.Martha {
+    background-position: 0px -670px;
+}
+
+.pilot.Pedro {
+    background-position: 0px -1000px;
 }
 
 @keyframes pilot {

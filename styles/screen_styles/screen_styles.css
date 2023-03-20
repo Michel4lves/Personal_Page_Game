@@ -107,30 +107,14 @@
     bottom: 90vh;
     left: calc((100vw/2) - 300px);
     width: 165px;
-    height: 60px;
+    height: 40px;
     font-size: 30px;
     border: 1px solid red;
-    border-radius: 10px;
+    background-color: #fbf5a0;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #006400;
     z-index: 14;
 }
-
-
-
-/* 
-.speek {
-    position: fixed;
-    bottom: 250px;
-    left: 750px;
-    width: 350px;
-    height: 250px;
-    background-image: url(../../img/signs/speek.png);
-    background-repeat: no-repeat;
-    background-size: 350px;
-    background-position: 0 0;
-    z-index: 11;
-    visibility: hidden;
-} */

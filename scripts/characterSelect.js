@@ -12,12 +12,14 @@ function choiceCharacter(){
                 $('.character-number').text((select + 1).toString() + '/' + characterName.length.toString())
                 $('.main-character').addClass(characterName[select]).removeClass(characterName[select - 1])
                 $('.welcome-character').addClass(characterName[select]).removeClass(characterName[select - 1])
+                $('.pilot').addClass(characterName[select]).removeClass(characterName[select + 1])
             }else{
                 select += 1
                 $('.character-name').text(characterName[select])
                 $('.character-number').text((select + 1).toString() + '/' + characterName.length.toString())
                 $('.main-character').addClass(characterName[select]).removeClass(characterName[select - 1])
                 $('.welcome-character').addClass(characterName[select]).removeClass(characterName[select - 1])
+                $('.pilot').addClass(characterName[select]).removeClass(characterName[select + 1])
             }
         } 
     })
@@ -31,12 +33,14 @@ function choiceCharacter(){
                 $('.character-number').text((select + 1).toString() + '/' + characterName.length.toString())
                 $('.main-character').addClass(characterName[select]).removeClass(characterName[select + 1])
                 $('.welcome-character').addClass(characterName[select]).removeClass(characterName[select + 1])
+                $('.pilot').addClass(characterName[select]).removeClass(characterName[select + 1])
             }else{
                 select -= 1
                 $('.character-name').text(characterName[select])
                 $('.character-number').text((select + 1).toString() + '/' + characterName.length.toString())
                 $('.main-character').addClass(characterName[select]).removeClass(characterName[select + 1])
                 $('.welcome-character').addClass(characterName[select]).removeClass(characterName[select + 1])
+                $('.pilot').addClass(characterName[select]).removeClass(characterName[select + 1])
             }
         } 
     })
