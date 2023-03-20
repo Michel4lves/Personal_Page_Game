@@ -72,4 +72,5 @@ $(document).ready(function() {
     $('.character').addClass(characterName[0])
     choiceCharacter()
     start()
+    
 })
