@@ -8,6 +8,17 @@
     height: 100vh;
 }
 
+.phase-2-map h1 {
+    position: absolute;
+    bottom: 70vh;
+    left: 1000px;
+    width: 500px;
+    height: 100px;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 3px 3px 2px black;;
+}
+
 .phase-2-map .tree-5 {
     position: absolute;
     left: -100px;
