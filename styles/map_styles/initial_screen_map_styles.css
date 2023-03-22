@@ -128,3 +128,23 @@
     background-position: 0px 0px;
     background-size: 200px;
 }
+
+.compens-screen-left .initial-alert {
+    position: absolute;
+    bottom: 30px;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    z-index: 20;
+    visibility: hidden;
+    animation: initial-alert 2s linear infinite;
+}
+
+@keyframes initial-alert {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}

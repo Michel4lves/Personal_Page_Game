@@ -56,20 +56,26 @@ function choiceCharacter(){
 
 function start() {
     $('.begin').click(function() {
-
         $('body').css({overflow: 'auto'})
         $('.welcome-character').css({visibility: 'hidden'})
         $('.main-character').css({visibility: 'visible'})
         $('.welcome-screen').css({visibility: 'hidden'})
         $('.welcome-ballon').css({visibility: 'hidden', transitionDelay: '0s'})
+        $('.initial-alert').css({visibility: 'visible', transitionDelay: '0s'})
     })
 }
 
 
+function initialAlert(){
+    if ($(window).scrollTop() > 0){
+        $('.initial-alert').css({visibility: 'hidden', transitionDelay: '0s'})
+    }
+}
 
 
-
-
+$(window).scroll(function(){
+    initialAlert()
+})
 
 
 $(document).ready(function() {

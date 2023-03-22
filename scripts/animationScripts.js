@@ -137,6 +137,13 @@ function birdFly() {
 }
 
 
+function moon() {
+    if (mapPosition() >= 13400 && mapPosition() <= 17285) {
+        $('.moon').css({bottom: '200px', left: 'calc(600px + ' + (valueScroll - (13400 + screenLeft)) + 'px)'})
+    }
+}
+
+
 function fly(){
     var screenLeft = $('.screen').offset().left
     // UP
@@ -217,6 +224,7 @@ $(window).scroll(function(){
     desertHill()
     pilot()
     birdFly()
+    moon()
     fly()
     finalLinks()
     iconsCollected()
