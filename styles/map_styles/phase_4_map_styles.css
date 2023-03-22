@@ -11,6 +11,17 @@
     align-items: flex-end;
 }
 
+.phase-4-map .titles-3 {
+    position: absolute;
+    bottom: 70vh;
+    left: 1200px;
+    width: 500px;
+    height: 100px;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 3px 3px 2px black;;
+}
+
 .phase-4-map .ground-5 {
     position: absolute;
     left: 200px;
@@ -111,6 +122,20 @@
     height: 820vh;
     background-image: url(../../img/greens/dark-clouds.png);
     z-index: -9;
+}
+
+.phase-4-map .moon {
+    position: absolute;
+    left: 4500px;
+    bottom: 200px;
+    width: 490px;
+    height: 490px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #fff, 0 0 100px #fff;
+    background-image: url(../../img/desert/moon.png);
+    background-position: -63px -63px;
+    z-index: -10;
 }
 
 /* COMPONENTS */
@@ -462,6 +487,114 @@
     visibility: hidden;
     /* animation: info-show 10s linear infinite; */
 }
+
+.final-links .message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.final-links .message-form h1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.final-links .message-form .form-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.final-links .message-form .form-box .input-box {
+    position: relative;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.final-links .message-form .form-box .input-box input,
+.final-links .message-form .form-box .input-box textarea {
+    width: 100%;
+    resize: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 0.5S;
+}
+
+.final-links .message-form .form-box .input-box textarea {
+    height: 120px;
+}
+
+.final-links .message-form .form-box .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0 0 15px;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+    color: #333;
+}
+
+.final-links .message-form .form-box .input-box input:focus,
+.final-links .message-form .form-box .input-box input:valid,
+.final-links .message-form .form-box .input-box textarea:focus,
+.final-links .message-form .form-box .input-box textarea:valid {
+    width: 70%;
+    transform: translateX(132px);
+}
+
+.final-links .message-form .form-box .input-box input:focus ~ span,
+.final-links .message-form .form-box .input-box input:valid ~ span,
+.final-links .message-form .form-box .input-box textarea:focus ~ span,
+.final-links .message-form .form-box .input-box textarea:valid ~ span {
+    transform: translateX(-30px);
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #074518;
+    margin-left: 10px;
+}
+
+.final-links .message-form .form-box .input-box .send {
+    position: relative;
+    bottom: 0px;
+    left: -130px;
+    color: #006400;
+    border: 1px solid #006400;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 150px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .final-links .info-links {
     display: flex;

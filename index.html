@@ -91,7 +91,7 @@
         <div class="phase-1">
             <div class="phase-1-container">
                 <div class="phase-1-map">
-                    <h1>Desenvolvedor Web</h1>
+                    <h1 class="titles">Desenvolvedor Web</h1>
                     <div class="ground-1"></div>
                     <div class="tree-4"></div>
                     <div class="field"></div>
@@ -121,7 +121,8 @@
         <div class="phase-2">
             <div class="phase-2-container">
                 <div class="phase-2-map">
-                    <h1>Adoro futebol</h1>
+                    <h1 class="titles-1">Adoro futebol</h1>
+                    <h1 class="titles-2">Minhas habilidades</h1>
                     <div class="tree-5"></div>
                     <div class="bridge-back"></div>
                     <div class="bridge-front"></div>
@@ -141,11 +142,12 @@
                         <div class="beam-a"></div>
                         <div class="beam-b"></div>
                         <div class="mail"></div>
+                        <div class="wooden-board-2"></div>
                     </div>
                     <div class="phase-2-components-2">
                         <div class="outdoor">
                             <div class="knowledge">
-                                <h1>Conhecimentos:</h1>
+                                <h1 class="level">Conhecimentos:</h1>
                                 <div class="team">
                                     <img class="icon" src="img/icons/html.png">
                                     <h3>Html</h3>
@@ -173,7 +175,7 @@
                                 </div>
                             </div>
                             <div class="frameworks">
-                                <h1>Frameworks:</h1>
+                                <h1 class="level">Frameworks:</h1>
                                 <div class="team">
                                     <img class="icon" src="img/icons/bootstrap.png">
                                     <h3>Bootstrap</h3>
@@ -191,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="learning">
-                                <h1>Aprendendo:</h1>
+                                <h1 class="level">Aprendendo:</h1>
                                 <div class="team">
                                     <img class="icon" src="img/icons/react.png">
                                     <h3>React Js</h3>
@@ -270,6 +272,7 @@
         <div class="phase-4">
             <div class="phase-4-container">
                 <div class="phase-4-map">
+                    <h1 class="titles-3">ÁREA EXTRA</h1>
                     <div class="ground-5"></div>
                     <div class="sands-a"></div>
                     <div class="sands-b"></div>
@@ -280,6 +283,7 @@
                     <div class="city-b"></div>
                     <div class="sky-fall"></div>
                     <div class="dark-clouds"></div>
+                    <div class="moon"></div>
                     <div class="phase-4-components">
                         <div class="github"></div>
                         <div class="plataform-a"></div>
@@ -321,7 +325,33 @@
                         <a href="https://www.linkedin.com/in/michel-alves-892457232/" class="linkedin-link" target="blank"></a>
                     </div>
                     <div class="final-links">
-                        <div class="info-links">
+                        <div class="message-form">
+                            <h1>Envie sua mensagem:</h1>
+                            <form class="form-box" name="form-box" autocomplete="false" action="https://formsubmit.co/michel4alves.python@gmail.com" method="POST">
+                                <!-- submit configuration -->
+                                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html"> -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <!-- End of submit configuration -->
+                                <div class="input-box">
+                                    <input type="email" required id="email" name="email">
+                                    <span>Seu Email</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" required id="subject" name="subject">
+                                    <span>Assunto</span>
+                                </div>
+                                <div class="input-box" >
+                                    <textarea required id="message" name="message"></textarea>
+                                    <span>Sua mensagem</span>
+                                </div>
+                                <div class="input-box">
+                                    <input type="submit" value="Enviar" class="send" onclick="Enviar()">
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- <div class="info-links">
                             <h1>Contate-me:</h1>
                             <div class="contact-form">
                                 <img class="icon-local" src="img/screen/local_collected.png">
@@ -335,11 +365,8 @@
                                 <img class="icon" src="img/screen/mobile_collected.png">
                                 <div class="info">53 99119 9848</div>
                             </div>
-                            <h1>Meus repositórios no <img class="icon-git" src="img/icons/github.png">:</h1>
-                            <div class="contact-form">
-                                <a href="https://github.com/Michel4lves" class="link" target="blank">https://github.com/Michel4lves</a>
-                            </div>
-                        </div>
+                            <h1>Meus repositórios no:<a href="https://github.com/Michel4lves" class="link" target="blank"><img class="icon-git" src="img/icons/github.png"></a></h1>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -408,5 +435,6 @@
     <script src="scripts/animationScripts.js"></script>
     <script src="scripts/menuDebug.js"></script>
     <script src="scripts/characterSelect.js"></script>
+    <script src="scripts/message.js"></script>
 </body>
 </html>

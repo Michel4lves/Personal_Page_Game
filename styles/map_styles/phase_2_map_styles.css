@@ -8,7 +8,8 @@
     height: 100vh;
 }
 
-.phase-2-map h1 {
+.phase-2-map .titles-1,
+.phase-2-map .titles-2 {
     position: absolute;
     bottom: 70vh;
     left: 1000px;
@@ -17,6 +18,11 @@
     font-size: 3em;
     color: #fff;
     text-shadow: 3px 3px 2px black;;
+}
+
+.phase-2-map .titles-2 {
+    bottom: 70vh;
+    left: 2540px;  
 }
 
 .phase-2-map .tree-5 {
@@ -294,6 +300,17 @@
     z-index: 1;
 }
 
+.wooden-board-2 {
+    position: absolute;
+    right: -150px;
+    bottom: 75px;
+    width: 230px;
+    height: 220px;
+    background-image: url(../../img/signs/wood-plate-2.png);
+    background-position: 0px 0px;
+    background-size: 250px;
+}
+
 /* COMPONENTS 2 */
 
 .phase-2-components-2 .outdoor {
@@ -317,8 +334,10 @@
     height: 40px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 10px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .phase-2-components-2 .outdoor .frameworks {

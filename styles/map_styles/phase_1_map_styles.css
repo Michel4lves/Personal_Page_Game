@@ -8,7 +8,7 @@
     height: 100vh;
 }
 
-.phase-1-map h1 {
+.phase-1-map .titles {
     position: absolute;
     bottom: 70vh;
     left: 800px;
