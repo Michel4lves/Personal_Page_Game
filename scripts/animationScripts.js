@@ -138,8 +138,8 @@ function birdFly() {
 
 
 function moon() {
-    if (mapPosition() >= 13400 && mapPosition() <= 17285) {
-        $('.moon').css({bottom: '200px', left: 'calc(600px + ' + (valueScroll - (13400 + screenLeft)) + 'px)'})
+    if (mapPosition() >= 13200 && mapPosition() <= 17285) {
+        $('.moon').css({bottom: '500px', left: (((mapPosition() + 420) - 13200)) + 'px'})
     }
 }
 
@@ -150,22 +150,22 @@ function fly(){
     if (mapPosition() >= 17285 && mapPosition() <= 19850) {
         $('.game').css('top', ((mapPosition() - 17285) / 1.42) + 'px')
         $('.helicopter').css({bottom: 'calc(55px + ' + ((mapPosition() - 17285) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
-        $('.moon').css({bottom: 'calc(200px + ' + ((mapPosition() - 17285) / 1.42) + 'px)',left: 'calc(4500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
+        $('.moon').css({bottom: 'calc(500px + ' + ((mapPosition() - 17285) / 1.42) + 'px)',left: 'calc(4500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
     }else if (mapPosition() <= 17285.999) {
         $('.helicopter').css({bottom: '55px'})
-        $('.moon').css({bottom: '200px'})
+        $('.moon').css({bottom: '500px'})
     }
     // DOWN
     if (mapPosition() >= 19850.01 && mapPosition() <= 20988) {//
         $('.game').css('top', (1800 - (mapPosition() - 19850.01) / 1.42) + 'px')
         $('.helicopter').css({bottom: 'calc(55px + ' + (1800 - (mapPosition() - 19850.01) / 1.42) + 'px)',left: 'calc(3500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
-        $('.moon').css({bottom: 'calc(200px + ' + (1800 - (mapPosition() - 19850.01) / 1.42) + 'px)',left: 'calc(4500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
+        $('.moon').css({bottom: 'calc(500px + ' + (1800 - (mapPosition() - 19850.01) / 1.42) + 'px)',left: 'calc(4500px + ' + (valueScroll - (17285 + screenLeft)) + 'px)'})
     }
     // RIGHT
     if (mapPosition() >= 20988.01) {
         $('.game').css('top', '985px')
         $('.helicopter').css({bottom: '1055px'})
-        $('.moon').css({bottom: '1200px', left: 'calc(8202.18px + ' + (valueScroll - (20988.01 + screenLeft)) + 'px)'})
+        $('.moon').css({bottom: '1500px', left: 'calc(8202.18px + ' + (valueScroll - (20988.01 + screenLeft)) + 'px)'})
     }
 }
 
@@ -208,6 +208,15 @@ function iconsCollected(){
 }
 
 
+function messageClick(){
+    $('.change-form').click(function() {
+        $('.final-links').addClass('message')
+    })
+    $('.back-form').click(function() {
+        $('.final-links').removeClass('message')
+    })
+}
+
 
 
 
@@ -228,4 +237,5 @@ $(window).scroll(function(){
     fly()
     finalLinks()
     iconsCollected()
+    messageClick()
 })

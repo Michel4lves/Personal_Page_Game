@@ -1,5 +1,75 @@
 /* SUPPORTING CHARACTER */
 
+/* INITIAL SCREEN */
+
+.cat {
+    position: absolute;
+    bottom: 75px;
+    width: 200px;
+    height: 170px;
+    background-image: url(../../img/Characters/cat.png);
+    background-repeat: no-repeat;
+    background-size: 1800px;
+    background-position: 0 0;
+    animation: run .5s steps(8) infinite, move 15s linear infinite;
+    z-index: 5;
+}
+
+@keyframes run {
+    0% {
+        background-position: 0 0px;
+    }
+    100% {
+        background-position: -1800px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: -50px;
+    }
+    50%{
+        left: 1200px;
+        transform: scaleX(1);
+    }
+    50.1%{
+        left: 1200px;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: -50px;
+        transform: scaleX(-1);
+    }
+}
+
+.initial-birds {
+    position: absolute;
+    bottom: 500px;
+    width: 200px;
+    height: 170px;
+    animation: fly-move 10s linear infinite;
+    z-index: 5;
+}
+
+@keyframes fly-move {
+    0% {
+        left: 1800px;
+        transform: scaleX(1);
+    }
+    50%{
+        left: -400px;
+        transform: scaleX(1);
+    }
+    50.1%{
+        left: -400px;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 1800px;
+        transform: scaleX(-1);
+    }
+}
+
 /* PHASE 1 */
 
 .desktop-a,

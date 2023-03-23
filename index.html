@@ -80,6 +80,15 @@
                     <div class="wooden-board"></div>
                     <div class="sky"></div>
                     <div class="sun"></div>
+                    <div class="initial-screen-character">
+                        <div class="animals">
+                            <div class="cat"></div>
+                            <div class="initial-birds">
+                                <div class="bird-1"></div>
+                                <div class="bird-2"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="compens-screen-right">
                     <div class="initial-ground"></div>
@@ -326,48 +335,51 @@
                         <a href="https://www.linkedin.com/in/michel-alves-892457232/" class="linkedin-link" target="blank"></a>
                     </div>
                     <div class="final-links">
-                        <div class="message-form">
-                            <h1>Envie sua mensagem:</h1>
-                            <form class="form-box" name="form-box" autocomplete="false" action="https://formsubmit.co/michelsantosa@gmail.com" method="POST">
-                                <!-- submit configuration -->
-                                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html"> -->
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_template" value="table">
-                                <!-- End of submit configuration -->
-                                <div class="input-box">
-                                    <input type="email" required id="email" name="email">
-                                    <span>Seu Email</span>
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" required id="_subject" name="_subject">
-                                    <span>Assunto</span>
-                                </div>
-                                <div class="input-box" >
-                                    <textarea required id="message" name="message"></textarea>
-                                    <span>Sua mensagem</span>
-                                </div>
-                                <div class="input-box">
-                                    <input type="submit" value="Enviar" class="send" onclick="Enviar()">
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- <div class="info-links">
-                            <h1>Contate-me:</h1>
+                        <div class="main-form">
                             <div class="contact-form">
-                                <img class="icon-local" src="img/screen/local_collected.png">
-                                <div class="info">Pelotas - RS - Brasil</div>
+                                <h1>Contate-me:</h1>
+                                <div class="info-links">
+                                    <img class="icon-local" src="img/screen/local_collected.png">
+                                    <div class="info">Pelotas - RS - Brasil</div>
+                                </div>
+                                <div class="info-links">
+                                    <img class="icon" src="img/screen/mail_collected.png">
+                                    <div class="info">michelsantosa@gmail.com</div>
+                                </div>
+                                <div class="info-links">
+                                    <img class="icon" src="img/screen/mobile_collected.png">
+                                    <div class="info">53 99119 9848</div>
+                                </div>
+                                <h2>Acesse meus repositórios no:<a href="https://github.com/Michel4lves" class="link" target="blank"><img class="icon-git" src="img/icons/github.png"></a></h2>
+                                <h2>Ou clique <span class="change-form">aqui</span> para enviar sua mensagem.</h2>
                             </div>
-                            <div class="contact-form">
-                                <img class="icon" src="img/screen/mail_collected.png">
-                                <div class="info">michelsantosa@gmail.com</div>
+                            <div class="message-form">
+                                <h1>Envie sua mensagem:</h1>
+                                <form class="form-box" name="form-box" autocomplete="false" action="https://formsubmit.co/michelsantosa@gmail.com" method="POST">
+                                    <!-- submit configuration -->
+                                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html"> -->
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_template" value="table">
+                                    <!-- End of submit configuration -->
+                                    <div class="input-box">
+                                        <input type="email" required id="email" name="email">
+                                        <span>Seu Email</span>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="text" required id="_subject" name="_subject">
+                                        <span>Assunto</span>
+                                    </div>
+                                    <div class="input-box" >
+                                        <textarea required id="message" name="message"></textarea>
+                                        <span>Sua mensagem</span>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="submit" value="Enviar" class="send" onclick="Enviar()">
+                                        <div class="back-form">Voltar</div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="contact-form">
-                                <img class="icon" src="img/screen/mobile_collected.png">
-                                <div class="info">53 99119 9848</div>
-                            </div>
-                            <h1>Meus repositórios no:<a href="https://github.com/Michel4lves" class="link" target="blank"><img class="icon-git" src="img/icons/github.png"></a></h1>
-                        </div> -->
+                        </div>    
                     </div>
                 </div>
             </div>
@@ -425,9 +437,7 @@
         </div>
     </div>
 
-            <!-- <div class="animals">
-                <div class="cat"></div>
-            </div> -->
+          
 
 
     <script src="files/jquery.min.js"></script>
