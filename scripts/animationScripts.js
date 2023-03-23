@@ -41,8 +41,8 @@ function devicesMotion(){
 function soccerMotion(){
     // Step one
     if (mapPosition() >= 4030 && directionValues[0] < directionValues[1]) {
-        $('.ball-a').css({animation: 'pass 1s linear both, rolling 1s steps(12) both'})
-        $('.ball-b').css({visibility: 'visible', transitionDelay: '1s'})
+        $('.ball-a').css({animation: 'pass 0.5s linear both, rolling 0.5s steps(12) both'})
+        $('.ball-b').css({visibility: 'visible', transitionDelay: '0.5s'})
     }
     // Step two
     if (mapPosition() >= 4460) {

@@ -365,6 +365,27 @@
     left: 4025px;
 }
 
+.phase-3-map .subway .phase-3-subway-portfolios .project-1 img,
+.phase-3-map .subway .phase-3-subway-portfolios .project-2 img {
+    position: relative;
+    left: 30px;
+    bottom: -30px;
+    width: 240px;
+    height: 140px;
+}
+
+.phase-3-map .subway .phase-3-subway-portfolios .project-3 .shortly,
+.phase-3-map .subway .phase-3-subway-portfolios .project-4 .shortly {
+    position: relative;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .project-1-link,
 .project-2-link,
 .project-3-link,
