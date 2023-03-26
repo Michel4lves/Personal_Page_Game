@@ -51,3 +51,10 @@ $(document).ready(function(){
     $('body').css({height: documentHeightCustom})
     $('.game').css({width: mapWidth})
 })
+
+
+$(window).resize(function(){
+    mapReferences()
+    $('body').css({height: documentHeightCustom})
+    $('.game').css({width: mapWidth})
+})

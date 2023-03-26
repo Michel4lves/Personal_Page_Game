@@ -6,6 +6,7 @@
     height: 10px;
     background-color: black;
     visibility: hidden;
+    z-index: 300;
 }
 
 .local-no-collected,
@@ -91,9 +92,10 @@
 }
 
 .debug-mod-access {
+    border: 1px solid red;
     position: absolute;
-    bottom: 978px;
-    left: 0px;
+    bottom: 385px;
+    left: 30px;
     width: 100px;
     height: 30px;
     border: none;

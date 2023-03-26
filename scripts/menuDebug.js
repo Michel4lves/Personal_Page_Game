@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
+    $(window).scroll(function debug(){
         var position = -($('.game').offset().left + $('.screen').offset().left)
         $('#position-value').text(position)
         $('#orientation-value').text(orientationValue)
@@ -16,6 +16,7 @@ $(document).ready(function(){
 
 $('.exit-menu-debug').click(function() {
     $('.debug-screen').css('display', 'none')
+    $('.screen').css('visibility', 'hidden')
 })
 
 var ex = $('.xxx')
@@ -23,5 +24,6 @@ $('.debug-mod-access').keyup(function(){
     ex.text($(this).val())
     if (ex.text() == 'debug') {
         $('.debug-screen').css('display', 'flex')
+        $('.screen').css('visibility', 'visible')
     }
 })

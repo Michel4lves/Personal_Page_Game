@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0;
     height: 0;
-} */
+}
 
 /* html {
     scroll-behavior: smooth;
@@ -20,7 +20,7 @@ body {
 
 .game {
     position: fixed;
-    bottom: -979px;
+    top: 0;
     left: 0;
     width: 0; /* value on js*/
     display: flex;

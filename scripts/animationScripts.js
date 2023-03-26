@@ -171,8 +171,8 @@ function fly(){
 
 
 function finalLinks(){
-    var mapLeft = $('.game').offset().left
-    if (mapLeft == -documentHeightCustom){
+    var mapLeft = ($(window).height() + $(window).scrollTop()) + 1
+    if (mapLeft >= (document.body.scrollHeight)){
         $('.linkedin-icon').css({visibility: 'visible', transitionDelay: '11s'})
         $('.linkedin-ballon').css({visibility: 'visible', transitionDelay: '11s'})
         $('.linkedin-link').css({visibility: 'visible', transitionDelay: '11s'})
@@ -183,8 +183,8 @@ function finalLinks(){
 
 
 function iconsCollected(){
-    var mapLeft = $('.game').offset().left
-    if (mapLeft == -documentHeightCustom){
+    var mapLeft = ($(window).height() + $(window).scrollTop()) + 1
+    if (mapLeft >= (document.body.scrollHeight)){
         $('.local-collected').css({animation: 'local-collected 0.5s linear both', animationDelay: '0.5s'})
         $('.local-collected-final').css({visibility: 'visible', transitionDelay: '1s'})
         $('.hide-1').css({visibility: 'visible', transitionDelay: '3s'})
