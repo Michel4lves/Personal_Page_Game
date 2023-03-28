@@ -30,8 +30,10 @@ function devicesMotion(){
     if (mapPosition() >= 1100) {
         $('.desktop-a').css({animation: 'moving 1.5s linear both, walking_a 0.5s steps(2) infinite', visibility: 'hidden', transitionDelay: '1.5s'})
         $('.desktop-b').css({visibility: 'visible', transitionDelay: '1.7s'})
+
         $('.laptop-a').css({animation: 'moving 1.5s linear both, walking_b 0.5s steps(2) infinite', animationDelay: '0.2s', visibility: 'hidden', transitionDelay: '1.7s'}) 
         $('.laptop-b').css({visibility: 'visible', transitionDelay: '1.9s', animationDelay: '1s'})
+
         $('.mobile-a').css({animation: 'moving 1.5s linear both, walking_c 0.5s steps(2) infinite', animationDelay: '0.4s', visibility: 'hidden', transitionDelay: '1.9s'})
         $('.mobile-b').css({visibility: 'visible', transitionDelay: '2.1s', animationDelay: '1s'})
     }

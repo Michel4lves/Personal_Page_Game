@@ -421,22 +421,74 @@
     
     .desktop-a,
     .desktop-b {
-        bottom: 70px;
+        bottom: 10px;
         transform: scale(0.7);
     }
-    
+
+    @keyframes jump_a {
+        0%, 100% {
+            background-position: -1150px -35px;
+            transform: scale(0.7);
+            bottom: 10px;
+        }
+        20% {
+            background-position: -2150px -35px;
+            transform: translateY(-50px), scale(0.7);
+            bottom: 40px;
+        }
+        20.01% {
+            background-position: -1150px -35px;
+            transform: translateY(0), scale(0.7);
+            bottom: 10px;
+        }
+    }
+
     .laptop-a,
     .laptop-b {
         bottom: 60px;
         transform: scale(0.7);
     }
     
+    @keyframes jump_b {
+        0%, 100% {
+            background-position: -1150px -70px;
+            transform: scale(0.7);
+            bottom: 10px;
+        }
+        20% {
+            background-position: -2150px -70px;
+            transform: translateY(-50px), scale(0.7);
+            bottom: 40px;
+        }
+        20.01% {
+            background-position: -1150px -70px;
+            transform: translateY(0), scale(0.7);
+            bottom: 10px;
+        }
+    }
+
     .mobile-a,
     .mobile-b {
         bottom: 30px;
         transform: scale(0.7);
+        border: 1px solid red;
     }
     
+    @keyframes jump_c {
+        0%, 100% {
+            background-position: -1180px -80px;
+            /* transform: scale(0.7); */
+        }
+        20% {
+            background-position: -2180px -80px;
+            /* transform: translateY(-50px), scale(0.7); */
+        }
+        20.01% {
+            background-position: -1180px -80px;
+            /* transform: translateY(0), scale(0.7); */
+        }
+    }
+
     /* PHASE 2 */
     
     .goal-keeper {
