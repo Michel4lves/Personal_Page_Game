@@ -103,3 +103,49 @@
         transform: scale(0, 0);
     }
 }
+
+
+/* RESPONSIVE EFFECT */
+
+
+@media (max-width: 1200px) {
+    .phase-1-map .titles {
+        font-size: 2.0em;
+    }
+    
+    .phase-1-map .ground-1 {
+        height: 90px;
+        background-size: 400px;
+    }
+    
+    .phase-1-map .tree-4 {
+        left: -265px;
+        bottom: -35px;
+        transform: scale(0.7);
+    }
+    
+    .phase-1-map .field {
+        bottom: 70px;
+        height: 180px;
+        background-size: 660px;
+    }
+    
+    .phase-1-map .back-trees {
+        left: -10px;
+        bottom: 195px;
+        height: 100px;
+        background-size: 200px;
+    } 
+    
+    .phase-1-map .city-a {
+        bottom: 18px;
+        transform: scale(0.7);
+    }
+    
+    .phase-1-components .local {
+        left: 2130px;
+        bottom: 50px;
+        height: 170px;
+        transform: scale(0.7);
+    }
+}

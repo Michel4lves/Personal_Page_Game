@@ -38,7 +38,7 @@
 .welcome-ballon {
     position: absolute;
     bottom: 200px;
-    left: calc((100vw/2) - 190px);
+    left: calc(50% - 190px);
     width: 500px;
     height: 400px;
     background-image: url(../../img/signs/speek.png);
@@ -99,4 +99,24 @@
     border: 1px solid #006400;
     border-radius: 10px;
     cursor: pointer;
+}
+
+
+/* RESPONSIVE EFFECT */
+
+@media (max-width: 1200px) {
+    .welcome-screen .Carol,
+    .welcome-screen .Michael,
+    .welcome-screen .Martha,
+    .welcome-screen .Pedro {
+        bottom: 5px;
+        left: calc((100vw/2) - 320px);
+        transform: scale(0.7);
+    }
+    
+    .welcome-ballon {
+        bottom: 80px;
+        left: calc(50% - 150px);
+        transform: scale(0.7);
+    }
 }

@@ -117,35 +117,15 @@
     .main-character,
     .main-character.jump,
     .main-character.running {
-        transform: scale(0.9);
-        bottom: 45px;
-        left: calc((100vw/2) - 450px);
+        transform: scale(0.7);
+        bottom: 5px;
+        left: calc((100vw/2) - 320px);
     }
     
-    .pilot.Carol {
-        position: absolute;
+    .pilot {
         top: 210px;
         left: 50px;
-        width: 300px;
-        height: 300px;
-        background-image: url(../../img/Characters/personages-pilot.png);
-        background-repeat: no-repeat;
-        background-size: 300px;
-        transform: scaleX(-1);
-        z-index: -2;
-        visibility: hidden;
-    }
-    
-    .pilot.Michael {
-        background-position: 0px -340px;
-    }
-    
-    .pilot.Martha {
-        background-position: 0px -670px;
-    }
-    
-    .pilot.Pedro {
-        background-position: 0px -1000px;
+        transform: scale(0.7);
     }
 }
 

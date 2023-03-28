@@ -386,3 +386,347 @@
 .phase-2-components-2 .outdoor .learning .team h3 {
     font-size: 1.3em;
 }
+
+
+/* RESPONSIVE EFFECT */
+
+
+@media (max-width: 1200px) {
+    .phase-2-map .titles-1,
+    .phase-2-map .titles-2 {
+        font-size: 1.5em;
+    }
+    
+    .phase-2-map .tree-5 {
+        bottom: 150px;
+        transform: scale(0.7);
+    }
+    
+    .phase-2-map .bridge-back {
+        left: -190px;
+        bottom: 45px;
+        transform: scale(0.9);
+    }
+    
+    .phase-2-map .bridge-front {
+        left: -63px;
+        bottom: 54px;
+        transform: scale(0.9);
+    }
+    
+    .phase-2-map .lake {
+        left: -300px;
+        bottom: -40px;
+        width: 1000px;
+        transform: scale(0.9);
+    }
+    
+    .phase-2-map .water-effect {
+        position: absolute;
+        left: 100px;
+        bottom: -30PX;
+        transform: scale(0.9);
+    }
+    
+    @keyframes water {
+        0%, 100% {
+            left: -50px;
+        }
+        50% {
+            left: -800px;
+        }
+    }
+    
+    .phase-2-map .ground-6 {
+        left: 380px;
+        width: 90.7%;
+        height: 106px;
+        background-size: 560px;
+    }
+    
+    .phase-2-map .field {
+        bottom: 75px;
+        height: 200px;
+        background-size: 700px;
+    }
+    
+    .phase-2-map .rock {
+        position: absolute;
+        right: 0;
+        top: 100vh;
+        width: 75%;
+        height: 980px;
+        background-image: url(../../img/grounds/rocks.jpg);
+        background-size: 100px;
+    }
+    
+    .phase-2-map .sky {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #bef6f7;
+        z-index: -10;
+    }
+    
+    .phase-2-map .clouds {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        height: 120vh;
+        background-image: url(../../img/greens/clouds.png);
+        z-index: -8;
+    }
+    
+    /* COMPONENTS */
+    
+    
+    .phase-2-components .grandstand_a,
+    .phase-2-components .grandstand_b,
+    .phase-2-components .grandstand_c {
+        position: absolute;
+        left: 420px;
+        bottom: 0px;
+        width: 1500px;
+        height:560px;
+        background-image: url(../../img/street/grandstand_c.png);
+        background-size: 1500px;
+        z-index: -5;
+    }
+    
+    .phase-2-components .grandstand_a {
+        background-image: url(../../img/street/grandstand_a.png);
+        z-index: -1;
+    }
+    
+    .phase-2-components .grandstand_b {
+        background-image: url(../../img/street/grandstand_b.png);
+        z-index: -3;
+    }
+    
+    .ball-a, 
+    .ball-b {
+        position: absolute;
+        left: 700px;
+        bottom: 85px;
+        width: 86px;
+        height: 85px;
+        background-image: url(../../img/street/things.png);
+        background-repeat: no-repeat;
+        background-size: 1700px;
+        background-position: -6px -1818px;
+        transform: scaleX(-1) rotateZ(-40deg);
+        z-index: 11;
+        visibility: visible;
+    }
+    
+    .ball-b {
+        left: 1100px;
+        visibility: hidden;
+    }
+    
+    @keyframes rolling {
+        0% {
+            background-position: -6px -1818px;
+        }
+        99% {
+            background-position: -1120px -1818px;
+        }
+        100% {
+            background-position: -6px -1818px;
+        }
+    }
+    
+    @keyframes pass {
+        0% {
+            top: calc(100vh - 170px);
+            left: 700px;
+        }
+        20% {
+            top: calc(100vh - 180px);
+            left: 800px;
+        }
+        40% {
+            top: calc(100vh - 170px);
+            left: 900px;
+        }
+        60% {
+            top: calc(100vh - 180px);
+            left: 950px;
+        }
+        80% {
+            top: calc(100vh - 170px);
+            left: 1000px;
+        }
+        100% {
+            top: calc(100vh - 170px);
+            left: 1100px;
+            visibility: hidden;
+        }
+    }
+    
+    @keyframes kick {
+        0% {
+            top: calc(100vh - 170px);
+            left: 1100px;
+        }
+        50% {
+            top: calc(100vh - 400px);
+            left: 1880px;
+        }
+        70% {
+            top: calc(100vh - 170px);
+            left: 1800px;
+        }
+        90% {
+            top: calc(100vh - 180px);
+            left: 1750px;
+        }
+        100% {
+            top: calc(100vh - 170px);
+            left: 1700px;
+        }
+    }
+    
+    @keyframes roll {
+        0% {
+            background-position: -6px -1818px;
+        }
+        99% {
+            background-position: -1120px -1818px;
+        }
+        100% {
+            background-position: -6px -1818px;
+        }
+    }
+    
+    .beam-a,
+    .beam-b {
+        position: absolute;
+        left: 1700px;
+        bottom: 80px;
+        width: 430px;
+        height: 430px;
+        background-image: url(../../img/street/things.png);
+        background-size: 1650px;
+        background-position: -6px -1860px;
+        z-index: 12;
+    }
+    
+    .beam-b {
+        visibility: hidden;
+    }
+    
+    @keyframes net {
+        0% {
+            background-position: -6px -1860px;
+        }
+        100% {
+            background-position: -1389px -1860px;
+        }
+    }
+    
+    .mail {
+        position: absolute;
+        bottom: 100px;
+        left: 3700px;
+        width: 120px;
+        height: 120px;
+        background-image: url(../../img/signs/mail.gif);
+        background-size: 120px;
+        z-index: 1;
+    }
+    
+    .wooden-board-2 {
+        position: absolute;
+        right: -150px;
+        bottom: 75px;
+        width: 230px;
+        height: 220px;
+        background-image: url(../../img/signs/wood-plate-2.png);
+        background-position: 0px 0px;
+        background-size: 250px;
+    }
+    
+    /* COMPONENTS 2 */
+    
+    .phase-2-components-2 .outdoor {
+        position: relative;
+        top: calc(100vh - 745px);
+        left: 2000px;
+        width: 1500px;
+        height: 680px;
+        background-image: url(../../img/street/outdoor.png);
+        background-size: 500px;
+        z-index: -1;
+    }
+    
+    .phase-2-components-2 .outdoor .knowledge,
+    .phase-2-components-2 .outdoor .frameworks,
+    .phase-2-components-2 .outdoor .learning {
+        position: absolute;
+        top: 80px; 
+        left: 100px;
+        width: 350px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        overflow: hidden;
+    }
+    
+    .phase-2-components-2 .outdoor .frameworks {
+        gap: 15px;
+        left: 600px;
+    }
+    
+    .phase-2-components-2 .outdoor .learning {
+        left: 1100px;
+    }
+    
+    @keyframes classif {
+        0% {
+            height: 40px;
+        }
+        100% {
+            height: 400px;
+        }
+    }
+    
+    .phase-2-components-2 .outdoor .knowledge .team,
+    .phase-2-components-2 .outdoor .frameworks .team,
+    .phase-2-components-2 .outdoor .learning .team {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .phase-2-components-2 .outdoor .knowledge .star,
+    .phase-2-components-2 .outdoor .frameworks .star,
+    .phase-2-components-2 .outdoor .learning .star {
+        width: 200px;
+    }
+    
+    .phase-2-components-2 .outdoor .knowledge .team .icon,
+    .phase-2-components-2 .outdoor .learning .team .icon {
+        width: 50px;
+    }
+    
+    .phase-2-components-2 .outdoor .frameworks .team .icon {
+        width: 40px;
+    }
+    
+    .phase-2-components-2 .outdoor .knowledge .team h3,
+    .phase-2-components-2 .outdoor .frameworks .team h3,
+    .phase-2-components-2 .outdoor .learning .team h3 {
+        font-size: 1.3em;
+    }
+    
+
+
+
+}
