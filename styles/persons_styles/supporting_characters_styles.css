@@ -60,19 +60,19 @@
 @keyframes fly-move {
     0% {
         left: 200%;
-        transform: scaleX(-1);
+        transform: scaleX(1);
     }
     50%{
         left: -100%;
-        transform: scaleX(-1);
+        transform: scaleX(1);
     }
     50.1%{
         left: -100%;
-        transform: scaleX(1);
+        transform: scaleX(-1);
     }
     100% {
         left: 200%;
-        transform: scaleX(1);
+        transform: scaleX(-1);
     }
 }
 
@@ -191,7 +191,7 @@
 .mobile-a,
 .mobile-b {
     position: absolute;
-    top: calc(100vh - 370px);
+    bottom: 70px;
     left: 2200px;
     width: 270px;
     height: 300px;
@@ -393,237 +393,4 @@
     100% {
         background-position: -1750px 0;
     }
-}
-
-
-/* RESPONSIVE EFFECT */
-
-
-@media (max-width: 1200px) {
-    .pet {
-        bottom: 30px;
-    }
-
-    .cat {
-        transform: scale(0.7);
-    }
-    
-    .initial-birds {
-        bottom: 350px;
-    }
-    
-    .bird-1,
-    .bird-2 {
-        transform: scale(0.7);
-    }
-    
-    /* PHASE 1 */
-    
-    .desktop-a,
-    .desktop-b {
-        bottom: 10px;
-        transform: scale(0.7);
-    }
-
-    @keyframes jump_a {
-        0%, 100% {
-            background-position: -1150px -35px;
-            transform: scale(0.7);
-            bottom: 10px;
-        }
-        20% {
-            background-position: -2150px -35px;
-            transform: translateY(-50px), scale(0.7);
-            bottom: 40px;
-        }
-        20.01% {
-            background-position: -1150px -35px;
-            transform: translateY(0), scale(0.7);
-            bottom: 10px;
-        }
-    }
-
-    .laptop-a,
-    .laptop-b {
-        bottom: 60px;
-        transform: scale(0.7);
-    }
-    
-    @keyframes jump_b {
-        0%, 100% {
-            background-position: -1150px -70px;
-            transform: scale(0.7);
-            bottom: 10px;
-        }
-        20% {
-            background-position: -2150px -70px;
-            transform: translateY(-50px), scale(0.7);
-            bottom: 40px;
-        }
-        20.01% {
-            background-position: -1150px -70px;
-            transform: translateY(0), scale(0.7);
-            bottom: 10px;
-        }
-    }
-
-    .mobile-a,
-    .mobile-b {
-        bottom: 30px;
-        transform: scale(0.7);
-        border: 1px solid red;
-    }
-    
-    @keyframes jump_c {
-        0%, 100% {
-            background-position: -1180px -80px;
-            /* transform: scale(0.7); */
-        }
-        20% {
-            background-position: -2180px -80px;
-            /* transform: translateY(-50px), scale(0.7); */
-        }
-        20.01% {
-            background-position: -1180px -80px;
-            /* transform: translateY(0), scale(0.7); */
-        }
-    }
-
-    /* PHASE 2 */
-    
-    .goal-keeper {
-        position: absolute;
-        bottom: 80px;
-        left: 1400px;
-        width: 390px;
-        height: 300px;
-        background-image: url(../../img/Characters/character-miguel.png);
-        background-repeat: no-repeat;
-        background-size: 5000px;
-        background-position: -1100px 0px; 
-        transform: scaleX(-1);
-        animation: stoping_gk .7s steps(3) infinite;
-        z-index: 10;
-    }
-    
-    @keyframes stoping_gk {
-        0% {
-            background-position: 0px 0px;
-        }
-        100% {
-            background-position: -1150px 0px;
-        }
-    }
-    
-    @keyframes fall_gk {
-        0% {
-            background-position: -1500px 0px;
-        }
-        100% {
-            background-position: -2270px 0px;
-        }
-    }
-    
-    .crowd-a,
-    .crowd-b ,
-    .crowd-a2,
-    .crowd-b2 {
-        position: absolute;
-        left: 420px;
-        bottom: 0px;
-        width: 1500px;
-        height:560px;
-        background-image: url(../../img/Characters/crowd_a.png);
-        background-size: 1500px;
-        z-index: -2;
-    }
-    
-    .crowd-b {
-        background-image: url(../../img/Characters/crowd_b.png);
-        z-index: -4;
-    }
-    
-    .crowd-a2 {
-        background-image: url(../../img/Characters/crowd_a2.png);
-        z-index: -2;
-        visibility: hidden;
-    }
-    
-    .crowd-b2 {
-        background-image: url(../../img/Characters/crowd_b2.png);
-        z-index: -4;
-        visibility: hidden;
-    }
-    
-    @keyframes goal {
-        0% {
-            bottom: 0px;
-        }
-        100% {
-            bottom: -10px;
-        }
-    }
-    
-    
-    /* PHASE 4 */
-    
-    .controller {
-        position: absolute;
-        bottom: 1070px;
-        right: -120px;
-        width: 400px;
-        height: 300px;
-        background-image: url(../../img/Characters/personages.png);
-        background-repeat: no-repeat;
-        background-size: 5000px;
-        background-position: -3450px -1680px;
-        transform: scaleX(-1);
-        z-index: 1;
-        animation: stopping2 0.5s steps(3) infinite;
-    }
-    
-    @keyframes stopping2 {
-        0% {
-            background-position: -3450px -1680px;
-        }
-        100% {
-            background-position: -4600px -1680px;
-        }
-    }
-    
-    .bird-box {
-        position: absolute;
-        bottom: 1230px;
-        left: 7000px;
-        width: 300px;
-        height: 300px;
-        /* animation: bird-fly 10s linear infinite; */
-    }
-    
-    .bird-3,
-    .bird-4 {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 125px;
-        height: 130px;
-        background-image: url(../../img/Characters/bird.png);
-        background-repeat: no-repeat;
-        background-size: 1800px;
-        background-position: 0 0;
-        transform: scaleX(-1);
-        animation: flyBird .5s steps(14) infinite;
-        z-index: 50;
-    }
-    
-    .bird-4 {
-        position: absolute;
-        bottom: 150px;
-        left: 150px;
-    }
-    
-
-
-
-
 }

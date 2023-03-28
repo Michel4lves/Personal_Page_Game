@@ -108,24 +108,3 @@
         left: 50px;
     }
 }
-
-
-/* RESPONSIVE EFFECT */
-
-
-@media (max-width: 1200px) {
-    .main-character,
-    .main-character.jump,
-    .main-character.running {
-        transform: scale(0.7);
-        bottom: 5px;
-        left: calc((100vw/2) - 320px);
-    }
-    
-    .pilot {
-        top: 210px;
-        left: 50px;
-        transform: scale(0.7);
-    }
-}
-

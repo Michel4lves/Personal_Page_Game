@@ -394,60 +394,62 @@
 @media (max-width: 1200px) {
     .phase-2-map .titles-1,
     .phase-2-map .titles-2 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
     
     .phase-2-map .tree-5 {
-        bottom: 150px;
+        left: -90px;
+        bottom: 115px;
         transform: scale(0.7);
     }
     
     .phase-2-map .bridge-back {
-        left: -190px;
-        bottom: 45px;
-        transform: scale(0.9);
+        left: -230px;
+        bottom: 10px;
+        transform: scale(0.7);
     }
     
     .phase-2-map .bridge-front {
-        left: -63px;
-        bottom: 54px;
-        transform: scale(0.9);
+        left: -102px;
+        bottom: 21px;
+        transform: scale(0.7);
     }
     
     .phase-2-map .lake {
-        left: -300px;
-        bottom: -40px;
+        left: -280px;
+        bottom: -60px;
         width: 1000px;
-        transform: scale(0.9);
+        transform: scale(0.7);
     }
     
     .phase-2-map .water-effect {
         position: absolute;
         left: 100px;
         bottom: -30PX;
-        transform: scale(0.9);
+        transform: scale(0.7);
     }
     
     @keyframes water {
         0%, 100% {
-            left: -50px;
+            left: -200px;
         }
         50% {
-            left: -800px;
+            left: -700px;
         }
     }
     
     .phase-2-map .ground-6 {
-        left: 380px;
-        width: 90.7%;
-        height: 106px;
-        background-size: 560px;
+        left: 290px;
+        width: 93%;
+        height: 90px;
+        background-size: 400px;
+        background-position: 0 198px;
     }
     
     .phase-2-map .field {
-        bottom: 75px;
-        height: 200px;
-        background-size: 700px;
+        bottom: 50px;
+        height: 180px;
+        background-size: 600px;
     }
     
     .phase-2-map .rock {

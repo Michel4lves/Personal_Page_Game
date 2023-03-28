@@ -39,6 +39,4 @@ function mainCharacterDirection(){
 $(window).scroll(function() {
     mainCharacterRunning()
     mainCharacterDirection()
-
 })
-

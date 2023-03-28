@@ -108,29 +108,3 @@
 .character-choice-screen .character-box .right-choice {
     left: calc(50% + 85px);
 }
-
-
-/* RESPONSIVE EFFECT */
-
-
-@media (max-width: 1200px) {
-    .character-choice-screen h1 {
-        bottom: calc((100vh/2) + 230px);
-        font-size: 1em;
-    }
-    
-    .character-choice-screen .character-box {
-        transform: scale(0.7);
-    }
-    
-    @keyframes chosen {
-        0% {
-            left: calc(50% - 200px);
-            bottom: calc(50% - 30px);
-        }
-        100%{
-            left: calc(50% - 320px);
-            bottom: 5px;
-        }
-    }
-}

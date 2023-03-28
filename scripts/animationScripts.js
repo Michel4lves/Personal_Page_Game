@@ -220,10 +220,6 @@ function messageClick(){
 }
 
 
-
-
-
-
 $(window).scroll(function(){
     bridge()
     subway()
