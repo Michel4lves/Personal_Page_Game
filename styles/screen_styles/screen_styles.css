@@ -25,7 +25,6 @@
     background-image: url(../../img/screen/local_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: local-collected 5s linear infinite; */
     z-index: 15;
 }
 
@@ -45,7 +44,6 @@
     background-image: url(../../img/screen/mail_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: mail-collected 5s linear infinite; */
     z-index: 15;
 }
 
@@ -66,7 +64,6 @@
     background-image: url(../../img/screen/mobile_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: mobile-collected 5s linear infinite; */
     z-index: 15;
 }
 
@@ -87,7 +84,6 @@
     background-image: url(../../img/screen/github_collected.png);
     opacity: 1;
     visibility: hidden;
-    /* animation: github-collected 5s linear infinite; */
     z-index: 15;
 }
 

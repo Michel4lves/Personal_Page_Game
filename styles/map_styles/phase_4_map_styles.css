@@ -502,7 +502,7 @@
         height: 40px;
     }
     100% {
-        height: 280px;
+        height: 300px;
     }
 }
 
@@ -515,7 +515,7 @@
 }
 
 .final-links.message .main-form {
-    top: -290px;
+    top: -310px;
     transition: 1s;
 }
 
@@ -525,7 +525,6 @@
     top: 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     padding-left: 20px;
 }
 
@@ -585,7 +584,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 5px;
 }
 
 .final-links .main-form .message-form .form-box .input-box {

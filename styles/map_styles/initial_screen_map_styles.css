@@ -131,7 +131,7 @@
 
 .compens-screen-left .initial-alert {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     width: 100vw;
     text-align: center;
     color: #fff;
